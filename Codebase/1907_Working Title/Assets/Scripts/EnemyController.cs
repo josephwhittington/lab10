@@ -51,6 +51,7 @@ public class EnemyController : IPausable
     {
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
+            UpdateUi();
             agent.isStopped = false;
             agent.SetDestination(player.transform.position);
 

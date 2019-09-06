@@ -11,7 +11,6 @@ public class HealthPickUp : MonoBehaviour
         {
             if(PlayerStats.CurrentHealth +1 <= PlayerStats.MaxHitPoints)
                 PlayerStats.CurrentHealth += 1;
-            Debug.Log(PlayerStats.CurrentHealth);
             Destroy(gameObject);
 
             // Play picup sound
