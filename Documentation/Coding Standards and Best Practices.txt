@@ -1,0 +1,130 @@
+﻿Coding Standards and Best Practices
+
+Agreeing Members:
+Zach Molnar 
+Kole Keller-Morris
+William Casey
+
+Purpose
+
+To develop reliable and maintainable applications, you must follow coding standards and best practices.
+
+The naming conventions, coding standards and best practices described in this document are compiled from our own experience
+
+All team members are always expected to follow the coding standards and best practices.
+
+Folder Heiarchy
+
+
+Commenting standards
+
+	File header expectation
+	
+		Example:
+			/////////////////////
+			// Name		Date
+			//
+			// Description
+			/////////////////////
+
+	Method heading expectation
+	
+		Example:
+			///////////////////
+			// Params and why they are there
+			// What and why it returns
+			// What the method is for
+			///////////////////
+
+
+
+Naming convention
+
+	Meaningful, descriptive words to name variables.
+	Good:
+		string CharacterName;
+		int Row, Column;
+		GameObject SpawnedItem;
+
+	Not Good:
+		string nam;
+		int i,j;
+		GameObject temp;
+
+	Capitalization expectation
+	
+		Example:
+			Camel Case
+			int randomNumber;
+		
+	Standard Prefixing 
+	
+		Example:
+			g_Row global int
+			m_Row class/struct int
+			s_Row static class int
+			c_Row static method int
+		
+	Abbreviation use 
+	For tedious, or repetitive words within variable names
+		Example:
+			randDmg
+			tempBullet
+		
+
+File Formatting
+
+
+Indentation and Spacing
+
+	Indenting standard
+	
+		Example:
+			one indent per block
+			void method()
+			{
+				int ex;
+				{
+					ex += 1;
+				}
+			}
+		
+	Curly braces ( {} ) format
+	
+		Example:
+		void method()
+		{
+		}
+		
+	Blank line expectation
+	
+		Example:
+			void method()
+			{
+			}
+			
+			void method1()
+		
+	Spacing around operators
+	
+		Example:
+			1 + 1 = 2;
+
+	
+Programming practices
+
+	Maximum characters per line
+	
+		Example: 98
+		
+	Maximum nested conditions 
+	
+		Example: max of 4
+		
+	#region usage
+	
+		Example: to keep organized, name it with a capital
+		
+	Static values (hardcoded numbers. Const variables, and #defines)
+	
+		Example: for min/max possible numbers to restrict rng

@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ApplyUpgrades : MonoBehaviour
+{
+    private uint UpgradeCost = 1;
+
+    [SerializeField] PlayerStats.UPGRADE UpgradeName = 0;
+    [SerializeField] Button UpgradeButton = null;
+
+    private void Start()
+    {
+        UpgradeButton.onClick.AddListener(PurchaseUpgrade);
+    }
+
+    public void PurchaseUpgrade()
+    {
+        UpgradeCost = (uint) PlayerStats.GetUpgradeCost((int)UpgradeName);
+
+        if (PlayerStats.Coins >= UpgradeCost)
+        {
+            if (PlayerStats.ApplyUpgrade(UpgradeName))
+            {
+                if((int)UpgradeName == 1)
+                    Debug.Log("Pu works");
+                PlayerPrefs.Save();
+                PlayerStats.Coins -= UpgradeCost;
+            }
+        }
+    }
+}
