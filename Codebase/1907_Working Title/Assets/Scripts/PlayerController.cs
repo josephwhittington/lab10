@@ -27,6 +27,7 @@ public class PlayerController : IPausable
     float coolDown = 1.0f;
     float TimerCoolDown = 0.0f;
     [SerializeField] GameObject Dash = null;
+    [SerializeField] GameObject DashParticle = null;
 
     TrailRenderer trailRend;
     // Alex's Dash
@@ -201,6 +202,7 @@ public class PlayerController : IPausable
         }
         else if (dashing)
         {
+            Instantiate<GameObject>(DashParticle, transform.position, Quaternion.identity);
             trailRend.time = Mathf.Lerp(trailRend.time, 0.25f, Time.deltaTime);
             characterController.Move(moveDirection.normalized * DashSpeed * Time.deltaTime);
         }
