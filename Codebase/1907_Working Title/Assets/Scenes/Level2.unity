@@ -107,7 +107,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 1
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -7798,7 +7798,7 @@ MonoBehaviour:
   - {fileID: 1473593923}
   - {fileID: 1692081055}
   Enemies:
-  - {fileID: 791576392777489463, guid: b115ce3f8e1593b4c83126aea092ff72, type: 3}
+  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
   - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
   - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
@@ -18153,7 +18153,7 @@ MonoBehaviour:
   - {fileID: 1160015815}
   - {fileID: 740998954}
   Enemies:
-  - {fileID: 791576392777489463, guid: b115ce3f8e1593b4c83126aea092ff72, type: 3}
+  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
   - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
   EnemyWeights: 0100000001000000
   SpawnInterval: 2
@@ -22611,7 +22611,7 @@ MonoBehaviour:
   - {fileID: 416899900}
   - {fileID: 477844558}
   Enemies:
-  - {fileID: 791576392777489463, guid: b115ce3f8e1593b4c83126aea092ff72, type: 3}
+  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
   - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
   - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
@@ -29148,7 +29148,7 @@ MonoBehaviour:
   - {fileID: 540769248}
   - {fileID: 3845995}
   Enemies:
-  - {fileID: 791576392777489463, guid: b115ce3f8e1593b4c83126aea092ff72, type: 3}
+  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
   - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
   - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
@@ -32878,7 +32878,7 @@ MonoBehaviour:
   - {fileID: 1544967332}
   - {fileID: 1919783459}
   Enemies:
-  - {fileID: 791576392777489463, guid: b115ce3f8e1593b4c83126aea092ff72, type: 3}
+  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
   - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
   - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
