@@ -24,6 +24,7 @@ public class PauseScript : MonoBehaviour
 
     private void PlayButtonOnClick()
     {
+        PlayMenuSelectSound();
         //Debug.Log("Play Button Clicked");
         IsPaused = !IsPaused;
         PauseMenu.gameObject.SetActive(IsPaused);
@@ -33,20 +34,28 @@ public class PauseScript : MonoBehaviour
 
     private void OptionsMenuOnClick()
     {
+        PlayMenuSelectSound();
         SoundMenu.gameObject.SetActive(true);
         PauseMenu.gameObject.SetActive(false);
     }
 
     private void OptionsQuitButtonOnClick()
     {
+        PlayMenuSelectSound();
         SoundMenu.gameObject.SetActive(false);
         PauseMenu.gameObject.SetActive(true);
     }
 
     private void QuitButtonClick()
     {
+        PlayMenuSelectSound();
         //Debug.Log("Closing Application");
         SceneManager.LoadScene(0);
+    }
+
+    void PlayMenuSelectSound()
+    {
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayMenuSelectSound();
     }
 
     void TriggerEvent()

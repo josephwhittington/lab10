@@ -27,6 +27,7 @@ public class PlayerHasDied : MonoBehaviour
     }
     public void ExitClicked()
     {
+        PlayMenuSelectSound();
 #if DEBUG
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -35,10 +36,16 @@ public class PlayerHasDied : MonoBehaviour
     }
     public void RestartClicked()
     {
+        PlayMenuSelectSound();
         DeathScreen.enabled = false;
         RestartStats();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    void PlayMenuSelectSound()
+    {
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayMenuSelectSound();
+    }
+
     void RestartStats()
     {
         PlayerPrefs.SetInt("CurrentHealth", (int)PlayerStats.MaxHitPoints);
