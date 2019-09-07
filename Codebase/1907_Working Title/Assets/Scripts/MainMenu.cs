@@ -12,11 +12,18 @@ public class MainMenu : MonoBehaviour
     }
     public void Scene_Switcher(string menu)
     {
+        PlayMenuSelectSound();
         SceneManager.LoadScene("LoadingScreen");
+    }
+
+    void PlayMenuSelectSound()
+    {
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayMenuSelectSound();
     }
 
     public void ExitApp()
     {
+        PlayMenuSelectSound();
 #if DEBUG
         UnityEditor.EditorApplication.isPlaying = false;
 #else

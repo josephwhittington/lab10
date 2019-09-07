@@ -72,4 +72,9 @@ public class AudioManager : MonoBehaviour
     {
         GetComponents<AudioSource>()[7].Play();
     }
+
+    public void PlayMenuSelectSound()
+    {
+        GetComponents<AudioSource>()[8].Play();
+    }
 }

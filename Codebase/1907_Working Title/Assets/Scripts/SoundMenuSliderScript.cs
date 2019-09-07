@@ -17,6 +17,8 @@ public class SoundMenuSliderScript : MonoBehaviour
     {
         PlayerPrefs.SetFloat(GlobalConfigs.SFXVolume, SFXSlider.value);
         PlayerPrefs.Save();
+
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayCoinPickup();
     }
 
     public void UpdateMusic()
