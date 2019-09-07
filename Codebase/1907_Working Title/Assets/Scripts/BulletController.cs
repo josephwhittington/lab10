@@ -65,6 +65,7 @@ public class BulletController : IPausable
         {
             if (!PlayerBullet)
             {
+                //Debug.Log(collision.gameObject.name);
 
             }
             Vector2 directionVector = Vector2.Reflect(new Vector2(_RigidBody.velocity.normalized.x, _RigidBody.velocity.normalized.z), new Vector2(collision.contacts[0].normal.normalized.x, collision.contacts[0].normal.normalized.z)).normalized;

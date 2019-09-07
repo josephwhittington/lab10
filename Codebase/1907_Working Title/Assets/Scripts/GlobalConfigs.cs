@@ -8,4 +8,7 @@ public static class GlobalConfigs
     public static string DashCooldownUpgrade = "DashCooldownUpgrade";
     public static string DamageUpgrade = "DamageUpgrade";
     public static string Bouncy = "Bouncy";
+
+    public static string SFXVolume = "SFXVolume";
+    public static string MusicVolume = "MusicVolume";
 }
