@@ -193,6 +193,7 @@ public static class PlayerStats
 
         PlayerPrefs.SetInt("StoreVisited", 0);
 
+        //PlayerPrefs.SetInt("Damage Size Upgrade", (int)DamageSizeUpgrade);
     }
 
     public static int GetUpgradeCost(int p_upgrade)
