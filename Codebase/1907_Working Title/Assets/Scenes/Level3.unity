@@ -11346,11 +11346,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
-        type: 3}
-      propertyPath: CameraPosition
-      value: 
-      objectReference: {fileID: 1074499527}
     - target: {fileID: 2265362803095930720, guid: 70c78edc536072b4784c2e020c3a2cb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11426,6 +11421,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 17.242977
       objectReference: {fileID: 0}
+    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
+        type: 3}
+      propertyPath: CameraPosition
+      value: 
+      objectReference: {fileID: 1074499527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c78edc536072b4784c2e020c3a2cb3, type: 3}
 --- !u!4 &253258803 stripped
@@ -15461,11 +15461,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
-        type: 3}
-      propertyPath: CameraPosition
-      value: 
-      objectReference: {fileID: 1727792960}
     - target: {fileID: 2265362803095930720, guid: 70c78edc536072b4784c2e020c3a2cb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15541,6 +15536,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 17.952692
       objectReference: {fileID: 0}
+    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
+        type: 3}
+      propertyPath: CameraPosition
+      value: 
+      objectReference: {fileID: 1727792960}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c78edc536072b4784c2e020c3a2cb3, type: 3}
 --- !u!4 &373332435 stripped
@@ -26963,6 +26963,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27031,11 +27036,6 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -27314,6 +27314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27383,11 +27388,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -32527,6 +32527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32596,11 +32601,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -33734,6 +33734,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33803,11 +33808,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -37190,6 +37190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37254,11 +37259,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.40000045
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -39175,6 +39175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39243,11 +39248,6 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -45039,6 +45039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45107,11 +45112,6 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -46519,11 +46519,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
-        type: 3}
-      propertyPath: CameraPosition
-      value: 
-      objectReference: {fileID: 679065322}
     - target: {fileID: 2265362803095930720, guid: 70c78edc536072b4784c2e020c3a2cb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46599,6 +46594,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 17.505672
       objectReference: {fileID: 0}
+    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
+        type: 3}
+      propertyPath: CameraPosition
+      value: 
+      objectReference: {fileID: 679065322}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c78edc536072b4784c2e020c3a2cb3, type: 3}
 --- !u!1001 &1029768183
@@ -47314,11 +47314,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
-        type: 3}
-      propertyPath: CameraPosition
-      value: 
-      objectReference: {fileID: 422739297}
     - target: {fileID: 2265362803095930720, guid: 70c78edc536072b4784c2e020c3a2cb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47394,6 +47389,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 18.129543
       objectReference: {fileID: 0}
+    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
+        type: 3}
+      propertyPath: CameraPosition
+      value: 
+      objectReference: {fileID: 422739297}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c78edc536072b4784c2e020c3a2cb3, type: 3}
 --- !u!4 &1043247861 stripped
@@ -48459,11 +48459,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
-        type: 3}
-      propertyPath: CameraPosition
-      value: 
-      objectReference: {fileID: 1215293329}
     - target: {fileID: 2265362803095930720, guid: 70c78edc536072b4784c2e020c3a2cb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48539,6 +48534,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 18.277721
       objectReference: {fileID: 0}
+    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
+        type: 3}
+      propertyPath: CameraPosition
+      value: 
+      objectReference: {fileID: 1215293329}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c78edc536072b4784c2e020c3a2cb3, type: 3}
 --- !u!4 &1068597094 stripped
@@ -49818,6 +49818,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49886,11 +49891,6 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -62912,6 +62912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62980,11 +62985,6 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -73546,6 +73546,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73614,11 +73619,6 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -79603,6 +79603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -79672,11 +79677,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -82880,6 +82880,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -82948,11 +82953,6 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -98143,11 +98143,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
-        type: 3}
-      propertyPath: CameraPosition
-      value: 
-      objectReference: {fileID: 1327006615}
     - target: {fileID: 2265362803095930720, guid: 70c78edc536072b4784c2e020c3a2cb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -98223,6 +98218,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 18.386745
       objectReference: {fileID: 0}
+    - target: {fileID: 6530379904229329602, guid: 70c78edc536072b4784c2e020c3a2cb3,
+        type: 3}
+      propertyPath: CameraPosition
+      value: 
+      objectReference: {fileID: 1327006615}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c78edc536072b4784c2e020c3a2cb3, type: 3}
 --- !u!4 &1187266251609067269 stripped
