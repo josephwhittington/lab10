@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 5766771898337393943}
   - component: {fileID: 719811056331274846}
   m_Layer: 11
-  m_Name: Player_
+  m_Name: Player_wills
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,8 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  ShootingSpeed: 10
-  Dash: {fileID: 5766771898544652847}
+  Dash: {fileID: 6741135829680346468, guid: d5999f1bbb45d2045b9482266eb654b4, type: 3}
   DashParticle: {fileID: 3716606540960395534, guid: c4642f3ece9eaa74ba268af77162bd1a,
     type: 3}
   model: {fileID: 5766771897721464077}
