@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    private float SFXVolume = 1.0f;
-    private float MusicVolume = 1.0f;
+    public float SFXVolume = 1.0f;
+    public float MusicVolume = 1.0f;
     void Start()
     {
         SFXVolume = PlayerPrefs.GetFloat(GlobalConfigs.SFXVolume, 1.0f);

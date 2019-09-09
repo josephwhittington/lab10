@@ -10,8 +10,6 @@ public class EnemySpawnController : IPausable
     //float CoolDown = 2f;
     //Alex Spawn Effect
 
-
-
     // Whittington door gaurd safety thing
     [SerializeField] private GameObject[] DoorGuards = null;
     // Whittington door gaurd safety thing
@@ -43,7 +41,6 @@ public class EnemySpawnController : IPausable
 
     void Start()
     {
-      
         RoomStartWeight = RoomWeight;
 
         DisableDoors();

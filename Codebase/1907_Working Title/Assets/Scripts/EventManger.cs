@@ -47,8 +47,6 @@ public class EventManger : MonoBehaviour
 
         //Set time scale
         Time.timeScale = GameState.TimeScale;
-
-        Debug.Log(p_eventname);
     }
 
     void Update()
