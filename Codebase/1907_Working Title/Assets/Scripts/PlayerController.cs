@@ -188,7 +188,6 @@ public class PlayerController : IPausable
         if (Input.GetButtonDown("Dash") && !dashing)
         {
             //float thing = (PlayerPrefs.GetInt(GlobalConfigs.DashCooldownUpgrade) * 0.2f);
-            //Debug.Log(coolDown);
             dashing = true;
             TimerCoolDown = coolDown - ((float)(PlayerPrefs.GetInt(GlobalConfigs.DashCooldownUpgrade, 0) * 0.2f));
         }

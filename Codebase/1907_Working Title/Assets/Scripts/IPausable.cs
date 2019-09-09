@@ -19,7 +19,6 @@ public class IPausable : MonoBehaviour
 
     protected void UnPause()
     {
-        Debug.Log("up");
         GamePaused = false;
     }
 
