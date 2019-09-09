@@ -7,7 +7,6 @@ public class PlayerController : IPausable
     CharacterController characterController;
 
     [SerializeField] float speed = 6.0f;
-    [SerializeField] private float ShootingSpeed = 10;
 
     // Shooting
     private float ShootSpeedTimer = 0;
@@ -50,7 +49,9 @@ public class PlayerController : IPausable
 
     // Whittington params
     //[SerializeField] GameObject BulletPrefab = null;
-    [SerializeField] GameObject SpawnPoint = null;
+    [SerializeField] GameObject SpawnPoint1 = null;
+    [SerializeField] GameObject SpawnPoint2 = null;
+    [SerializeField] GameObject SpawnPoint3 = null;
     // Whittington params
 
     // Current gun
@@ -132,7 +133,7 @@ public class PlayerController : IPausable
         // If resource loads
         if (thing)
         {
-            GameObject newGun = Instantiate<GameObject>(thing, SpawnPoint.transform.position, SpawnPoint.transform.rotation);
+            GameObject newGun = Instantiate<GameObject>(thing, SpawnPoint1.transform.position, SpawnPoint1.transform.rotation);
             newGun.transform.parent = gameObject.transform;
         }
     }
@@ -253,11 +254,11 @@ public class PlayerController : IPausable
         {
             ShootSpeedTimer += Time.deltaTime;
 
-            if (ShootSpeedTimer >= (60 / ShootingSpeed) * Time.deltaTime)
+            if (ShootSpeedTimer >= (60 / PlayerStats.FireRate) * Time.deltaTime)
             {
                 ShootSpeedTimer = 0;
 
-                gameObject.GetComponentInChildren<IGunBase>().Shoot();
+                gameObject.GetComponentInChildren<IGunBase>().Shoot(SpawnPoint1, SpawnPoint2, SpawnPoint3);
                 gameObject.GetComponentInChildren<IGunBase>().GetComponent<AudioSource>().Play();
             }
         }
