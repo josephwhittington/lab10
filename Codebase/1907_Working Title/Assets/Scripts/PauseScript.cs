@@ -6,21 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class PauseScript : MonoBehaviour
 {
-    [SerializeField] private Canvas PauseMenu = null;
-    [SerializeField] private Button PlayButton = null, QuitButton = null;
+    [SerializeField] private Canvas PauseMenu = null, SoundMenu = null;
+    [SerializeField] private Button PlayButton = null, QuitButton = null, OptionsMenu = null, OptionsQuitButton = null;
     private bool IsPaused = false;
 
     // Start is called before the first frame update
     void Start()
     {
         PauseMenu.gameObject.SetActive(false);
+        SoundMenu.gameObject.SetActive(false);
 
         PlayButton?.onClick.AddListener(PlayButtonOnClick);
+        OptionsMenu.onClick.AddListener(OptionsMenuOnClick);
         QuitButton?.onClick.AddListener(QuitButtonClick);
+        OptionsQuitButton?.onClick.AddListener(OptionsQuitButtonOnClick);
     }
 
     private void PlayButtonOnClick()
     {
+        PlayMenuSelectSound();
         //Debug.Log("Play Button Clicked");
         IsPaused = !IsPaused;
         PauseMenu.gameObject.SetActive(IsPaused);
@@ -28,10 +32,30 @@ public class PauseScript : MonoBehaviour
         TriggerEvent();
     }
 
+    private void OptionsMenuOnClick()
+    {
+        PlayMenuSelectSound();
+        SoundMenu.gameObject.SetActive(true);
+        PauseMenu.gameObject.SetActive(false);
+    }
+
+    private void OptionsQuitButtonOnClick()
+    {
+        PlayMenuSelectSound();
+        SoundMenu.gameObject.SetActive(false);
+        PauseMenu.gameObject.SetActive(true);
+    }
+
     private void QuitButtonClick()
     {
+        PlayMenuSelectSound();
         //Debug.Log("Closing Application");
         SceneManager.LoadScene(0);
+    }
+
+    void PlayMenuSelectSound()
+    {
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayMenuSelectSound();
     }
 
     void TriggerEvent()
