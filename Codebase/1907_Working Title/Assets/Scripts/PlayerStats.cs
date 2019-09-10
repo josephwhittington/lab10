@@ -8,7 +8,7 @@ public static class PlayerStats
     //alex killstreak
     public static uint KillStreak = 0;
     //alex killstreak
-    public enum UPGRADE { HEALTH, DASH, DMG, BOUNCY };
+    public enum UPGRADE { HEALTH, DASH, DMG, BOUNCY, FIRERATE, MULTISHOT};
     // Stats
     public static uint MaxHitPoints = 10;
     public static uint CurrentHealth = 10;
@@ -20,7 +20,9 @@ public static class PlayerStats
     public static uint MAXHP = 15;
     public static uint MAXDASH = 3;
     public static uint MAXDMG = 2;
-    public static uint MAXBOUNCEY = 4;
+    public static uint MAXBOUNCEY = 3;
+    public static float MAXFIRERATE = 7f;
+    public static uint MAXMULTISHOT = 3;
     //Maxes
 
 
@@ -29,7 +31,9 @@ public static class PlayerStats
     public static uint DashCDUpgrade = 0; //.2 per level
     public static uint DamageUpgrade = 0; //1 per level, max 3 dmg
     public static uint Bouncy = 0;
-    //public static uint DamageSizeUpgrade = 0;
+    public static float FireRate = 5f; //1 per level, max 7
+    public static uint MultiShot = 1; //1 per level, max of 3, represents spawnpoints from the gun
+    //Uogrades
 
     //WHITTINGTON REMOVE YOU HOE \/\/\/\/
     public static bool Trichochet = true; // 25% chance of richochet
@@ -52,6 +56,8 @@ public static class PlayerStats
         DashCDUpgrade = (uint)PlayerPrefs.GetInt(GlobalConfigs.DashCooldownUpgrade, 0);
         DamageUpgrade = (uint)PlayerPrefs.GetInt(GlobalConfigs.DamageUpgrade, 0);
         Bouncy = (uint)PlayerPrefs.GetInt(GlobalConfigs.Bouncy, 0);
+        FireRate = PlayerPrefs.GetFloat(GlobalConfigs.FireRate, 5f);
+        MultiShot = (uint)PlayerPrefs.GetInt(GlobalConfigs.MultiShot, 1);
 
         MaxHitPoints = (uint)PlayerPrefs.GetInt("MaxHealth", 10);
         CurrentHealth = (uint)PlayerPrefs.GetInt("CurrentHealth", 10);
@@ -76,6 +82,12 @@ public static class PlayerStats
                 break;
             case UPGRADE.BOUNCY:
                 Sucess = ApplyBounce();
+                break;
+            case UPGRADE.FIRERATE:
+                Sucess = ApplyFireRate();
+                break;
+            case UPGRADE.MULTISHOT:
+                Sucess = ApplyMultishot();
                 break;
             default:
                 Sucess = false;
@@ -143,6 +155,28 @@ public static class PlayerStats
         return false;
     }
 
+    public static bool ApplyFireRate()
+    {
+        
+        if (FireRate < MAXFIRERATE)
+        {
+            PlayerPrefs.SetFloat(GlobalConfigs.FireRate, PlayerPrefs.GetFloat(GlobalConfigs.FireRate) + 1.0f);
+            FireRate += 1.0f;
+            return true;
+        }
+        return false;
+    }
+
+    public static bool ApplyMultishot()
+    {
+        if(MultiShot < MAXMULTISHOT)
+        {
+            PlayerPrefs.SetInt(GlobalConfigs.MultiShot, PlayerPrefs.GetInt(GlobalConfigs.MultiShot) + 1);
+            MultiShot += 1;
+            return true;
+        }
+        return false;
+    }
     //Call on scene exit
     public static void PlayerPrefSave()
     {
@@ -154,6 +188,8 @@ public static class PlayerStats
         PlayerPrefs.SetInt(GlobalConfigs.HealthUpgrade, (int)HealthUpgrade);
         PlayerPrefs.SetInt(GlobalConfigs.DashCooldownUpgrade, (int)DashCDUpgrade);
         PlayerPrefs.SetInt(GlobalConfigs.DamageUpgrade, (int)DamageUpgrade);
+        PlayerPrefs.SetFloat(GlobalConfigs.FireRate, FireRate);
+        PlayerPrefs.SetInt(GlobalConfigs.MultiShot, (int)MultiShot);
 
         PlayerPrefs.SetInt("StoreVisited", 0);
 
@@ -178,6 +214,12 @@ public static class PlayerStats
                 break;
             case UPGRADE.BOUNCY:
                 multiplier = PlayerPrefs.GetInt(GlobalConfigs.Bouncy);
+                break;
+            case UPGRADE.FIRERATE:
+                multiplier = (int)PlayerPrefs.GetFloat(GlobalConfigs.FireRate);
+                break;
+            case UPGRADE.MULTISHOT:
+                multiplier = PlayerPrefs.GetInt(GlobalConfigs.MultiShot);
                 break;
             default:
                 break;

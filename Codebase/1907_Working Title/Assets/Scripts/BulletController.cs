@@ -94,6 +94,20 @@ public class BulletController : IPausable
             {
                 collision.gameObject.GetComponent<BoomerEnemy>().DealDamage(Damage + PlayerStats.DamageUpgrade);
             }
+            else if (collision.gameObject.CompareTag("Bossman"))
+            {
+                if (!collision.gameObject.GetComponent<BossManController>().IsInvulnerable())
+                {
+                    collision.gameObject.GetComponent<BossManController>()
+                        .DealDamage(Damage + PlayerStats.DamageUpgrade);
+                    collision.gameObject.GetComponent<BossManController>()
+                        .MakeVisible();
+                }
+                else
+                {
+                    
+                }
+            }
             else if ((TimesBounced <= BounceCount) && PlayerBullet & CanBounce)
             {
                 IsColliding = false;
