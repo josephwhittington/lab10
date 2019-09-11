@@ -11384,7 +11384,7 @@ MonoBehaviour:
   - {fileID: 733383261}
   Enemies:
   - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   EnemyWeights: 010000000300000004000000
   SpawnInterval: 4
