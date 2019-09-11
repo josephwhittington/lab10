@@ -125,7 +125,6 @@ public class BossManController : MonoBehaviour
             State = BossState.PHASE1Invulnerable;
             timeinstate = 30;
         }
-        
     }
 
     void OnCollision(Collision collision)
@@ -169,5 +168,12 @@ public class BossManController : MonoBehaviour
     public void MakeVisible()
     {
         Debug.Log("Mesh hit");
+        mesh.enabled = true;
+        Invoke("MakeInvisible", 0.25f);
+    }
+
+    public void MakeInvisible()
+    {
+        mesh.enabled = false;
     }
 }
