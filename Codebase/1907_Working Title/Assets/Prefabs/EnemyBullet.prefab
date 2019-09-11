@@ -244,6 +244,8 @@ MonoBehaviour:
   Speed: 20
   Effect: {fileID: 761668285228663684, guid: 62d5b8226f7723949adca67c703b0487, type: 3}
   Damage: 1
+  PlayerBullet: 0
+  BounceCount: 0
 --- !u!82 &-8676334392077750696
 AudioSource:
   m_ObjectHideFlags: 0
