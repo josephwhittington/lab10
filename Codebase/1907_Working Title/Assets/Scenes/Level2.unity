@@ -87873,7 +87873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4735416125578178, guid: e9dcf4196f90aec40bfd9666319fbe69, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4735416125578178, guid: e9dcf4196f90aec40bfd9666319fbe69, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
