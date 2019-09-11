@@ -36,7 +36,7 @@ public class BossManController : MonoBehaviour
     private Quaternion target = Quaternion.identity;
     private Quaternion last_position = Quaternion.identity;
 
-    private float timeinstate = 8.0f;
+    private float timeinstate = 10.0f;
 
     void Start()
     {
@@ -105,14 +105,21 @@ public class BossManController : MonoBehaviour
             if ((timeinstate % 10) < 0.1f)
             {
                 System.Random rand = new System.Random();
-                WaypointIndex = rand.Next(Waypoints.Length);
+                int randindex = rand.Next(Waypoints.Length);
+                if (WaypointIndex == randindex)
+                {
+                    if (randindex == Waypoints.Length - 1)
+                        WaypointIndex -= 1;
+                    else WaypointIndex += 1;
+                }
+                else WaypointIndex = randindex;
             }
 
             if (timeinstate <= 0)
             {
                 State = BossState.PHASE1Vulnerable;
                 agent.SetDestination(CenterWaypoint.transform.position);
-                timeinstate = 8.0f;
+                timeinstate = 10.0f;
             }
 
             Vector3 position = Waypoints[WaypointIndex].gameObject.transform.position;

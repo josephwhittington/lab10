@@ -31,7 +31,7 @@ public static class PlayerStats
     public static uint DashCDUpgrade = 0; //.2 per level
     public static uint DamageUpgrade = 0; //1 per level, max 3 dmg
     public static uint Bouncy = 0;
-    public static float FireRate = 5f; //1 per level, max 7
+    public static float FireRate = 15f; //1 per level, max 7
     public static uint MultiShot = 1; //1 per level, max of 3, represents spawnpoints from the gun
     //Uogrades
 

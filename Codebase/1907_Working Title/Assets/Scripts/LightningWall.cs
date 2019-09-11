@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class LightningWall : MonoBehaviour
 {
+    [SerializeField] private bool DestructibleItem = false;
     [SerializeField] float tickDamageCooldown = 2.0f;
     private float tickDamageTimer = 0.0f;
     public void OnTriggerStay(Collider other)
     {
         tickDamageTimer += Time.deltaTime;
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && !other.GetComponent<PlayerController>().GodModeEnabled())
         {
             if(tickDamageTimer >= tickDamageCooldown)
             {
@@ -18,6 +19,4 @@ public class LightningWall : MonoBehaviour
             }
         }
     }
-
-
 }
