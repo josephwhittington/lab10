@@ -5271,7 +5271,7 @@ MonoBehaviour:
   EnemyWeights: 01000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 600000
-  RoomWeight: 1
+  RoomWeight: 0
 --- !u!4 &108585664
 Transform:
   m_ObjectHideFlags: 0
@@ -15168,9 +15168,9 @@ MonoBehaviour:
   - {fileID: 1473593923}
   - {fileID: 1692081055}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   - {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
@@ -35010,8 +35010,8 @@ MonoBehaviour:
   - {fileID: 1160015815}
   - {fileID: 740998954}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   EnemyWeights: 0100000001000000
   SpawnInterval: 8
   HealthPickupSpawnInterval: 600000
@@ -41922,7 +41922,7 @@ MonoBehaviour:
   EnemyWeights: 01000000010000000100000001000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 600000
-  RoomWeight: 8
+  RoomWeight: 0
 --- !u!4 &958738493
 Transform:
   m_ObjectHideFlags: 0
@@ -44695,11 +44695,10 @@ MonoBehaviour:
   - {fileID: 416899900}
   - {fileID: 477844558}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  EnemyWeights: 01000000010000000100000001000000
+  EnemyWeights: 010000000100000001000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 600000
   RoomWeight: 8
@@ -56425,9 +56424,9 @@ MonoBehaviour:
   - {fileID: 540769248}
   - {fileID: 3845995}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   - {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
@@ -64456,10 +64455,10 @@ MonoBehaviour:
   - {fileID: 1544967332}
   - {fileID: 1919783459}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   EnemyWeights: 0100000001000000020000000400000001000000
   SpawnInterval: 3
@@ -76272,7 +76271,7 @@ MonoBehaviour:
   EnemyWeights: 01000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 600000
-  RoomWeight: 1
+  RoomWeight: 0
 --- !u!4 &1723222621
 Transform:
   m_ObjectHideFlags: 0
@@ -87874,7 +87873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4735416125578178, guid: e9dcf4196f90aec40bfd9666319fbe69, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4735416125578178, guid: e9dcf4196f90aec40bfd9666319fbe69, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -88057,7 +88056,7 @@ MonoBehaviour:
   EnemyWeights: 0100000001000000020000000400000001000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 600000
-  RoomWeight: 12
+  RoomWeight: 0
 --- !u!4 &1975913312
 Transform:
   m_ObjectHideFlags: 0
