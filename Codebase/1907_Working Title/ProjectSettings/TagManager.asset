@@ -21,6 +21,8 @@ TagManager:
   - Coin
   - Weapon
   - Bossman
+  - BossRoomEnv
+  - LightningWalls
   layers:
   - Default
   - TransparentFX

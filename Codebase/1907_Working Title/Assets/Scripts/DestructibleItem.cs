@@ -5,11 +5,15 @@ using UnityEngine;
 public class DestructibleItem : MonoBehaviour
 {
     [SerializeField] private int HP = 25;
+    [SerializeField] private bool DestroyOtherObjectOnCollision = false;
+    [SerializeField] private GameObject thingtpdestroy = null;
+
+    private int maxhp = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        maxhp = HP;
     }
 
     void OnCollisionEnter(Collision other)
@@ -23,7 +27,14 @@ public class DestructibleItem : MonoBehaviour
         if (HP <= 0)
         {
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayDoorDestructionSound();
-            Destroy(gameObject);
+
+            if (DestroyOtherObjectOnCollision)
+            {
+                Debug.Log("Hit ");
+                thingtpdestroy.GetComponent<LightningWall>().Disable();
+                HP = maxhp;
+            }
+            else Destroy(gameObject);
         }
     }
 

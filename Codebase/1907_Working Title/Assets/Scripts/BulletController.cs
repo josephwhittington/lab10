@@ -104,10 +104,6 @@ public class BulletController : IPausable
                     collision.gameObject.GetComponent<BossManController>()
                         .MakeVisible();
                 }
-                else
-                {
-                    
-                }
             }
             else if ((TimesBounced <= BounceCount) && PlayerBullet & CanBounce)
             {
