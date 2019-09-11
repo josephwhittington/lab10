@@ -30,7 +30,7 @@ public class SniperController : IPausable
 
 
 
-    [SerializeField] ParticleSystem particleSystem = null;
+    [SerializeField] ParticleSystem ParticleSystem = null;
     private bool canShoot = false;
     void Start()
     {
@@ -42,7 +42,7 @@ public class SniperController : IPausable
 
         // Set the max hp to the starting hp value for percentage on fill amt for UI update
         MaxHP = HitPoints;
-        particleSystem.Stop();
+        ParticleSystem.Stop();
     }
     private void Update()
     {
@@ -56,14 +56,14 @@ public class SniperController : IPausable
             if(Hit.collider.gameObject.tag == "Player")
             {
                 canShoot = true;
-                if(particleSystem.isStopped)
-                    particleSystem.Play();
+                if(ParticleSystem.isStopped)
+                    ParticleSystem.Play();
             }
             else
             {
                 canShoot = false;
-                if (particleSystem.isPlaying)
-                    particleSystem.Stop();
+                if (ParticleSystem.isPlaying)
+                    ParticleSystem.Stop();
                 timer = 0;
             }
 
@@ -73,6 +73,7 @@ public class SniperController : IPausable
                 timer += Time.deltaTime;
                 if (timer >= ShotInterval)
                 {
+                    Debug.Log("FIRING");
                     timer = 0;
                     Shoot();
                 }
