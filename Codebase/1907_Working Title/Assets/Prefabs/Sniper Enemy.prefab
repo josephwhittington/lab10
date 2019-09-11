@@ -4842,7 +4842,7 @@ GameObject:
   - component: {fileID: 3605609630305656506}
   - component: {fileID: 3605609630305656509}
   - component: {fileID: 3605609630305656508}
-  - component: {fileID: 3605609630305656511}
+  - component: {fileID: 3484635685274771206}
   m_Layer: 8
   m_Name: Sniper Enemy
   m_TagString: Enemy
@@ -4948,7 +4948,7 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3605609630305656511
+--- !u!114 &3484635685274771206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4957,7 +4957,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3605609630305656510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0d019be3561b3244a09390e82716908, type: 3}
+  m_Script: {fileID: 11500000, guid: 7be93084804e18b4cbd4bb4da325f170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CoinDrop: {fileID: 1321514484295485850, guid: ff96e86bbad424a4eab268734dffe1de,
@@ -4969,8 +4969,9 @@ MonoBehaviour:
   SpawnPoints:
   - {fileID: 3605609629724095027}
   ShotInterval: 5
-  EnemyHealthUI: {fileID: 5497684822216563466}
+  EnemyHealthUI: {fileID: 5497684821389673213}
   HitPoints: 5
+  ParticleSystem: {fileID: 7321395605739689385}
 --- !u!1 &5497684821389673091
 GameObject:
   m_ObjectHideFlags: 0
