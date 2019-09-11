@@ -19,9 +19,9 @@ public static class PlayerStats
     //Maxes
     public static uint MAXHP = 15;
     public static uint MAXDASH = 3;
-    public static uint MAXDMG = 2;
+    public static uint MAXDMG = 3;
     public static uint MAXBOUNCEY = 3;
-    public static float MAXFIRERATE = 7f;
+    public static float MAXFIRERATE = 3;
     public static uint MAXMULTISHOT = 3;
     //Maxes
 
@@ -31,8 +31,8 @@ public static class PlayerStats
     public static uint DashCDUpgrade = 0; //.2 per level
     public static uint DamageUpgrade = 0; //1 per level, max 3 dmg
     public static uint Bouncy = 0;
-    public static float FireRate = 10f; //-1 per level, max 7
-    public static uint MultiShot = 0; //1 per level, max of 3, represents spawnpoints from the gun
+    public static float FireRate = 0; //-1 per level, max 7
+    public static uint MultiShot = 1; //1 per level, max of 3, represents spawnpoints from the gun
     //Uogrades
 
     //WHITTINGTON REMOVE YOU HOE \/\/\/\/
@@ -160,8 +160,8 @@ public static class PlayerStats
         
         if (FireRate < MAXFIRERATE)
         {
-            PlayerPrefs.SetFloat(GlobalConfigs.FireRate, PlayerPrefs.GetFloat(GlobalConfigs.FireRate) - 1.0f);
-            FireRate -= 1.0f;
+            PlayerPrefs.SetFloat(GlobalConfigs.FireRate, PlayerPrefs.GetFloat(GlobalConfigs.FireRate) + 1.0f);
+            FireRate += 1.0f;
             return true;
         }
         return false;

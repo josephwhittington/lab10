@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a9bf4c413151245bd3b54377b0a8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinDrop: {fileID: 1321514484295485850, guid: ff96e86bbad424a4eab268734dffe1de,
+  HealthDrop: {fileID: 6272406701969588298, guid: 5583ea574bcb5e24aa2ddb073cc21491,
     type: 3}
   DeathEffect: {fileID: 761668285228663684, guid: 136b1545eb32a9a49ad5f8acf9698cf5,
     type: 3}

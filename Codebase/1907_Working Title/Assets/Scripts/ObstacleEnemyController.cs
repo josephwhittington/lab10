@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ObstacleEnemyController : IPausable
 {
     NavMeshAgent agent;
-    [SerializeField] GameObject CoinDrop = null;
+    [SerializeField] GameObject HealthDrop = null;
     [SerializeField] GameObject DeathEffect = null;
     [SerializeField] Image EnemyHealthUI = null;
     [SerializeField] GameObject[] Waypoints = null;
@@ -84,7 +84,7 @@ public class ObstacleEnemyController : IPausable
             //After destroying enemy make him drop a coin this will follow to the player//
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayEnemyDeathSound();
             Instantiate<GameObject>(DeathEffect, transform.position, transform.rotation);
-            Instantiate<GameObject>(CoinDrop, transform.position, transform.rotation);
+            Instantiate<GameObject>(HealthDrop, transform.position, transform.rotation);
         }
         else HitPoints -= p_damage;
 
