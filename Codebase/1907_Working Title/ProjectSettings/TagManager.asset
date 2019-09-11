@@ -21,6 +21,8 @@ TagManager:
   - Coin
   - Weapon
   - Bossman
+  - Sniper
+  - Roomba
   - BossRoomEnv
   - LightningWalls
   layers:

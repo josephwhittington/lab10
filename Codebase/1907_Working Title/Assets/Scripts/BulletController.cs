@@ -85,7 +85,7 @@ public class BulletController : IPausable
             }
             else if (collision.gameObject.CompareTag("Enemy"))
             {
-                collision.gameObject.GetComponent<EnemyController>().DealDamage(Damage + PlayerStats.DamageUpgrade);
+                collision.gameObject.GetComponent<EnemyController>().DealDamage((int)(Damage + PlayerStats.DamageUpgrade));
             }
             else if (collision.gameObject.CompareTag("EnemyBoom"))
             {
@@ -105,6 +105,14 @@ public class BulletController : IPausable
                         .MakeVisible();
                 }
             }
+            else if (collision.gameObject.CompareTag("Sniper"))
+            {
+                collision.gameObject.GetComponent<SniperController>().DealDamage(Damage + PlayerStats.DamageUpgrade);
+            }
+            else if (collision.gameObject.CompareTag("Roomba"))
+            {
+                collision.gameObject.GetComponent<ObstacleEnemyController>().DealDamage((int)(Damage + PlayerStats.DamageUpgrade));
+            }
             else if ((TimesBounced <= BounceCount) && PlayerBullet & CanBounce)
             {
                 IsColliding = false;
@@ -120,6 +128,7 @@ public class BulletController : IPausable
                 }
                 Destroy(gameObject);
             }
+
 
             if (spawnEffect)
             {

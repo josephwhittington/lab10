@@ -73,7 +73,6 @@ public class SniperController : IPausable
                 timer += Time.deltaTime;
                 if (timer >= ShotInterval)
                 {
-                    Debug.Log("FIRING");
                     timer = 0;
                     Shoot();
                 }
