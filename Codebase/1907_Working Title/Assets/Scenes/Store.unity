@@ -206,7 +206,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &7058010
 Light:
@@ -218,7 +218,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -378,7 +378,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -532,7 +532,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -970,7 +970,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &159576603
 Light:
@@ -982,7 +982,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -1412,7 +1412,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 22
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &328597750
 Light:
@@ -1424,7 +1424,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -1858,7 +1858,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -1955,7 +1955,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -2034,7 +2034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 26
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &508839586
 Light:
@@ -2046,7 +2046,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -2408,7 +2408,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -2795,7 +2795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 20
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &780125330
 Light:
@@ -2807,7 +2807,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -2886,7 +2886,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &790698113
 Light:
@@ -2898,7 +2898,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -3200,7 +3200,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &858212745
 Light:
@@ -3212,7 +3212,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -3360,7 +3360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 21
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &875268165
 Light:
@@ -3372,7 +3372,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -3463,7 +3463,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -3830,7 +3830,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 15
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &989680787
 Light:
@@ -3842,7 +3842,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -3921,7 +3921,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &998577151
 Light:
@@ -3933,7 +3933,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -4527,7 +4527,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -4606,7 +4606,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 14
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1169625215
 Light:
@@ -4618,7 +4618,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -4781,7 +4781,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 23
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1205022687
 Light:
@@ -4793,7 +4793,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -5274,7 +5274,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -5597,7 +5597,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -5682,7 +5682,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1539294375
 Light:
@@ -5694,7 +5694,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -5805,7 +5805,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 24
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1641828176
 Light:
@@ -5817,7 +5817,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -6052,7 +6052,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 16
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1717410261
 Light:
@@ -6064,7 +6064,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -6161,7 +6161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 13
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1772584068
 Light:
@@ -6173,7 +6173,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -6327,7 +6327,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1861815265
 Light:
@@ -6339,7 +6339,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -7475,7 +7475,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -7873,7 +7873,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1690649922}
-  m_RootOrder: 25
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &2146045303
 Light:
@@ -7885,7 +7885,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9339623, g: 0.8802079, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.3655994, b: 0.93333334, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
