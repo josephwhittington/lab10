@@ -90,6 +90,8 @@ public class EnemySpawnController : IPausable
                 NumberOfEnemies +=  GameObject.FindGameObjectsWithTag("EnemyBoom").Length;
             if (GameObject.FindGameObjectsWithTag("Boomer").Length > 0)
                 NumberOfEnemies +=  GameObject.FindGameObjectsWithTag("Boomer").Length;
+            if (GameObject.FindGameObjectsWithTag("Sniper").Length > 0)
+                NumberOfEnemies += GameObject.FindGameObjectsWithTag("Sniper").Length;
 
             if (NumberOfEnemies <= 0)
                 RoomClear = true;
