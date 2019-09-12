@@ -21,6 +21,8 @@ TagManager:
   - Coin
   - Weapon
   - Bossman
+  - CoinThief
+  - CoinThiefCoin
   layers:
   - Default
   - TransparentFX
