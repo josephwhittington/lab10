@@ -18,7 +18,8 @@ public class ApplyUpgrades : MonoBehaviour
     public void PurchaseUpgrade()
     {
         UpgradeCost = (uint) PlayerStats.GetUpgradeCost((int)UpgradeName);
-
+        if (UpgradeName == PlayerStats.UPGRADE.DMG && PlayerPrefs.GetInt(GlobalConfigs.DamageUpgrade) == PlayerStats.MAXDMG - 1)
+            UpgradeCost = 500;
         if (PlayerStats.Coins >= UpgradeCost)
         {
             if (PlayerStats.ApplyUpgrade(UpgradeName))

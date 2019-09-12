@@ -64,7 +64,13 @@ public class StoreCostTextUpdater : MonoBehaviour
         // Update Cost Text
         CooldownCostText.text = PlayerStats.GetUpgradeCost(1).ToString();
         HealthCostText.text = PlayerStats.GetUpgradeCost(0).ToString();
-        DamageCostText.text = PlayerStats.GetUpgradeCost(2).ToString();
+        if(Damage == PlayerStats.MAXDMG - 1 || Damage == PlayerStats.MAXDMG)
+        {
+            DamageCostText.text = "500";
+        }
+        else
+            DamageCostText.text = PlayerStats.GetUpgradeCost(2).ToString();
+
         BounceCostText.text = PlayerStats.GetUpgradeCost(3).ToString();
         FireRateText.text = PlayerStats.GetUpgradeCost(4).ToString();
         MultishotText.text = PlayerStats.GetUpgradeCost(5).ToString();
