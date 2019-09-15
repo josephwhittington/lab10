@@ -2874,7 +2874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards:
   - {fileID: 1705003009}
   roomName: Room 6
@@ -9334,7 +9335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards:
   - {fileID: 2134159642}
   roomName: Room 5
@@ -9346,10 +9348,10 @@ MonoBehaviour:
   - {fileID: 1743293295}
   - {fileID: 851476604}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 3605609630305656510, guid: 9bacb1080fa226046bb0851f9b8f97c8, type: 3}
   EnemyWeights: 0100000002000000030000000100000002000000
   SpawnInterval: 1.32
@@ -11255,7 +11257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards:
   - {fileID: 1275865671636970440}
   roomName: Room 2
@@ -26807,7 +26810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards:
   - {fileID: 502317682375377531}
   roomName: Room 4
@@ -26821,9 +26825,9 @@ MonoBehaviour:
   - {fileID: 5034078950664835903}
   - {fileID: 887139029270357551}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
   - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
@@ -29448,7 +29452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards:
   - {fileID: 4928928010291122043}
   roomName: Room 3
@@ -29464,7 +29469,7 @@ MonoBehaviour:
   EnemyWeights: 01000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 10
-  RoomWeight: 10
+  RoomWeight: 20
 --- !u!1 &5862083077051277908
 GameObject:
   m_ObjectHideFlags: 0
@@ -29941,7 +29946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards:
   - {fileID: 5602324778222774443}
   roomName: Room 1
