@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class EnemySpawnController : IPausable
 {
     //Alex Spawn Effect
-    [SerializeField] GameObject SpawnEffect;
+    [SerializeField] GameObject SpawnEffect = null;
     //float TimerCoolDown = 0.0f;
     //float CoolDown = 2f;
     //Alex Spawn Effect
@@ -40,8 +40,8 @@ public class EnemySpawnController : IPausable
     [SerializeField] private float WaitTimebeforeSpawn = 0.0f;
 
     private float enemyspawntimer = 0;
-    private GameObject enemy = null;
-    private Vector3 enemylocation = Vector3.zero;
+    private List<GameObject> enemy = new List<GameObject>();
+    private List<Vector3> enemylocation = new List<Vector3>();
     // Enemy spawn timer
 
     private void OnEnable()
@@ -76,6 +76,7 @@ public class EnemySpawnController : IPausable
                     if (!GameState.GamePaused)
                     {
                         enemyspawntimer = SpawnInterval;
+                        SetSpawn();
                         SetSpawn();
                     }
                 }
@@ -209,10 +210,14 @@ public class EnemySpawnController : IPausable
             RoomWeight -= EnemyWeights[spawnIndex];
             // Instantiate effect
             Instantiate(SpawnEffect, SpawnPoints[spawnpointindex].transform.position, transform.rotation);
-            //Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
+            // Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
             // Spawn Enemy
-            enemy = Enemies[spawnIndex];
-            enemylocation = SpawnPoints[spawnpointindex].transform.position;
+            if(!Enemies[spawnIndex])
+                Debug.Log("Thing broke");
+            else
+                enemy.Add(Enemies[spawnIndex]);
+
+            enemylocation.Add(SpawnPoints[spawnpointindex].transform.position);
 
             Invoke("SpawnEnemy", SpawnInterval);
         }
@@ -220,8 +225,12 @@ public class EnemySpawnController : IPausable
 
     private void SpawnEnemy()
     {
-        if(enemy && enemylocation != Vector3.zero)
-            Instantiate<GameObject>(enemy, enemylocation, transform.rotation);
+        if (enemy.Count > 0 && enemylocation.Count > 0 && enemy.Count == enemylocation.Count)
+        {
+            Instantiate<GameObject>(enemy[enemy.Count - 1], enemylocation[enemy.Count -1], transform.rotation);
+            enemy.RemoveAt(enemy.Count - 1);
+            enemylocation.RemoveAt(enemylocation.Count - 1);
+        }
     }
 
     private void OnDisable()
