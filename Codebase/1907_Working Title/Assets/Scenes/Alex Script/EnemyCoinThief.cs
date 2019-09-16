@@ -7,7 +7,7 @@ public class EnemyCoinThief : IPausable
 {
     GameObject player = null;
     NavMeshAgent agent = null;
-    [SerializeField] int HitPoints = 12;
+    [SerializeField] uint HitPoints = 6;
     [SerializeField] GameObject CoinDrop = null;
     private float TimerCoolDown = 0;
     private float CoolDown = 0.01f;
@@ -49,14 +49,14 @@ public class EnemyCoinThief : IPausable
 
     public void DealDamage(uint p_damage)
     {
-        if (HitPoints - (int)p_damage <= 0)
+        if (HitPoints - p_damage <= 0)
         {
             Suicide();
         }
 
         else
         {
-            HitPoints -= (int)p_damage;
+            HitPoints -= p_damage;
         }
 
     }
