@@ -19,10 +19,20 @@ public class LoadLevelAsync : MonoBehaviour
 
     IEnumerator LoadAsyncOperation()
     {
-        if (PlayerPrefs.GetInt("StoreVisited") == 1)
+        if (PlayerPrefs.GetInt("StoreVisited", 0) == 1)
         {
-            Level = SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("CurrentLevel") + 1);
-            Level.allowSceneActivation = false;
+            if (PlayerPrefs.GetInt("CurrentLevel") == 7)
+            {
+                PlayerPrefs.DeleteAll();
+
+                Level = SceneManager.LoadSceneAsync("Main Menu");
+                Level.allowSceneActivation = false;
+            }
+            else
+            {
+                Level = SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("CurrentLevel") + 1);
+                Level.allowSceneActivation = false;
+            }
         }
         else
         {
@@ -30,7 +40,6 @@ public class LoadLevelAsync : MonoBehaviour
             Level.allowSceneActivation = false;
         }
         yield return null;
-
     }
 
     // Update is called once per frame

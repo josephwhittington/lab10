@@ -9,6 +9,7 @@ public class BulletController : IPausable
     [SerializeField] uint Damage = 1;
     [SerializeField] private bool PlayerBullet = false;
     [SerializeField] private uint BounceCount = 0;
+    [SerializeField] private bool IsBossBullet = false;
 
     // Richochet effect
     private uint TimesBounced = 0;
@@ -96,6 +97,7 @@ public class BulletController : IPausable
             }
             else if (collision.gameObject.CompareTag("CoinThief"))
             {
+                Debug.Log("Hit");
                 collision.gameObject.GetComponent<EnemyCoinThief>().DealDamage(Damage + PlayerStats.DamageUpgrade);
             }
 
@@ -108,10 +110,6 @@ public class BulletController : IPausable
                         .DealDamage(Damage + PlayerStats.DamageUpgrade);
                     collision.gameObject.GetComponent<BossManController>()
                         .MakeVisible();
-                }
-                else
-                {
-                    
                 }
             }
             else if (collision.gameObject.CompareTag("Sniper"))
@@ -130,16 +128,22 @@ public class BulletController : IPausable
             }
             else
             {
-                Instantiate<GameObject>(Effect, collision.GetContact(0).point, Quaternion.identity);
-                GetComponent<Light>().intensity = 0;
+                if (!IsBossBullet)
+                {
+                    Instantiate<GameObject>(Effect, collision.GetContact(0).point, Quaternion.identity);
+                    GetComponent<Light>().intensity = 0;
+                }
                 Destroy(gameObject);
             }
 
 
             if (spawnEffect)
             {
-                Instantiate<GameObject>(Effect, collision.GetContact(0).point, Quaternion.identity);
-                GetComponent<Light>().intensity = 0;
+                if (!IsBossBullet)
+                {
+                    Instantiate<GameObject>(Effect, collision.GetContact(0).point, Quaternion.identity);
+                    GetComponent<Light>().intensity = 0;
+                }
                 Destroy(gameObject);
             }
 

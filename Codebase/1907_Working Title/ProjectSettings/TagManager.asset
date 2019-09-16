@@ -25,6 +25,8 @@ TagManager:
   - Roomba
   - CoinThief
   - CoinThiefCoin
+  - BossRoomEnv
+  - LightningWalls
   layers:
   - Default
   - TransparentFX

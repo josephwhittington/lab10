@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class BossManController : MonoBehaviour
@@ -14,33 +15,47 @@ public class BossManController : MonoBehaviour
 
     private BossState State = BossState.PHASE1Vulnerable;
 
+    [SerializeField] private GameObject EnvObjects = null;
+
     [SerializeField] private GameObject[] BulletSpawnPoints = null;
     [SerializeField] private GameObject BulletPrefab = null;
+    [SerializeField] private GameObject SlowBulletPrefab = null;
     [SerializeField] private GameObject RichochetBulletPrefab = null;
-    [SerializeField] private GameObject[] Waypoints = null; 
-    [SerializeField] private GameObject CenterWaypoint = null; 
+    [SerializeField] private GameObject[] Waypoints = null;
+    [SerializeField] private GameObject CenterWaypoint = null;
 
     [SerializeField] private float ShotInterval = 0.1f;
 
     [SerializeField] private int Health = 100000;
     [SerializeField] private GameObject DestroyEffect = null;
 
+    // Health
+    private int maxheath = 0;
+    [SerializeField] private Image BossManHealth = null;
+    // Health
+
     // AI
     private NavMeshAgent agent = null;
     private int WaypointIndex = 0;
 
     private MeshRenderer mesh = null;
+
+    private bool phase2 = false;
+
+    private int shotcount = 0;
     // AI
 
     private float TimeElapsedSinceLastShot = 0.0f;
     private Quaternion target = Quaternion.identity;
     private Quaternion last_position = Quaternion.identity;
 
-    private float timeinstate = 8.0f;
+    private float timeinstate = 10.0f;
 
     void Start()
     {
-        target = Quaternion.AngleAxis(180.0f , Vector3.up);
+        maxheath = Health;
+
+        target = Quaternion.AngleAxis(180.0f, Vector3.up);
         agent = GetComponent<NavMeshAgent>();
 
         mesh = GetComponent<MeshRenderer>();
@@ -49,17 +64,33 @@ public class BossManController : MonoBehaviour
 
     void Update()
     {
+        BossManHealth.fillAmount = (float)((float)Health / (float)maxheath);
+
         if (Health <= 0)
             Suicide();
+        if ((Health <= ((float)maxheath * 0.6f)) && !phase2)
+        {
+            phase2 = true;
+
+            EnvObjects.gameObject.GetComponent<LightningWallsController>().EnableEnvEffects();
+        }
+
+        if (Health <= (maxheath * 0.3f))
+        {
+            EnvObjects.gameObject.GetComponent<LightningWallsController>().StartPhase3();
+        }
 
         TimeElapsedSinceLastShot += Time.deltaTime;
 
         if (TimeElapsedSinceLastShot >= ShotInterval)
         {
+            shotcount++;
             for (int i = 0; i < BulletSpawnPoints.Length; i++)
             {
                 Shoot(BulletSpawnPoints[i]);
             }
+
+            if (shotcount == 4) shotcount = 0;
 
             TimeElapsedSinceLastShot = 0.0f;
         }
@@ -105,14 +136,21 @@ public class BossManController : MonoBehaviour
             if ((timeinstate % 10) < 0.1f)
             {
                 System.Random rand = new System.Random();
-                WaypointIndex = rand.Next(Waypoints.Length);
+                int randindex = rand.Next(Waypoints.Length);
+                if (WaypointIndex == randindex)
+                {
+                    if (randindex == Waypoints.Length - 1)
+                        WaypointIndex -= 1;
+                    else WaypointIndex += 1;
+                }
+                else WaypointIndex = randindex;
             }
 
             if (timeinstate <= 0)
             {
                 State = BossState.PHASE1Vulnerable;
                 agent.SetDestination(CenterWaypoint.transform.position);
-                timeinstate = 8.0f;
+                timeinstate = 10.0f;
             }
 
             Vector3 position = Waypoints[WaypointIndex].gameObject.transform.position;
@@ -125,7 +163,6 @@ public class BossManController : MonoBehaviour
             State = BossState.PHASE1Invulnerable;
             timeinstate = 30;
         }
-        
     }
 
     void OnCollision(Collision collision)
@@ -144,9 +181,14 @@ public class BossManController : MonoBehaviour
 
     void Shoot(GameObject p_spawnPoint)
     {
-        if (BulletPrefab)
+        if (BulletPrefab && shotcount < 4)
         {
             Instantiate<GameObject>(BulletPrefab, p_spawnPoint.transform.position, p_spawnPoint.transform.rotation);
+        }
+        else
+        {
+            if(SlowBulletPrefab)
+                Instantiate<GameObject>(SlowBulletPrefab, p_spawnPoint.transform.position, p_spawnPoint.transform.rotation);
         }
     }
 
@@ -168,6 +210,12 @@ public class BossManController : MonoBehaviour
 
     public void MakeVisible()
     {
-        Debug.Log("Mesh hit");
+        mesh.enabled = true;
+        Invoke("MakeInvisible", 0.25f);
+    }
+
+    public void MakeInvisible()
+    {
+        mesh.enabled = false;
     }
 }

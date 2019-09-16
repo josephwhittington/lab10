@@ -5,11 +5,13 @@ using UnityEngine;
 public class LightningWall : MonoBehaviour
 {
     [SerializeField] float tickDamageCooldown = 2.0f;
+    [SerializeField] private GameObject[] HealthSpawnPoints = null;
+    [SerializeField] private GameObject HealthPickup = null;
     private float tickDamageTimer = 0.0f;
     public void OnTriggerStay(Collider other)
     {
         tickDamageTimer += Time.deltaTime;
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && !other.GetComponent<PlayerController>().GodModeEnabled())
         {
             if(tickDamageTimer >= tickDamageCooldown)
             {
@@ -19,5 +21,28 @@ public class LightningWall : MonoBehaviour
         }
     }
 
+    public void Enable()
+    {
+        gameObject.SetActive(true);
+        SpawnHealthPickup();
+    }
 
+    private void SpawnHealthPickup()
+    {
+        System.Random rand = new System.Random();
+        int thing = rand.Next(HealthSpawnPoints.Length);
+        Instantiate<GameObject>(HealthPickup, HealthSpawnPoints[thing].transform.position,
+            HealthSpawnPoints[thing].transform.rotation);
+    }
+
+    public void Disable()
+    {
+        gameObject.SetActive(false);
+        Invoke("Enable", 10);
+    }
+
+    public void Suicide()
+    {
+        Destroy(gameObject);
+    }
 }
