@@ -16,6 +16,7 @@ public class BossManController : MonoBehaviour
     private BossState State = BossState.PHASE1Vulnerable;
 
     [SerializeField] private GameObject EnvObjects = null;
+    [SerializeField] private GameObject WinScreen = null;
 
     [SerializeField] private GameObject[] BulletSpawnPoints = null;
     [SerializeField] private GameObject BulletPrefab = null;
@@ -53,6 +54,10 @@ public class BossManController : MonoBehaviour
 
     void Start()
     {
+        // Disable the win screen canvas
+        WinScreen.gameObject.SetActive(false);
+        // Disable the win screen canvas
+
         maxheath = Health;
 
         target = Quaternion.AngleAxis(180.0f, Vector3.up);
@@ -175,6 +180,8 @@ public class BossManController : MonoBehaviour
 
     void Suicide()
     {
+        WinScreen.SetActive(true);
+
         Instantiate<GameObject>(DestroyEffect, transform.position, transform.rotation);
         Destroy(gameObject);
     }
