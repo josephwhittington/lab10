@@ -140,11 +140,6 @@ public class PlayerController : IPausable
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            PlayerStats.Coins += 5;
-        }
-
         if (!GamePaused)
         {
             float vSpeed = characterController.velocity.magnitude;
@@ -166,8 +161,13 @@ public class PlayerController : IPausable
                 Shoot();
 
                 // God mode
+#if DEBUG
                 if (Input.GetKeyDown(KeyCode.G))
                     ToggleGodMode();
+
+                if (Input.GetKeyDown(KeyCode.Return))
+                    PlayerStats.Coins += 5;
+#endif
                 // God mode
             }
 

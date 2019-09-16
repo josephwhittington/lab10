@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+
 
 public class EnemySpawnController : IPausable
 {
@@ -35,6 +37,8 @@ public class EnemySpawnController : IPausable
     int lastspawn = -1;
 
     // Enemy spawn timer
+    [SerializeField] private float WaitTimebeforeSpawn = 0.0f;
+
     private float enemyspawntimer = 0;
     private GameObject enemy = null;
     private Vector3 enemylocation = Vector3.zero;
@@ -56,9 +60,12 @@ public class EnemySpawnController : IPausable
     {
         if (!GamePaused)
         {
+            if (ShouldSpawn && WaitTimebeforeSpawn > 0)
+                WaitTimebeforeSpawn -= Time.deltaTime;
+
             CheckIfRoomClear();
 
-            if (!RoomClear && ShouldSpawn)
+            if (!RoomClear && ShouldSpawn && WaitTimebeforeSpawn <= 0)
             {
                 // Timer shit
                 timer += Time.deltaTime;
@@ -72,19 +79,10 @@ public class EnemySpawnController : IPausable
                         SetSpawn();
                     }
                 }
-
-                if (enemyspawntimer > 0)
-                {
-                    enemyspawntimer -= Time.deltaTime;
-                }
-                if(enemyspawntimer < 0)
-                {
-                    enemyspawntimer = 0;
-                    SpawnEnemy(enemy, enemylocation);
-                }
             }
         }
     }
+
 
     void StartSpawning(string RoomName)
     {
@@ -118,7 +116,6 @@ public class EnemySpawnController : IPausable
         if(RoomClear && !RoomClearTriggered)
         {
             RoomClearTriggered = true;
-            //Debug.Log("Room Clear");
             // Do things here on room clear
             CancelInvoke("SpawnHealthPickup");
             OpenDoors();
@@ -216,19 +213,19 @@ public class EnemySpawnController : IPausable
             // Spawn Enemy
             enemy = Enemies[spawnIndex];
             enemylocation = SpawnPoints[spawnpointindex].transform.position;
+
+            Invoke("SpawnEnemy", SpawnInterval);
         }
     }
 
-    private void SpawnEnemy(GameObject enemy, Vector3 spawnLocation)
+    private void SpawnEnemy()
     {
-        if(enemy && spawnLocation != Vector3.zero)
-            Instantiate<GameObject>(enemy, spawnLocation, transform.rotation);
+        if(enemy && enemylocation != Vector3.zero)
+            Instantiate<GameObject>(enemy, enemylocation, transform.rotation);
     }
+
     private void OnDisable()
     {
         StartSpawner.PlayerEntered -= StartSpawning;
     }
-
-   
- 
 }

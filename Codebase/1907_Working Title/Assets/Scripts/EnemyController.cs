@@ -80,11 +80,16 @@ public class EnemyController : IPausable
         {
             Suicide();
 
+            //alex kill counter
+            //KillCounter.instance.count++;
+            //KillCounter.instance.UpdateCounter();
+
             //After destroying enemy make him drop a coin this will follow to the player//
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayEnemyDeathSound();
             Instantiate<GameObject>(DeathEffect, transform.position, transform.rotation);
             Instantiate<GameObject>(CoinDrop, transform.position, transform.rotation);
         }
+
         else HitPoints -= p_damage;
 
         UpdateUi();
