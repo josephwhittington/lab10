@@ -97,6 +97,7 @@ public class BulletController : IPausable
             }
             else if (collision.gameObject.CompareTag("CoinThief"))
             {
+                Debug.Log("Hit");
                 collision.gameObject.GetComponent<EnemyCoinThief>().DealDamage(Damage + PlayerStats.DamageUpgrade);
             }
 

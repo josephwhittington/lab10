@@ -1160,8 +1160,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1845406612}
-        m_MethodName: Scene_Switcher
-        m_Mode: 5
+        m_MethodName: NewGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1598,6 +1598,7 @@ GameObject:
   - component: {fileID: 2025814664}
   - component: {fileID: 2025814663}
   - component: {fileID: 2025814667}
+  - component: {fileID: 2025814668}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1704,6 +1705,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 651384ca36c413446afe21dfe1bf78a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2025814668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025814662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b0417e9b5e0da47850902d6223c7bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContinueButton: {fileID: 1852768575}
 --- !u!1 &2119544823
 GameObject:
   m_ObjectHideFlags: 0

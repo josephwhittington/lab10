@@ -13,10 +13,10 @@ public class BoomerEnemy : IPausable
     [SerializeField] GameObject ForceField = null;
     public float scrollSpeed = 0.5f;
 
-    [SerializeField] uint HitPoints = 2;
+    [SerializeField] int HitPoints = 2;
     [SerializeField] GameObject littlefucks = null;
 
-    uint MaxHP = 5;
+    int MaxHP = 5;
 
     uint ShieldHealth = 10;
 
@@ -68,7 +68,7 @@ public class BoomerEnemy : IPausable
             }
             else
             {
-               HitPoints -= p_damage;
+               HitPoints -= (int)p_damage;
             }
 
             if (ShieldHealth <= 5)

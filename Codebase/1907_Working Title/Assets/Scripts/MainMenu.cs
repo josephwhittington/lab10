@@ -7,14 +7,25 @@ public class MainMenu : MonoBehaviour
 {
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        if(!PlayerPrefs.HasKey("CurrentLevel"))
+            PlayerPrefs.SetInt("CurrentLevel", SceneManager.GetActiveScene().buildIndex);
 
-        PlayerPrefs.SetInt("CurrentLevel", SceneManager.GetActiveScene().buildIndex);
         PlayerPrefs.SetInt("StoreVisited", 1);
     }
     public void Scene_Switcher(string menu)
     {
+        //PlayerStats.LoadPlayerPrefs();
+
         PlayMenuSelectSound();
+        SceneManager.LoadScene("LoadingScreen");
+    }
+
+    public void NewGame()
+    {
+        PlayMenuSelectSound();
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("StoreVisited", 1);
+
         SceneManager.LoadScene("LoadingScreen");
     }
 
