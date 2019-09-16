@@ -10,7 +10,7 @@ public class CoinThiefSpawner : IPausable
     [SerializeField] GameObject[] SpawnPoints = null;
     [SerializeField] GameObject Enemy = null;
     private float timer = 0;
-    public int maxSpawns = 0;
+    private int maxSpawns = 0;
     bool ShouldSpawn = false;
     int lastspawn = -1;
 

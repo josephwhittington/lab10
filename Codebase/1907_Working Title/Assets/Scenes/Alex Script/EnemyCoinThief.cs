@@ -7,7 +7,7 @@ public class EnemyCoinThief : IPausable
 {
     GameObject player = null;
     NavMeshAgent agent = null;
-    [SerializeField] uint HitPoints = 12;
+    [SerializeField] uint HitPoints = 6;
     [SerializeField] GameObject CoinDrop = null;
     private float TimerCoolDown = 0;
     private float CoolDown = 0.01f;
