@@ -27,6 +27,7 @@ TagManager:
   - CoinThiefCoin
   - BossRoomEnv
   - LightningWalls
+  - FirstAid
   layers:
   - Default
   - TransparentFX

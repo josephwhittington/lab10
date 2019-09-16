@@ -56,7 +56,7 @@ public class EnemyCoinThief : IPausable
 
         else
         {
-            HitPoints -= p_damage;
+           HitPoints -= p_damage;
         }
 
     }
