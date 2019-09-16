@@ -3628,7 +3628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards: []
   roomName: Room1
   DoorLights: []
@@ -4853,7 +4854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards: []
   roomName: Room1
   DoorLights: []
@@ -12892,7 +12894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards: []
   roomName: Room1
   DoorLights: []
@@ -24148,7 +24151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards: []
   roomName: Room1
   DoorLights:
@@ -24508,7 +24512,7 @@ PrefabInstance:
     - target: {fileID: 3521601335492636121, guid: a92154e9c94d6b1448942aefe3164430,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3521601335492636121, guid: a92154e9c94d6b1448942aefe3164430,
         type: 3}
@@ -24909,7 +24913,7 @@ Transform:
   - {fileID: 1157822826}
   - {fileID: 1454733704}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &5902067213959752746
 MeshCollider:
@@ -24980,7 +24984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 0}
+  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+    type: 3}
   DoorGuards:
   - {fileID: 1932972871}
   roomName: Room2
