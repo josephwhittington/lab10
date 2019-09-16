@@ -7,6 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     void Start()
     {
+        PlayerPrefs.DeleteAll();
+
         PlayerPrefs.SetInt("CurrentLevel", SceneManager.GetActiveScene().buildIndex);
         PlayerPrefs.SetInt("StoreVisited", 1);
     }

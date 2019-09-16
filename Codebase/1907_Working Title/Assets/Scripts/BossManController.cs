@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class BossManController : MonoBehaviour
@@ -30,6 +31,7 @@ public class BossManController : MonoBehaviour
 
     // Health
     private int maxheath = 0;
+    [SerializeField] private Image BossManHealth = null;
     // Health
 
     // AI
@@ -62,6 +64,8 @@ public class BossManController : MonoBehaviour
 
     void Update()
     {
+        BossManHealth.fillAmount = (float)((float)Health / (float)maxheath);
+
         if (Health <= 0)
             Suicide();
         if ((Health <= ((float)maxheath * 0.6f)) && !phase2)

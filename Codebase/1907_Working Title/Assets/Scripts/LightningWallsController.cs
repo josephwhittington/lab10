@@ -8,6 +8,7 @@ public class LightningWallsController : MonoBehaviour
 
     // Explosion shit
     [SerializeField] private GameObject[] SectorObjs = null;
+    [SerializeField] private GameObject[] SectorObjLights = null;
     [SerializeField] private GameObject SectorBasedExplosion = null;
     // Explosion shit
 
@@ -18,6 +19,9 @@ public class LightningWallsController : MonoBehaviour
 
     private bool Phase3 = false;
 
+    private int sector = 0;
+    private bool sectorSelected = false;
+
     void Start()
     {
         // pawn shit
@@ -25,6 +29,13 @@ public class LightningWallsController : MonoBehaviour
         // pawn shit
 
         gameObject.SetActive(false);
+
+        // Lights
+        for (int i = 0; i < SectorObjLights.Length; i++)
+        {
+            SectorObjLights[i].GetComponent<Light>().gameObject.SetActive(false);
+        }
+        // Lights
     }
 
     void Update()
@@ -32,13 +43,26 @@ public class LightningWallsController : MonoBehaviour
         if (Phase3)
             phase3timer -= Time.deltaTime;
 
-        if (phase3timer <= 0)
+        if (phase3timer <= 1 && !sectorSelected)
         {
             System.Random rand = new System.Random();
-            int spawnindex = rand.Next(SectorObjs.Length);
+            sector = rand.Next(SectorObjs.Length);
 
-            Instantiate(SectorBasedExplosion, SectorObjs[spawnindex].transform.position, SectorObjs[spawnindex].transform.rotation);
+            SectorObjLights[sector].GetComponent<Light>().gameObject.SetActive(true);
+            sectorSelected = true;
+
+        } else if (phase3timer < 1)
+        {
+            SectorObjLights[sector].GetComponent<Light>().intensity += Time.deltaTime * 100;
+        }
+
+        if (phase3timer <= 0)
+        {
+            SectorObjLights[sector].GetComponent<Light>().gameObject.SetActive(false);
+
+            Instantiate(SectorBasedExplosion, SectorObjs[sector].transform.position, SectorObjs[sector].transform.rotation);
             phase3timer = 10;
+            sectorSelected = false;
         }
 
         timer -= Time.deltaTime;
