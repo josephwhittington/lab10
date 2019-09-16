@@ -95,6 +95,12 @@ public class BulletController : IPausable
             {
                 collision.gameObject.GetComponent<BoomerEnemy>().DealDamage(Damage + PlayerStats.DamageUpgrade);
             }
+            else if (collision.gameObject.CompareTag("CoinThief"))
+            {
+                collision.gameObject.GetComponent<EnemyCoinThief>().DealDamage(Damage + PlayerStats.DamageUpgrade);
+            }
+
+
             else if (collision.gameObject.CompareTag("Bossman"))
             {
                 if (!collision.gameObject.GetComponent<BossManController>().IsInvulnerable())
