@@ -11,8 +11,8 @@ public class EnemyCoinThief : IPausable
     [SerializeField] GameObject CoinDrop = null;
     private float TimerCoolDown = 0;
     private float CoolDown = 0.01f;
-    private float WaitForThis = 0;
-    private float WaitForThisCool = 1.0f;
+    //private float WaitForThis = 0;
+    //private float WaitForThisCool = 1.0f;
    
 
     // Start is called before the first frame update

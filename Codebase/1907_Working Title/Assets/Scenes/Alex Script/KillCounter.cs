@@ -7,7 +7,7 @@ using TMPro;
 public class KillCounter : MonoBehaviour
 {
     public static KillCounter instance;
-    [SerializeField] TextMeshProUGUI killcounter;
+    [SerializeField] TextMeshProUGUI killcounter = null;
     [SerializeField] GameObject SpecialMove;
     [SerializeField] Transform player;
     public int count;

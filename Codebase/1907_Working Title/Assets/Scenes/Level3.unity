@@ -2026,6 +2026,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 400
+  WaitTimebeforeSpawn: 0
 --- !u!4 &37913793
 Transform:
   m_ObjectHideFlags: 0
@@ -3752,7 +3753,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79304692}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -17764,6 +17765,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &421339399
 Transform:
   m_ObjectHideFlags: 0
@@ -20386,6 +20388,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 400
+  WaitTimebeforeSpawn: 0
 --- !u!4 &462564626
 Transform:
   m_ObjectHideFlags: 0
@@ -24592,6 +24595,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 45
+  WaitTimebeforeSpawn: 0
 --- !u!4 &567393175
 Transform:
   m_ObjectHideFlags: 0
@@ -26713,6 +26717,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 35
+  WaitTimebeforeSpawn: 0
 --- !u!4 &615186072
 Transform:
   m_ObjectHideFlags: 0
@@ -34990,6 +34995,7 @@ MonoBehaviour:
   SpawnInterval: 6
   HealthPickupSpawnInterval: 6
   RoomWeight: 30
+  WaitTimebeforeSpawn: 0
 --- !u!1001 &794890629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38485,7 +38491,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867404399}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -40640,6 +40646,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &904503250
 Transform:
   m_ObjectHideFlags: 0
@@ -54341,6 +54348,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 400
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1192871937
 Transform:
   m_ObjectHideFlags: 0
@@ -54417,6 +54425,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 400
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1193920786
 Transform:
   m_ObjectHideFlags: 0
@@ -56010,6 +56019,7 @@ MonoBehaviour:
   SpawnInterval: 1.8
   HealthPickupSpawnInterval: 4
   RoomWeight: 180
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1231988580
 Transform:
   m_ObjectHideFlags: 0
@@ -75924,6 +75934,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 35
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1691201186
 Transform:
   m_ObjectHideFlags: 0
@@ -84648,6 +84659,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 45
+  WaitTimebeforeSpawn: 0
 --- !u!1001 &1865333768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87153,6 +87165,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 400
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1908605908
 Transform:
   m_ObjectHideFlags: 0
@@ -94547,6 +94560,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 45
+  WaitTimebeforeSpawn: 0
 --- !u!1001 &2065707375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95975,6 +95989,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 108917273264302800, guid: ac75edbe1628f434d962fe1d019d9c01,
+        type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 108917273264302800, guid: ac75edbe1628f434d962fe1d019d9c01,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac75edbe1628f434d962fe1d019d9c01, type: 3}
