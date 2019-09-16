@@ -9298,7 +9298,7 @@ MonoBehaviour:
   - {fileID: 2092146258}
   CenterWaypoint: {fileID: 2092146258}
   ShotInterval: 0.15
-  Health: 100
+  Health: 1400
   DestroyEffect: {fileID: 632193105208960728, guid: a89bccfe7837b244f918b5aa31e0e559,
     type: 3}
   BossManHealth: {fileID: 1023358524}

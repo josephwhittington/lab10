@@ -73,15 +73,15 @@ public class EnemySpawnController : IPausable
                     }
                 }
 
-                if (enemyspawntimer > 0)
-                {
-                    enemyspawntimer -= Time.deltaTime;
-                }
-                if(enemyspawntimer < 0)
-                {
-                    enemyspawntimer = 0;
-                    SpawnEnemy(enemy, enemylocation);
-                }
+                //if (enemyspawntimer > 0)
+                //{
+                //    enemyspawntimer -= Time.deltaTime;
+                //}
+                //if(enemyspawntimer < 0)
+                //{
+                //    enemyspawntimer = 0;
+                //    SpawnEnemy(enemy, enemylocation);
+                //}
             }
         }
     }
@@ -216,14 +216,17 @@ public class EnemySpawnController : IPausable
             // Spawn Enemy
             enemy = Enemies[spawnIndex];
             enemylocation = SpawnPoints[spawnpointindex].transform.position;
+
+            Invoke("SpawnEnemy", SpawnInterval);
         }
     }
 
-    private void SpawnEnemy(GameObject enemy, Vector3 spawnLocation)
+    private void SpawnEnemy()
     {
-        if(enemy && spawnLocation != Vector3.zero)
-            Instantiate<GameObject>(enemy, spawnLocation, transform.rotation);
+        if(enemy && enemylocation != Vector3.zero)
+            Instantiate<GameObject>(enemy, enemylocation, transform.rotation);
     }
+
     private void OnDisable()
     {
         StartSpawner.PlayerEntered -= StartSpawning;
