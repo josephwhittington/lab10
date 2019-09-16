@@ -120,9 +120,9 @@ public class camera_em : MonoBehaviour {
 
     public void ChangeSkin()
     {
-        GameObject m1 = Tesla.FindChild("mesh_head").gameObject;
-        GameObject m2 = Tesla.FindChild("mesh_head_helmet").gameObject;
-        GameObject m3 = Tesla.FindChild("mesh_electro_man").gameObject;
+        GameObject m1 = Tesla.Find("mesh_head").gameObject;
+        GameObject m2 = Tesla.Find("mesh_head_helmet").gameObject;
+        GameObject m3 = Tesla.Find("mesh_electro_man").gameObject;
 
         m1.SetActive(!m1.activeInHierarchy);
         m2.SetActive(!m2.activeInHierarchy);

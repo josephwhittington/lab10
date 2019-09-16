@@ -36,6 +36,12 @@ public class EnemySpawnController : IPausable
     private uint RoomStartWeight = 0;
     int lastspawn = -1;
 
+    // Enemy spawn timer
+    private float enemyspawntimer = 0;
+    private GameObject enemy = null;
+    private Vector3 enemylocation = Vector3.zero;
+    // Enemy spawn timer
+
     private void OnEnable()
     {
         StartSpawner.PlayerEntered += StartSpawning;
@@ -58,13 +64,25 @@ public class EnemySpawnController : IPausable
             {
                 // Timer shit
                 timer += Time.deltaTime;
+
                 if (timer >= SpawnInterval)
                 {
                     timer = 0;
                     if (!GameState.GamePaused)
                     {
-                        Spawn();
+                        enemyspawntimer = SpawnInterval;
+                        SetSpawn();
                     }
+                }
+
+                if (enemyspawntimer > 0)
+                {
+                    enemyspawntimer -= Time.deltaTime;
+                }
+                if(enemyspawntimer < 0)
+                {
+                    enemyspawntimer = 0;
+                    SpawnEnemy(enemy, enemylocation);
                 }
             }
         }
@@ -164,7 +182,7 @@ public class EnemySpawnController : IPausable
         Instantiate<GameObject>(Resources.Load<GameObject>("FirstAid"), SpawnPoints[spawnIndex].transform.position, SpawnPoints[spawnIndex].transform.rotation);
     }
 
-    void Spawn()
+    void SetSpawn()
     {
         System.Random rand = new System.Random();
         int spawnIndex = rand.Next(Enemies.Length);
@@ -195,10 +213,19 @@ public class EnemySpawnController : IPausable
             lastspawn = spawnpointindex;
 
             RoomWeight -= EnemyWeights[spawnIndex];
-            //GameObject effect = Instantiate<GameObject>(SpawnEffect, SpawnPoints[spawnpointindex].transform.position, transform.rotation);
-            //effect.gameObject.transform.parent = Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation).transform;
-            Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
+            // Instantiate effect
+            Instantiate(SpawnEffect, SpawnPoints[spawnpointindex].transform.position, transform.rotation);
+            //Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
+            // Spawn Enemy
+            enemy = Enemies[spawnIndex];
+            enemylocation = SpawnPoints[spawnpointindex].transform.position;
         }
+    }
+
+    private void SpawnEnemy(GameObject enemy, Vector3 spawnLocation)
+    {
+        if(enemy && spawnLocation != Vector3.zero)
+            Instantiate<GameObject>(enemy, spawnLocation, transform.rotation);
     }
     private void OnDisable()
     {

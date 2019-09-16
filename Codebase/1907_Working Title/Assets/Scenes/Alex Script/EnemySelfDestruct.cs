@@ -13,7 +13,7 @@ public class EnemySelfDestruct : IPausable
     MeshRenderer meshRenderer = null;
     [SerializeField] Material HitEffect = null;
     [SerializeField] Material EnemyColor = null;
-    [SerializeField] uint HitPoints = 3;
+    [SerializeField] int HitPoints = 3;
     //uint MaxHP = 3;
 
     [SerializeField] GameObject Explosion = null;
@@ -113,14 +113,14 @@ public class EnemySelfDestruct : IPausable
     //player damage connected to enemy health bar
     public void DealDamage(uint p_damage)
     {
-        if (HitPoints - p_damage <= 0)
+        if (HitPoints - (int)p_damage <= 0)
         {
             Suicide();
             Instantiate<GameObject>(Explosion, transform.position, transform.rotation);
         }
         else
         {
-            HitPoints -= p_damage;
+            HitPoints -= (int)p_damage;
         }
     }
 

@@ -16,5 +16,4 @@ public abstract class IGunBase : MonoBehaviour
     public abstract void Shoot();
 
     public abstract void Shoot(GameObject spawnPoint1, GameObject spawnPoint2, GameObject spawnPoint3);
-
 }

@@ -49,6 +49,7 @@ public class PauseScript : MonoBehaviour
     private void QuitButtonClick()
     {
         PlayMenuSelectSound();
+        PlayerPrefs.SetInt("StoreVisited", 1);
         //Debug.Log("Closing Application");
         SceneManager.LoadScene(0);
     }
