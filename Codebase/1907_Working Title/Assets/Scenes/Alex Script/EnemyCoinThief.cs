@@ -9,11 +9,14 @@ public class EnemyCoinThief : IPausable
     NavMeshAgent agent = null;
     [SerializeField] uint HitPoints = 6;
     [SerializeField] GameObject CoinDrop = null;
+    [SerializeField] GameObject DeathEffect = null;
     private float TimerCoolDown = 0;
     private float CoolDown = 0.01f;
+
+   
     //private float WaitForThis = 0;
     //private float WaitForThisCool = 1.0f;
-   
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +24,7 @@ public class EnemyCoinThief : IPausable
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
         InvokeRepeating("CoinTimer", 0, .6f);
+        
     }
 
     void CoinTimer()
@@ -39,6 +43,16 @@ public class EnemyCoinThief : IPausable
         }
     }
 
+
+    private void Update()
+    {
+        if (!GamePaused && !PlayerStats.PlayerDead)
+        {
+           
+        }
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name.Equals("CoinThief"))
@@ -52,6 +66,7 @@ public class EnemyCoinThief : IPausable
         if (HitPoints - p_damage <= 0)
         {
             Suicide();
+            Instantiate<GameObject>(DeathEffect, transform.position, transform.rotation);
         }
 
         else
@@ -64,6 +79,7 @@ public class EnemyCoinThief : IPausable
     private void FixedUpdate()
     {
         LookAtPlayer();
+        
     }
 
     void LookAtPlayer()

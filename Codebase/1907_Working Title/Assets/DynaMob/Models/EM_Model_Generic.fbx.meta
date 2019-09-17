@@ -1,140 +1,358 @@
 fileFormatVersion: 2
 guid: 709ec484325181245aac74f3ae589c56
-timeCreated: 1485240811
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: em_fl_01
-    100002: em_fl_02
-    100004: em_fl_11
-    100006: em_fl_12
-    100008: em_fr_01
-    100010: em_fr_02
-    100012: em_fr_11
-    100014: em_fr_12
-    100016: em_head
-    100018: em_l_calf
-    100020: em_l_clavicle
-    100022: em_l_foot
-    100024: em_l_forearm
-    100026: em_l_hand
-    100028: em_l_thigh
-    100030: em_l_toe0
-    100032: em_l_upperarm
-    100034: //RootNode
-    100036: em_neck
-    100038: em_pelvis
-    100040: em_r_calf
-    100042: em_r_clavicle
-    100044: em_r_foot
-    100046: em_r_forearm
-    100048: em_r_hand
-    100050: em_r_thigh
-    100052: em_r_toe0
-    100054: em_r_upperarm
-    100056: em_root
-    100058: em_rotator
-    100060: em_spine
-    100062: em_spine1
-    100064: em_trigger
-    100066: em_wiresl
-    100068: em_wiresr
-    100070: mesh_electro_man
-    100072: mesh_head
-    100074: mesh_head_helmet
-    400000: em_fl_01
-    400002: em_fl_02
-    400004: em_fl_11
-    400006: em_fl_12
-    400008: em_fr_01
-    400010: em_fr_02
-    400012: em_fr_11
-    400014: em_fr_12
-    400016: em_head
-    400018: em_l_calf
-    400020: em_l_clavicle
-    400022: em_l_foot
-    400024: em_l_forearm
-    400026: em_l_hand
-    400028: em_l_thigh
-    400030: em_l_toe0
-    400032: em_l_upperarm
-    400034: //RootNode
-    400036: em_neck
-    400038: em_pelvis
-    400040: em_r_calf
-    400042: em_r_clavicle
-    400044: em_r_foot
-    400046: em_r_forearm
-    400048: em_r_hand
-    400050: em_r_thigh
-    400052: em_r_toe0
-    400054: em_r_upperarm
-    400056: em_root
-    400058: em_rotator
-    400060: em_spine
-    400062: em_spine1
-    400064: em_trigger
-    400066: em_wiresl
-    400068: em_wiresr
-    400070: mesh_electro_man
-    400072: mesh_head
-    400074: mesh_head_helmet
-    4300000: mesh_electro_man
-    4300002: mesh_head
-    4300004: mesh_head_helmet
-    7400000: charge
-    7400002: death_back
-    7400004: death_front
-    7400006: fire_in
-    7400008: fire_action
-    7400010: fire_out
-    7400012: hit
-    7400014: idle_lookaround
-    7400016: idle_short
-    7400018: turn_left_45
-    7400020: turn_left_90
-    7400022: turn_left_180A
-    7400024: turn_left_180B
-    7400026: turn_right_45
-    7400028: turn_right_90
-    7400030: turn_right_180
-    7400032: walk_forward
-    7400034: walk_left_radius_90
-    7400036: walk_left_radius_160
-    7400038: walk_left_radius_280
-    7400040: walk_right_radius_90
-    7400042: walk_right_radius_160
-    7400044: walk_right_radius_280
-    9500000: //RootNode
-    13700000: mesh_electro_man
-    13700002: mesh_head
-    13700004: mesh_head_helmet
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: em_fl_01
+  - first:
+      1: 100002
+    second: em_fl_02
+  - first:
+      1: 100004
+    second: em_fl_11
+  - first:
+      1: 100006
+    second: em_fl_12
+  - first:
+      1: 100008
+    second: em_fr_01
+  - first:
+      1: 100010
+    second: em_fr_02
+  - first:
+      1: 100012
+    second: em_fr_11
+  - first:
+      1: 100014
+    second: em_fr_12
+  - first:
+      1: 100016
+    second: em_head
+  - first:
+      1: 100018
+    second: em_l_calf
+  - first:
+      1: 100020
+    second: em_l_clavicle
+  - first:
+      1: 100022
+    second: em_l_foot
+  - first:
+      1: 100024
+    second: em_l_forearm
+  - first:
+      1: 100026
+    second: em_l_hand
+  - first:
+      1: 100028
+    second: em_l_thigh
+  - first:
+      1: 100030
+    second: em_l_toe0
+  - first:
+      1: 100032
+    second: em_l_upperarm
+  - first:
+      1: 100034
+    second: //RootNode
+  - first:
+      1: 100036
+    second: em_neck
+  - first:
+      1: 100038
+    second: em_pelvis
+  - first:
+      1: 100040
+    second: em_r_calf
+  - first:
+      1: 100042
+    second: em_r_clavicle
+  - first:
+      1: 100044
+    second: em_r_foot
+  - first:
+      1: 100046
+    second: em_r_forearm
+  - first:
+      1: 100048
+    second: em_r_hand
+  - first:
+      1: 100050
+    second: em_r_thigh
+  - first:
+      1: 100052
+    second: em_r_toe0
+  - first:
+      1: 100054
+    second: em_r_upperarm
+  - first:
+      1: 100056
+    second: em_root
+  - first:
+      1: 100058
+    second: em_rotator
+  - first:
+      1: 100060
+    second: em_spine
+  - first:
+      1: 100062
+    second: em_spine1
+  - first:
+      1: 100064
+    second: em_trigger
+  - first:
+      1: 100066
+    second: em_wiresl
+  - first:
+      1: 100068
+    second: em_wiresr
+  - first:
+      1: 100070
+    second: mesh_electro_man
+  - first:
+      1: 100072
+    second: mesh_head
+  - first:
+      1: 100074
+    second: mesh_head_helmet
+  - first:
+      4: 400000
+    second: em_fl_01
+  - first:
+      4: 400002
+    second: em_fl_02
+  - first:
+      4: 400004
+    second: em_fl_11
+  - first:
+      4: 400006
+    second: em_fl_12
+  - first:
+      4: 400008
+    second: em_fr_01
+  - first:
+      4: 400010
+    second: em_fr_02
+  - first:
+      4: 400012
+    second: em_fr_11
+  - first:
+      4: 400014
+    second: em_fr_12
+  - first:
+      4: 400016
+    second: em_head
+  - first:
+      4: 400018
+    second: em_l_calf
+  - first:
+      4: 400020
+    second: em_l_clavicle
+  - first:
+      4: 400022
+    second: em_l_foot
+  - first:
+      4: 400024
+    second: em_l_forearm
+  - first:
+      4: 400026
+    second: em_l_hand
+  - first:
+      4: 400028
+    second: em_l_thigh
+  - first:
+      4: 400030
+    second: em_l_toe0
+  - first:
+      4: 400032
+    second: em_l_upperarm
+  - first:
+      4: 400034
+    second: //RootNode
+  - first:
+      4: 400036
+    second: em_neck
+  - first:
+      4: 400038
+    second: em_pelvis
+  - first:
+      4: 400040
+    second: em_r_calf
+  - first:
+      4: 400042
+    second: em_r_clavicle
+  - first:
+      4: 400044
+    second: em_r_foot
+  - first:
+      4: 400046
+    second: em_r_forearm
+  - first:
+      4: 400048
+    second: em_r_hand
+  - first:
+      4: 400050
+    second: em_r_thigh
+  - first:
+      4: 400052
+    second: em_r_toe0
+  - first:
+      4: 400054
+    second: em_r_upperarm
+  - first:
+      4: 400056
+    second: em_root
+  - first:
+      4: 400058
+    second: em_rotator
+  - first:
+      4: 400060
+    second: em_spine
+  - first:
+      4: 400062
+    second: em_spine1
+  - first:
+      4: 400064
+    second: em_trigger
+  - first:
+      4: 400066
+    second: em_wiresl
+  - first:
+      4: 400068
+    second: em_wiresr
+  - first:
+      4: 400070
+    second: mesh_electro_man
+  - first:
+      4: 400072
+    second: mesh_head
+  - first:
+      4: 400074
+    second: mesh_head_helmet
+  - first:
+      43: 4300000
+    second: mesh_electro_man
+  - first:
+      43: 4300002
+    second: mesh_head
+  - first:
+      43: 4300004
+    second: mesh_head_helmet
+  - first:
+      74: 7400000
+    second: charge
+  - first:
+      74: 7400002
+    second: death_back
+  - first:
+      74: 7400004
+    second: death_front
+  - first:
+      74: 7400006
+    second: fire_in
+  - first:
+      74: 7400008
+    second: fire_action
+  - first:
+      74: 7400010
+    second: fire_out
+  - first:
+      74: 7400012
+    second: hit
+  - first:
+      74: 7400014
+    second: idle_lookaround
+  - first:
+      74: 7400016
+    second: idle_short
+  - first:
+      74: 7400018
+    second: turn_left_45
+  - first:
+      74: 7400020
+    second: turn_left_90
+  - first:
+      74: 7400022
+    second: turn_left_180A
+  - first:
+      74: 7400024
+    second: turn_left_180B
+  - first:
+      74: 7400026
+    second: turn_right_45
+  - first:
+      74: 7400028
+    second: turn_right_90
+  - first:
+      74: 7400030
+    second: turn_right_180
+  - first:
+      74: 7400032
+    second: walk_forward
+  - first:
+      74: 7400034
+    second: walk_left_radius_90
+  - first:
+      74: 7400036
+    second: walk_left_radius_160
+  - first:
+      74: 7400038
+    second: walk_left_radius_280
+  - first:
+      74: 7400040
+    second: walk_right_radius_90
+  - first:
+      74: 7400042
+    second: walk_right_radius_160
+  - first:
+      74: 7400044
+    second: walk_right_radius_280
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: mesh_electro_man
+  - first:
+      137: 13700002
+    second: mesh_head
+  - first:
+      137: 13700004
+    second: mesh_head_helmet
+  externalObjects: {}
   materials:
     importMaterials: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: em_root
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: charge
       takeName: charge
+      internalID: 7400000
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -143,7 +361,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -239,6 +457,7 @@ ModelImporter:
     - serializedVersion: 16
       name: death_back
       takeName: death_back
+      internalID: 7400002
       firstFrame: 0
       lastFrame: 64
       wrapMode: 0
@@ -343,6 +562,7 @@ ModelImporter:
     - serializedVersion: 16
       name: death_front
       takeName: death_front
+      internalID: 7400004
       firstFrame: 0
       lastFrame: 52
       wrapMode: 0
@@ -447,6 +667,7 @@ ModelImporter:
     - serializedVersion: 16
       name: fire_in
       takeName: fire_in
+      internalID: 7400006
       firstFrame: 0
       lastFrame: 26
       wrapMode: 0
@@ -551,6 +772,7 @@ ModelImporter:
     - serializedVersion: 16
       name: fire_action
       takeName: fire_action
+      internalID: 7400008
       firstFrame: 0
       lastFrame: 16
       wrapMode: 0
@@ -655,6 +877,7 @@ ModelImporter:
     - serializedVersion: 16
       name: fire_out
       takeName: fire_out
+      internalID: 7400010
       firstFrame: 0
       lastFrame: 20
       wrapMode: 0
@@ -759,6 +982,7 @@ ModelImporter:
     - serializedVersion: 16
       name: hit
       takeName: hit
+      internalID: 7400012
       firstFrame: 0
       lastFrame: 37
       wrapMode: 0
@@ -863,6 +1087,7 @@ ModelImporter:
     - serializedVersion: 16
       name: idle_lookaround
       takeName: idle_lookaround
+      internalID: 7400014
       firstFrame: 0
       lastFrame: 240
       wrapMode: 0
@@ -967,6 +1192,7 @@ ModelImporter:
     - serializedVersion: 16
       name: idle_short
       takeName: idle_short
+      internalID: 7400016
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -1071,6 +1297,7 @@ ModelImporter:
     - serializedVersion: 16
       name: turn_left_45
       takeName: turn_left_45
+      internalID: 7400018
       firstFrame: 0
       lastFrame: 24
       wrapMode: 0
@@ -1175,6 +1402,7 @@ ModelImporter:
     - serializedVersion: 16
       name: turn_left_90
       takeName: turn_left_90
+      internalID: 7400020
       firstFrame: 0
       lastFrame: 24
       wrapMode: 0
@@ -1279,6 +1507,7 @@ ModelImporter:
     - serializedVersion: 16
       name: turn_left_180A
       takeName: turn_left_180A
+      internalID: 7400022
       firstFrame: 0
       lastFrame: 24
       wrapMode: 0
@@ -1383,6 +1612,7 @@ ModelImporter:
     - serializedVersion: 16
       name: turn_left_180B
       takeName: turn_left_180B
+      internalID: 7400024
       firstFrame: 0
       lastFrame: 24
       wrapMode: 0
@@ -1487,6 +1717,7 @@ ModelImporter:
     - serializedVersion: 16
       name: turn_right_45
       takeName: turn_right_45
+      internalID: 7400026
       firstFrame: 0
       lastFrame: 24
       wrapMode: 0
@@ -1591,6 +1822,7 @@ ModelImporter:
     - serializedVersion: 16
       name: turn_right_90
       takeName: turn_right_90
+      internalID: 7400028
       firstFrame: 0
       lastFrame: 24
       wrapMode: 0
@@ -1695,6 +1927,7 @@ ModelImporter:
     - serializedVersion: 16
       name: turn_right_180
       takeName: turn_right_180
+      internalID: 7400030
       firstFrame: 0
       lastFrame: 24
       wrapMode: 0
@@ -1799,6 +2032,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk_forward
       takeName: walk_forward
+      internalID: 7400032
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
@@ -1903,6 +2137,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk_left_radius_90
       takeName: walk_left_radius_90
+      internalID: 7400034
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
@@ -2007,6 +2242,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk_left_radius_160
       takeName: walk_left_radius_160
+      internalID: 7400036
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
@@ -2111,6 +2347,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk_left_radius_280
       takeName: walk_left_radius_280
+      internalID: 7400038
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
@@ -2215,6 +2452,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk_right_radius_90
       takeName: walk_right_radius_90
+      internalID: 7400040
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
@@ -2319,6 +2557,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk_right_radius_160
       takeName: walk_right_radius_160
+      internalID: 7400042
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
@@ -2423,6 +2662,7 @@ ModelImporter:
     - serializedVersion: 16
       name: walk_right_radius_280
       takeName: walk_right_radius_280
+      internalID: 7400044
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
@@ -2530,13 +2770,22 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -2546,9 +2795,15 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -2558,8 +2813,11 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: em_root
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
