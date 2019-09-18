@@ -7,6 +7,9 @@ public class PlayerController : IPausable
     CharacterController characterController;
 
     [SerializeField] float speed = 6.0f;
+    [SerializeField] GameObject healEffect;
+    [SerializeField] GameObject HealEffectSpawnPoint;
+   
 
     // Shooting
     private float ShootSpeedTimer = 0;
@@ -73,6 +76,7 @@ public class PlayerController : IPausable
 
     void Start()
     {
+        
         tempDash = DashSpeed;
         tempSpeed = speed;
         // Player Y correction
@@ -123,6 +127,11 @@ public class PlayerController : IPausable
             string name = other.gameObject.GetComponent<ItemPickupScript>()?.GetItemName();
             string location = other.gameObject.GetComponent<ItemPickupScript>()?.GetPrefabLocation();
             ChangeGun(location, name);
+        }
+
+        if (other.gameObject.CompareTag("FirstAid"))
+        {
+            Instantiate<GameObject>(healEffect, HealEffectSpawnPoint.transform.position, HealEffectSpawnPoint.transform.rotation);
         }
     }
 

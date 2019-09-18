@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthPickUp : MonoBehaviour
 {
     [SerializeField] private int pickupAmount = 1;
-
+   
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
