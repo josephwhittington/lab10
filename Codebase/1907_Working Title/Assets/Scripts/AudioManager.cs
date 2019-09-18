@@ -77,4 +77,13 @@ public class AudioManager : MonoBehaviour
     {
         GetComponents<AudioSource>()[8].Play();
     }
+
+    public void PlaySniperCharge()
+    {
+        GetComponents<AudioSource>()[9].Play();
+    }
+    public void StopSniperCharge()
+    {
+        GetComponents<AudioSource>()[9].Stop();
+    }
 }

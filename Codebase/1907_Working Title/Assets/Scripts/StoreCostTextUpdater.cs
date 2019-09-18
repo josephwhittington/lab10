@@ -57,7 +57,7 @@ public class StoreCostTextUpdater : MonoBehaviour
         HealthSlider.value = Health;
         DamageSlider.value = Damage;
         BounceSlider.value = Bounce;
-        FireRateSlider.value = FireRate;
+        FireRateSlider.value = FireRate - 5.0f;
         MultishotSlider.value = Multishot;
         // Set sliders
         

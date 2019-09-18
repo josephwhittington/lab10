@@ -49,21 +49,26 @@ public class SniperController : IPausable
         RaycastHit Hit;
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
-            UpdateUi();
             agent.isStopped = false;
             agent.SetDestination(player.transform.position);
             Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Hit, Mathf.Infinity);
             if(Hit.collider.gameObject.tag == "Player")
             {
                 canShoot = true;
-                if(ParticleSystem.isStopped)
+                if (ParticleSystem.isStopped)
+                {
                     ParticleSystem.Play();
-            }
+                    GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlaySniperCharge();
+                }
+        }
             else
             {
                 canShoot = false;
                 if (ParticleSystem.isPlaying)
+                {
+                    GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().StopSniperCharge();
                     ParticleSystem.Stop();
+                }
                 timer = 0;
             }
 
@@ -85,14 +90,6 @@ public class SniperController : IPausable
         
     }
 
-
-    void UpdateUi()
-    {
-        float fillamount = (float)HitPoints / (float)MaxHP;
-        EnemyHealthUI.fillAmount = fillamount > 1.0f ? 0.0f : fillamount;
-    }
-
-
     private void FixedUpdate()
     {
         LookAtPlayer();
@@ -110,8 +107,6 @@ public class SniperController : IPausable
             Instantiate<GameObject>(CoinDrop, transform.position, transform.rotation);
         }
         else HitPoints -= p_damage;
-
-        UpdateUi();
     }
 
     void Suicide()
