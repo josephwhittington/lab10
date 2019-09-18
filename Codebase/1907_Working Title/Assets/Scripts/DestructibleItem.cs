@@ -5,8 +5,12 @@ using UnityEngine;
 public class DestructibleItem : MonoBehaviour
 {
     [SerializeField] private int HP = 25;
+
+
     [SerializeField] private bool DestroyOtherObjectOnCollision = false;
     [SerializeField] private GameObject thingtpdestroy = null;
+
+    [SerializeField] private bool EnableObjectOnDestroy = false;
 
     private int maxhp = 0;
 

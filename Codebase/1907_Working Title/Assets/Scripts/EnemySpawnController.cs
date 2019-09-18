@@ -8,8 +8,6 @@ public class EnemySpawnController : IPausable
 {
     //Alex Spawn Effect
     [SerializeField] GameObject SpawnEffect = null;
-    //float TimerCoolDown = 0.0f;
-    //float CoolDown = 2f;
     //Alex Spawn Effect
 
     // Whittington door gaurd safety thing
@@ -42,6 +40,7 @@ public class EnemySpawnController : IPausable
     private float enemyspawntimer = 0;
     private List<GameObject> enemy = new List<GameObject>();
     private List<Vector3> enemylocation = new List<Vector3>();
+    private List<uint> EnemySpawnWeights = new List<uint>();
     // Enemy spawn timer
 
     private void OnEnable()
@@ -52,7 +51,6 @@ public class EnemySpawnController : IPausable
     void Start()
     {
         RoomStartWeight = RoomWeight;
-
         DisableDoors();
     }
 
@@ -97,7 +95,7 @@ public class EnemySpawnController : IPausable
 
     void CheckIfRoomClear()
     {
-        if ((RoomWeight <= 0 || RoomWeight > RoomStartWeight) && (int)timer == -1)
+        if ((RoomWeight <= 0 || RoomWeight > RoomStartWeight))
         {
             int NumberOfEnemies = 0;
 
@@ -209,7 +207,7 @@ public class EnemySpawnController : IPausable
 
             lastspawn = spawnpointindex;
 
-            RoomWeight -= EnemyWeights[spawnIndex];
+            //RoomWeight -= EnemyWeights[spawnIndex];
             // Instantiate effect
             Instantiate(SpawnEffect, SpawnPoints[spawnpointindex].transform.position, transform.rotation);
             // Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
@@ -220,6 +218,7 @@ public class EnemySpawnController : IPausable
                 enemy.Add(Enemies[spawnIndex]);
 
             enemylocation.Add(SpawnPoints[spawnpointindex].transform.position);
+            EnemySpawnWeights.Add(EnemyWeights[spawnIndex]);
 
             Invoke("SpawnEnemy", SpawnInterval);
         }
@@ -230,13 +229,11 @@ public class EnemySpawnController : IPausable
         if (enemy.Count > 0 && enemylocation.Count > 0 && enemy.Count == enemylocation.Count)
         {
             Instantiate<GameObject>(enemy[enemy.Count - 1], enemylocation[enemy.Count -1], transform.rotation);
+            RoomWeight -= EnemySpawnWeights[EnemySpawnWeights.Count - 1];
+
             enemy.RemoveAt(enemy.Count - 1);
             enemylocation.RemoveAt(enemylocation.Count - 1);
-        }
-
-        if (RoomWeight == 0 || RoomWeight > RoomStartWeight)
-        {
-            timer = -1;
+            EnemySpawnWeights.RemoveAt(EnemySpawnWeights.Count - 1);
         }
     }
 
