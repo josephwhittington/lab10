@@ -24,18 +24,12 @@ public class ObstacleEnemyController : IPausable
         particle.Stop();
         agent = GetComponentInChildren<NavMeshAgent>();
         CurrentWaypoint = Waypoints[0];
-    
+
         // Set shot rate here
         //InvokeRepeating("Shoot", ShotWaitTime, ShotInterval);
 
         // Set the max hp to the starting hp value for percentage on fill amt for UI update
         MaxHP = HitPoints;
-    }
-
-    void UpdateUi()
-    {
-        float fillamount = (float)HitPoints / (float)MaxHP;
-        EnemyHealthUI.fillAmount = fillamount > 1.0f ? 0.0f : fillamount;
     }
 
     // Update is called once per frame
@@ -45,7 +39,6 @@ public class ObstacleEnemyController : IPausable
         CurrentWaypointTrans.y = transform.position.y;
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
-            UpdateUi();
             agent.isStopped = false;
             if (transform.position != CurrentWaypointTrans)
             {   
@@ -84,11 +77,9 @@ public class ObstacleEnemyController : IPausable
             //After destroying enemy make him drop a coin this will follow to the player//
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayEnemyDeathSound();
             Instantiate<GameObject>(DeathEffect, transform.position, transform.rotation);
-            Instantiate<GameObject>(HealthDrop, transform.position, transform.rotation);
+            Instantiate<GameObject>(HealthDrop, new Vector3(transform.position.x, 1.0f, transform.position.z), transform.rotation);
         }
         else HitPoints -= p_damage;
-
-        UpdateUi();
     }
 
     void Suicide()
@@ -125,10 +116,13 @@ public class ObstacleEnemyController : IPausable
 
     private void HealEnemies()
     {
-        for(int i = 0; i < EnemiesToHeal.Length; i++)
+        if (EnemiesToHeal == null)
+            return;
+        for (int i = 0; i <= EnemiesToHeal.Length; i++)
         {
             EnemiesToHeal[i].GetComponent<EnemyController>().TakeDamage(-1);
         }
-        particle.Play();
+        if(EnemiesToHeal.Length != 0)
+            particle.Play();
     }
 }
