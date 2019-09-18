@@ -21,8 +21,8 @@ public static class PlayerStats
     public static uint MAXDASH = 3;
     public static uint MAXDMG = 3;
     public static uint MAXBOUNCEY = 3;
-    public static float MAXFIRERATE = 3;
-    public static uint MAXMULTISHOT = 3;
+    public static float MAXFIRERATE = 2;
+    public static uint MAXMULTISHOT = 2;
     //Maxes
 
 
@@ -31,7 +31,7 @@ public static class PlayerStats
     public static uint DashCDUpgrade = 0; //.2 per level
     public static uint DamageUpgrade = 0; //1 per level, max 3 dmg
     public static uint Bouncy = 0;
-    public static float FireRate = 5; //-1 per level, max 7
+    public static float FireRate = 0; //1 per level, max 2
     public static uint MultiShot = 1; //1 per level, max of 3, represents spawnpoints from the gun
     //Uogrades
 
@@ -56,7 +56,7 @@ public static class PlayerStats
         DashCDUpgrade = (uint)PlayerPrefs.GetInt(GlobalConfigs.DashCooldownUpgrade, 0);
         DamageUpgrade = (uint)PlayerPrefs.GetInt(GlobalConfigs.DamageUpgrade, 0);
         Bouncy = (uint)PlayerPrefs.GetInt(GlobalConfigs.Bouncy, 0);
-        FireRate = PlayerPrefs.GetFloat(GlobalConfigs.FireRate, 5f);
+        FireRate = PlayerPrefs.GetFloat(GlobalConfigs.FireRate, 0f);
         MultiShot = (uint)PlayerPrefs.GetInt(GlobalConfigs.MultiShot, 1);
 
         MaxHitPoints = (uint)PlayerPrefs.GetInt("MaxHealth", 10);

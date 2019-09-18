@@ -262,7 +262,7 @@ public class PlayerController : IPausable
         {
             ShootSpeedTimer += Time.deltaTime;
 
-            if (ShootSpeedTimer >= (60 / (10f - PlayerStats.FireRate)) * Time.deltaTime)
+            if (ShootSpeedTimer >= (3.3f - PlayerStats.FireRate) * 0.1f)
             {
                 ShootSpeedTimer = 0;
 
