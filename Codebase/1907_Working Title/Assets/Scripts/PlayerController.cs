@@ -47,7 +47,7 @@ public class PlayerController : IPausable
     //Alex Hit effect
 
     //Alex BulletShells
-    [SerializeField] GameObject AmmoShell;
+    //[SerializeField] GameObject AmmoShell;
     //Alex BulletShells
 
     // Whittington params
