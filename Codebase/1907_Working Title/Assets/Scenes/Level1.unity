@@ -2582,6 +2582,7 @@ MonoBehaviour:
   SpawnInterval: 3
   HealthPickupSpawnInterval: 10
   RoomWeight: 7
+  WaitTimebeforeSpawn: 0
 --- !u!4 &134872173
 Transform:
   m_ObjectHideFlags: 0
@@ -7041,6 +7042,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 10
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &445811580
 Transform:
   m_ObjectHideFlags: 0
@@ -7491,6 +7493,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &453831272
 Transform:
   m_ObjectHideFlags: 0
@@ -8145,11 +8148,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8220,10 +8218,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.96
       objectReference: {fileID: 0}
-    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -8240,6 +8238,11 @@ PrefabInstance:
       propertyPath: NextRoom
       value: 
       objectReference: {fileID: 527915439}
+    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974145, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Size.x
@@ -8902,6 +8905,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 10
   RoomWeight: 12
+  WaitTimebeforeSpawn: 0
 --- !u!4 &527915441
 Transform:
   m_ObjectHideFlags: 0
@@ -9313,11 +9317,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9388,10 +9387,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.96
       objectReference: {fileID: 0}
-    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -9408,6 +9407,11 @@ PrefabInstance:
       propertyPath: NextRoom
       value: 
       objectReference: {fileID: 794012977}
+    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974145, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Size.x
@@ -11394,6 +11398,7 @@ MonoBehaviour:
   SpawnInterval: 4
   HealthPickupSpawnInterval: 6
   RoomWeight: 12
+  WaitTimebeforeSpawn: 0
 --- !u!4 &711361594
 Transform:
   m_ObjectHideFlags: 0
@@ -12807,6 +12812,7 @@ MonoBehaviour:
   SpawnInterval: 3
   HealthPickupSpawnInterval: 10
   RoomWeight: 5
+  WaitTimebeforeSpawn: 0
 --- !u!1 &795448187
 GameObject:
   m_ObjectHideFlags: 0
@@ -15134,6 +15140,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &925285592
 Transform:
   m_ObjectHideFlags: 0
@@ -16191,11 +16198,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnToHall
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16266,10 +16268,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.96
       objectReference: {fileID: 0}
-    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -16286,6 +16288,11 @@ PrefabInstance:
       propertyPath: NextRoom
       value: 
       objectReference: {fileID: 76830864}
+    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974145, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Size.x
@@ -17626,6 +17633,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1063618011
 Transform:
   m_ObjectHideFlags: 0
@@ -20113,6 +20121,7 @@ MonoBehaviour:
   SpawnInterval: 2
   HealthPickupSpawnInterval: 6
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1182350422
 Transform:
   m_ObjectHideFlags: 0
@@ -21718,11 +21727,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21793,10 +21797,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2965047
       objectReference: {fileID: 0}
-    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -21813,6 +21817,11 @@ PrefabInstance:
       propertyPath: NextRoom
       value: 
       objectReference: {fileID: 711361592}
+    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974145, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Size.x
@@ -24416,6 +24425,7 @@ MonoBehaviour:
   SpawnInterval: 4
   HealthPickupSpawnInterval: 6
   RoomWeight: 0
+  WaitTimebeforeSpawn: 0
 --- !u!4 &1420313249
 Transform:
   m_ObjectHideFlags: 0
@@ -25520,6 +25530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3521601335492636123, guid: a92154e9c94d6b1448942aefe3164430,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3521601335492636121, guid: a92154e9c94d6b1448942aefe3164430,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25573,6 +25588,16 @@ PrefabInstance:
     - target: {fileID: 3521601335492636121, guid: a92154e9c94d6b1448942aefe3164430,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521601335492636127, guid: a92154e9c94d6b1448942aefe3164430,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521601335492636127, guid: a92154e9c94d6b1448942aefe3164430,
+        type: 3}
+      propertyPath: m_Volume
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -26558,11 +26583,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26633,10 +26653,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.96
       objectReference: {fileID: 0}
-    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -26652,6 +26672,11 @@ PrefabInstance:
         type: 3}
       propertyPath: NextRoom
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974145, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -28037,11 +28062,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28112,10 +28132,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.96
       objectReference: {fileID: 0}
-    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -28132,6 +28152,11 @@ PrefabInstance:
       propertyPath: NextRoom
       value: 
       objectReference: {fileID: 134872171}
+    - target: {fileID: 5829829412891358227, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974145, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Size.x
@@ -33632,17 +33657,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1688252639497542413, guid: 1e3d26722aa8fca47b098468764cc4d2,
+    - target: {fileID: 3850418763632143781, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426883596563747579, guid: 1e3d26722aa8fca47b098468764cc4d2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8836112748623587295, guid: 1e3d26722aa8fca47b098468764cc4d2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688252639497542413, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -33652,10 +33677,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3850418765079796296, guid: 1e3d26722aa8fca47b098468764cc4d2,
+    - target: {fileID: 4426883596563747579, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -7
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2611951099908008968, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}
@@ -33687,10 +33712,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3850418763632143781, guid: 1e3d26722aa8fca47b098468764cc4d2,
+    - target: {fileID: 3850418765079796296, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_AnchoredPosition.x
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 9050856895967749554, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}

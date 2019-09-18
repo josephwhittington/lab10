@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class SoundMenuSliderScript : MonoBehaviour
+public class SoundMenuSliderScript : IPausable
 {
     [SerializeField] private Slider SFXSlider = null, MusicSlider = null;
 
@@ -18,7 +18,8 @@ public class SoundMenuSliderScript : MonoBehaviour
         PlayerPrefs.SetFloat(GlobalConfigs.SFXVolume, SFXSlider.value);
         PlayerPrefs.Save();
 
-        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayCoinPickup();
+        if(GamePaused)
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayCoinPickup();
     }
 
     public void UpdateMusic()

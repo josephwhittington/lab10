@@ -30,6 +30,10 @@ public class BoomerEnemy : IPausable
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
         rend = ForceField.GetComponent<Renderer>();
+
+        if (GetComponent<AudioSource>())
+            GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
+                .GetComponent<AudioManager>().SFXVolume;
     }
 
     // Update is called once per frame

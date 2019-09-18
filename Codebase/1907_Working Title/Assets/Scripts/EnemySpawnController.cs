@@ -60,10 +60,10 @@ public class EnemySpawnController : IPausable
     {
         if (!GamePaused)
         {
+            CheckIfRoomClear();
+
             if (ShouldSpawn && WaitTimebeforeSpawn > 0)
                 WaitTimebeforeSpawn -= Time.deltaTime;
-
-            CheckIfRoomClear();
 
             if (!RoomClear && ShouldSpawn && WaitTimebeforeSpawn <= 0)
             {
@@ -73,9 +73,9 @@ public class EnemySpawnController : IPausable
                 if (timer >= SpawnInterval)
                 {
                     timer = 0;
+
                     if (!GameState.GamePaused)
                     {
-                        enemyspawntimer = SpawnInterval;
                         SetSpawn();
                         SetSpawn();
                     }
@@ -97,7 +97,7 @@ public class EnemySpawnController : IPausable
 
     void CheckIfRoomClear()
     {
-        if (RoomWeight <= 0)
+        if ((RoomWeight <= 0 || RoomWeight > RoomStartWeight) && (int)timer == -1)
         {
             int NumberOfEnemies = 0;
 
@@ -109,6 +109,8 @@ public class EnemySpawnController : IPausable
                 NumberOfEnemies +=  GameObject.FindGameObjectsWithTag("Boomer").Length;
             if (GameObject.FindGameObjectsWithTag("Sniper").Length > 0)
                 NumberOfEnemies += GameObject.FindGameObjectsWithTag("Sniper").Length;
+            if (GameObject.FindGameObjectsWithTag("CoinThief").Length > 0)
+                NumberOfEnemies += GameObject.FindGameObjectsWithTag("CoinThief").Length;
 
             if (NumberOfEnemies <= 0)
                 RoomClear = true;
@@ -230,6 +232,11 @@ public class EnemySpawnController : IPausable
             Instantiate<GameObject>(enemy[enemy.Count - 1], enemylocation[enemy.Count -1], transform.rotation);
             enemy.RemoveAt(enemy.Count - 1);
             enemylocation.RemoveAt(enemylocation.Count - 1);
+        }
+
+        if (RoomWeight == 0 || RoomWeight > RoomStartWeight)
+        {
+            timer = -1;
         }
     }
 

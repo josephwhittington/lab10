@@ -258,6 +258,8 @@ public class PlayerController : IPausable
                 ShootSpeedTimer = 0;
 
                 gameObject.GetComponentInChildren<IGunBase>().Shoot(SpawnPoint1, SpawnPoint2, SpawnPoint3);
+                gameObject.GetComponentInChildren<IGunBase>().GetComponent<AudioSource>().volume = GameObject
+                    .FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().SFXVolume;
                 gameObject.GetComponentInChildren<IGunBase>().GetComponent<AudioSource>().Play();
             }
         }

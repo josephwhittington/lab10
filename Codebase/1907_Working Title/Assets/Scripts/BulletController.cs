@@ -46,10 +46,22 @@ public class BulletController : IPausable
         //_RigidBody.angularVelocity = Vector3.zero;
         _RigidBody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         // Richochet
+
+        // Set volumes
+        if (GetComponent<AudioSource>())
+            GetComponent<AudioSource>().volume =
+                GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().SFXVolume;
+        // Set volumes
     }
 
     void update()
     {
+        // Set volumes
+        if(GetComponent<AudioSource>())
+            GetComponent<AudioSource>().volume =
+                GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().SFXVolume;
+        // Set volumes
+
         if (transform.position == LastPosition)
             Destroy(gameObject);
         else LastPosition = transform.position;

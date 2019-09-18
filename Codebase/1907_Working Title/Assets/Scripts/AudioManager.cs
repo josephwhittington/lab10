@@ -77,4 +77,9 @@ public class AudioManager : MonoBehaviour
     {
         GetComponents<AudioSource>()[8].Play();
     }
+
+    public void PlayEnemyPew()
+    {
+        GetComponents<AudioSource>()[9].Play();
+    }
 }
