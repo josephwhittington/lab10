@@ -59,6 +59,11 @@ public class BoomerEnemy : IPausable
         if (HitPoints - p_damage <= 0 || HitPoints > MaxHP)
         {
            Suicide();
+
+            //alex kill counter
+            KillCounter.instance.IncrementCount();
+            KillCounter.instance.UpdateCounter();
+
             for (int i = 0; i < 3; i++)
             {
                 Instantiate<GameObject>(littlefucks, transform.position, transform.rotation);

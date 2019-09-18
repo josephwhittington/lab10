@@ -66,6 +66,10 @@ public class EnemyCoinThief : IPausable
         if (HitPoints - p_damage <= 0)
         {
             Suicide();
+            //alex kill counter
+            KillCounter.instance.IncrementCount();
+            KillCounter.instance.UpdateCounter();
+
             Instantiate<GameObject>(DeathEffect, transform.position, transform.rotation);
         }
 

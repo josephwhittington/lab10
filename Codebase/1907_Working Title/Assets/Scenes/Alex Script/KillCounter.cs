@@ -1,20 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 
 public class KillCounter : MonoBehaviour
 {
     public static KillCounter instance;
-    [SerializeField] TextMeshProUGUI killcounter = null;
-    [SerializeField] GameObject SpecialMove;
-    [SerializeField] Transform player;
-    public int count;
+    [SerializeField] Text  killcounter = null;
+    //[SerializeField] GameObject SpecialMove;
+    //[SerializeField] Transform player;
+
+    private int count = 0;
+   
+
+    //private int _count;
+
+    public int GetCount()
+    {
+        return count;
+    }
+
+
+    public void IncrementCount()
+    {
+        count++;
+    }
+
+    public void SetCount()
+    {
+        count = 0;
+    }
+
 
     void Start()
     {
-        player = GetComponent<Transform>();
+        //player = GetComponent<Transform>();
     }
 
     private void Awake()
@@ -35,17 +56,15 @@ public class KillCounter : MonoBehaviour
     {
         killcounter.text = count.ToString();
 
-        if (count == 2)
-        {
-#if DEBUG
-            Debug.Log("SpeCialMOVESSSSSS BITCHHHH");
-#endif
-            //Instantiate<GameObject>(SpecialMove, player.transform.position, player.transform.rotation);
+        //if (count == 2)
+        //{
+        //    Debug.Log("SpeCialMOVESSSSSS BITCHHHH");
+        //    //Instantiate<GameObject>(SpecialMove, player.transform.position, player.transform.rotation);
 
-            //inside the effect make a check, that has a nav mesh agent and for all tags found with enemy
-            //destroy those game objects
-            //sick moves bro
-        }
+        //    //inside the effect make a check, that has a nav mesh agent and for all tags found with enemy
+        //    //destroy those game objects
+        //    //sick moves bro
+        //}
     }
 
     //void CheckKillStreak()

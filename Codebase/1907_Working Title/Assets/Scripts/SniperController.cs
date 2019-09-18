@@ -101,6 +101,11 @@ public class SniperController : IPausable
         {
             Suicide();
 
+            //alex kill counter
+            KillCounter.instance.IncrementCount();
+            KillCounter.instance.UpdateCounter();
+
+
             //After destroying enemy make him drop a coin this will follow to the player//
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayEnemyDeathSound();
             Instantiate<GameObject>(DeathEffect, transform.position, transform.rotation);

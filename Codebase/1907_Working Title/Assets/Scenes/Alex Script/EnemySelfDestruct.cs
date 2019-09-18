@@ -116,6 +116,11 @@ public class EnemySelfDestruct : IPausable
         if (HitPoints - (int)p_damage <= 0)
         {
             Suicide();
+
+            //alex kill counter
+            KillCounter.instance.IncrementCount();
+            KillCounter.instance.UpdateCounter();
+
             Instantiate<GameObject>(Explosion, transform.position, transform.rotation);
         }
         else

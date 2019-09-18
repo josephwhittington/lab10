@@ -17,10 +17,10 @@ public class GunPeaShooter : IGunBase
     {
         switch (PlayerStats.MultiShot)
         {
-            case 1:
+            case 0:
                 Instantiate<GameObject>(BulletPrefab, sp1.transform.position, sp1.transform.rotation);
                 break;
-            case 2:
+            case 1:
                 Instantiate<GameObject>(BulletPrefab, sp1.transform.position, sp1.transform.rotation);
                 Instantiate<GameObject>(BulletPrefab, sp2.transform.position, sp2.transform.rotation);
                 Instantiate<GameObject>(BulletPrefab, sp3.transform.position, sp3.transform.rotation);
