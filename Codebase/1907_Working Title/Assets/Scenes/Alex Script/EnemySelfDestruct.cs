@@ -118,7 +118,7 @@ public class EnemySelfDestruct : IPausable
             Suicide();
 
             //alex kill counter
-            KillCounter.instance.count++;
+            KillCounter.instance.IncrementCount();
             KillCounter.instance.UpdateCounter();
 
             Instantiate<GameObject>(Explosion, transform.position, transform.rotation);

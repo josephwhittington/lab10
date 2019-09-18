@@ -102,7 +102,7 @@ public class SniperController : IPausable
             Suicide();
 
             //alex kill counter
-            KillCounter.instance.count++;
+            KillCounter.instance.IncrementCount();
             KillCounter.instance.UpdateCounter();
 
 

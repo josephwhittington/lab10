@@ -67,7 +67,7 @@ public class EnemyCoinThief : IPausable
         {
             Suicide();
             //alex kill counter
-            KillCounter.instance.count++;
+            KillCounter.instance.IncrementCount();
             KillCounter.instance.UpdateCounter();
 
             Instantiate<GameObject>(DeathEffect, transform.position, transform.rotation);

@@ -8,13 +8,34 @@ public class KillCounter : MonoBehaviour
 {
     public static KillCounter instance;
     [SerializeField] Text  killcounter = null;
-    [SerializeField] GameObject SpecialMove;
-    [SerializeField] Transform player;
-    public int count;
+    //[SerializeField] GameObject SpecialMove;
+    //[SerializeField] Transform player;
+
+    private int count = 0;
+   
+
+    //private int _count;
+
+    public int GetCount()
+    {
+        return count;
+    }
+
+
+    public void IncrementCount()
+    {
+        count++;
+    }
+
+    public void SetCount()
+    {
+        count = 0;
+    }
+
 
     void Start()
     {
-        player = GetComponent<Transform>();
+        //player = GetComponent<Transform>();
     }
 
     private void Awake()

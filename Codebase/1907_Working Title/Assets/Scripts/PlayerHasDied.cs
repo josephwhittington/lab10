@@ -56,7 +56,7 @@ public class PlayerHasDied : MonoBehaviour
         PlayerStats.PlayerDead = false;
 
         //alex killcount
-        KillCounter.instance.count = 0;
+        KillCounter.instance.SetCount();
         KillCounter.instance.UpdateCounter();
         //alex killcount
     }

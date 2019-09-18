@@ -61,7 +61,7 @@ public class BoomerEnemy : IPausable
            Suicide();
 
             //alex kill counter
-            KillCounter.instance.count++;
+            KillCounter.instance.IncrementCount();
             KillCounter.instance.UpdateCounter();
 
             for (int i = 0; i < 3; i++)
