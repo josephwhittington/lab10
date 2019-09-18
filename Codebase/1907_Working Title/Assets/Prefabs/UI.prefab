@@ -8576,7 +8576,7 @@ GameObject:
   - component: {fileID: 3003226282639697095}
   - component: {fileID: 8304671704829747663}
   - component: {fileID: 1956443237164932221}
-  - component: {fileID: 6749383003229397367}
+  - component: {fileID: 1620196125741348483}
   m_Layer: 5
   m_Name: Fill Health
   m_TagString: Untagged
@@ -8698,7 +8698,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &6749383003229397367
+--- !u!114 &1620196125741348483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8707,11 +8707,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6694029888148957326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14906c6e8ac8b443bee30ed550f6c00, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f3ec4194ac1b16489f4fdc80fc5aed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpgradeName: 4
-  UpgradeButton: {fileID: 1956443237164932221}
+  fillHP: {fileID: 1956443237164932221}
 --- !u!1 &6766608805937608023
 GameObject:
   m_ObjectHideFlags: 0
