@@ -24156,7 +24156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
     type: 3}
-  DoorGuards: []
+  DoorGuards:
+  - {fileID: 755176802}
   roomName: Room1
   DoorLights:
   - {fileID: 1841260407}
