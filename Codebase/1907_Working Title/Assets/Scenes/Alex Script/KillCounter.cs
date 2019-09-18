@@ -37,7 +37,9 @@ public class KillCounter : MonoBehaviour
 
         if (count == 2)
         {
+#if DEBUG
             Debug.Log("SpeCialMOVESSSSSS BITCHHHH");
+#endif
             //Instantiate<GameObject>(SpecialMove, player.transform.position, player.transform.rotation);
 
             //inside the effect make a check, that has a nav mesh agent and for all tags found with enemy

@@ -30,6 +30,10 @@ public class EnemySpawnController : IPausable
     bool RoomClear = false;
     bool RoomClearTriggered = false;
 
+    // Random Number Generation
+    System.Random rand = new System.Random();
+    // Random Number Generation
+
     private float timer = 0;
     private uint RoomStartWeight = 0;
     int lastspawn = -1;
@@ -179,7 +183,6 @@ public class EnemySpawnController : IPausable
 
     void SetSpawn()
     {
-        System.Random rand = new System.Random();
         int spawnIndex = rand.Next(Enemies.Length);
         int count = 0;
 
@@ -213,7 +216,9 @@ public class EnemySpawnController : IPausable
             // Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
             // Spawn Enemy
             if(!Enemies[spawnIndex])
+#if DEBUG
                 Debug.Log("Thing broke");
+#endif
             else
                 enemy.Add(Enemies[spawnIndex]);
 
@@ -226,7 +231,7 @@ public class EnemySpawnController : IPausable
 
     private void SpawnEnemy()
     {
-        if (enemy.Count > 0 && enemylocation.Count > 0 && enemy.Count == enemylocation.Count)
+        if (enemy.Count > 0 && enemylocation.Count > 0 && enemy.Count == enemylocation.Count && (RoomWeight > 0 && RoomWeight <= RoomStartWeight))
         {
             Instantiate<GameObject>(enemy[enemy.Count - 1], enemylocation[enemy.Count -1], transform.rotation);
             RoomWeight -= EnemySpawnWeights[EnemySpawnWeights.Count - 1];

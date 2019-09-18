@@ -43,7 +43,9 @@ namespace Cinemachine
         void ConnectToVcam()
         {
             if (VirtualCamera == null)
+#if DEBUG
                 Debug.LogError("CinemachineExtension requires a Cinemachine Virtual Camera component");
+#endif
             else
                 VirtualCamera.AddPostPipelineStageHook(PostPipelineStageCallback);
             mExtraState = null;

@@ -25,7 +25,6 @@ public class PauseScript : MonoBehaviour
     private void PlayButtonOnClick()
     {
         PlayMenuSelectSound();
-        //Debug.Log("Play Button Clicked");
         IsPaused = !IsPaused;
         PauseMenu.gameObject.SetActive(IsPaused);
 
@@ -51,7 +50,6 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 1;
         PlayMenuSelectSound();
         PlayerPrefs.SetInt("StoreVisited", 1);
-        //Debug.Log("Closing Application");
         SceneManager.LoadScene(0);
     }
 

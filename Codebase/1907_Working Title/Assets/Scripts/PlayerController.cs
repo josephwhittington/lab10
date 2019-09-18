@@ -9,7 +9,6 @@ public class PlayerController : IPausable
     [SerializeField] float speed = 6.0f;
     [SerializeField] GameObject healEffect;
     [SerializeField] GameObject HealEffectSpawnPoint;
-   
 
     // Shooting
     private float ShootSpeedTimer = 0;
@@ -189,7 +188,9 @@ public class PlayerController : IPausable
     void ToggleGodMode()
     {
         GodMode = !GodMode;
+#if DEBUG
         Debug.Log(GodMode ? "Godmode enabled" : "Godmode Disabled");
+#endif
     }
 
     void DashFunction()

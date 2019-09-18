@@ -498,7 +498,7 @@ PrefabInstance:
     - target: {fileID: 3850418763632143781, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5328307361892698329, guid: 1e3d26722aa8fca47b098468764cc4d2,
         type: 3}
@@ -25038,8 +25038,7 @@ MonoBehaviour:
   DoorGuards:
   - {fileID: 1932972871}
   roomName: Room2
-  DoorLights:
-  - {fileID: 1032375588}
+  DoorLights: []
   SpawnPoints:
   - {fileID: 6915536832318056861}
   - {fileID: 782109838}

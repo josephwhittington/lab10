@@ -28,7 +28,6 @@ public class FollowingCoin : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //Debug.Log("ding");
             Destroy(gameObject);
             PlayerStats.Coins += 1;
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayCoinPickup();

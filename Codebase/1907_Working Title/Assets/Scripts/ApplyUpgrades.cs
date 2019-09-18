@@ -25,7 +25,9 @@ public class ApplyUpgrades : MonoBehaviour
             if (PlayerStats.ApplyUpgrade(UpgradeName))
             {
                 if((int)UpgradeName == 1)
+#if DEBUG
                     Debug.Log("Pu works");
+#endif
                 PlayerPrefs.Save();
                 PlayerStats.Coins -= UpgradeCost;
             }
