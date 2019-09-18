@@ -15,6 +15,8 @@ public class ItemPickupScript : MonoBehaviour
         {
             Triggered = true;
             GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
+                .GetComponent<AudioManager>().SFXVolume;
             GetComponent<AudioSource>().Play();
             Destroy(gameObject, 4);
         }

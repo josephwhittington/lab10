@@ -5,8 +5,13 @@ using UnityEngine;
 public class DestructibleItem : MonoBehaviour
 {
     [SerializeField] private int HP = 25;
+
+
     [SerializeField] private bool DestroyOtherObjectOnCollision = false;
     [SerializeField] private GameObject thingtpdestroy = null;
+
+    [SerializeField] private bool EnableObjectOnDestroy = false;
+    [SerializeField] private GameObject ThingToEnable = null;
 
     private int maxhp = 0;
 
@@ -14,6 +19,9 @@ public class DestructibleItem : MonoBehaviour
     void Start()
     {
         maxhp = HP;
+
+        if(EnableObjectOnDestroy && ThingToEnable)
+            ThingToEnable.gameObject.SetActive(false);
     }
 
     void OnCollisionEnter(Collision other)
@@ -30,11 +38,16 @@ public class DestructibleItem : MonoBehaviour
 
             if (DestroyOtherObjectOnCollision)
             {
-                Debug.Log("Hit ");
                 thingtpdestroy.GetComponent<LightningWall>().Disable();
                 HP = maxhp;
             }
-            else Destroy(gameObject);
+            else
+            {
+                if(EnableObjectOnDestroy && ThingToEnable)
+                    ThingToEnable.gameObject.SetActive(true);
+
+                Destroy(gameObject);
+            }
         }
     }
 
