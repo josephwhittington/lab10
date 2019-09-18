@@ -66,7 +66,9 @@ namespace Cinemachine
                 case 6: return m_Weight6;
                 case 7: return m_Weight7;
             }
+#if DEBUG
             Debug.LogError("CinemachineMixingCamera: Invalid index: " + index);
+#endif
             return 0;
         }
 
@@ -87,7 +89,9 @@ namespace Cinemachine
                 case 6: m_Weight6 = w; return;
                 case 7: m_Weight7 = w; return;
             }
+#if DEBUG
             Debug.LogError("CinemachineMixingCamera: Invalid index: " + index);
+#endif
         }
 
         /// <summary>Get the weight of the child CinemachineVirtualCameraBase.</summary>
@@ -98,8 +102,10 @@ namespace Cinemachine
             int index;
             if (m_indexMap.TryGetValue(vcam, out index))
                 return GetWeight(index);
+#if DEBUG
             Debug.LogError("CinemachineMixingCamera: Invalid child: " 
                 + ((vcam != null) ? vcam.Name : "(null)"));
+#endif
             return 0;
         }
 
@@ -112,8 +118,10 @@ namespace Cinemachine
             if (m_indexMap.TryGetValue(vcam, out index))
                 SetWeight(index, w);
             else
-                Debug.LogError("CinemachineMixingCamera: Invalid child: " 
-                    + ((vcam != null) ? vcam.Name : "(null)"));
+#if DEBUG
+                Debug.LogError("CinemachineMixingCamera: Invalid child: "
+                               + ((vcam != null) ? vcam.Name : "(null)"));
+#endif
         }
 
         /// <summary>Blended camera state</summary>

@@ -69,12 +69,12 @@ public class EnemySelfDestruct : IPausable
         //Vector2 gameobj_location = new Vector2(transform.position.x, transform.position.z);
         //float distanceToTarget = Mathf.Abs(Vector2.Distance(player_location, gameobj_location));
         // Whittington
-
+#if DEBUG
         //Debug.Log("Distance:" + distanceToTarget);
+#endif
 
         //if (distanceToTarget <= destinationReachedTreshold)
         //{
-        //    Debug.Log("Im Here");
         //    Suicide();
         //    Instantiate<GameObject>(Explosion, transform.position, transform.rotation);
         //}
@@ -116,6 +116,11 @@ public class EnemySelfDestruct : IPausable
         if (HitPoints - (int)p_damage <= 0)
         {
             Suicide();
+
+            //alex kill counter
+            KillCounter.instance.count++;
+            KillCounter.instance.UpdateCounter();
+
             Instantiate<GameObject>(Explosion, transform.position, transform.rotation);
         }
         else
