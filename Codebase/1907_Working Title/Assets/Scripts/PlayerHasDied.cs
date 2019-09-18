@@ -39,7 +39,7 @@ public class PlayerHasDied : MonoBehaviour
         PlayMenuSelectSound();
         DeathScreen.enabled = false;
         RestartStats();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void PlayMenuSelectSound()
     {
@@ -48,11 +48,8 @@ public class PlayerHasDied : MonoBehaviour
 
     void RestartStats()
     {
-
+        PlayerStats.LoadPlayerPrefs();
         PlayerPrefs.SetInt("CurrentHealth", (int)PlayerStats.MaxHitPoints);
-
-        PlayerStats.CurrentHealth = PlayerStats.MaxHitPoints;
-        PlayerStats.Coins = 0;
         PlayerStats.PlayerDead = false;
 
         //alex killcount
