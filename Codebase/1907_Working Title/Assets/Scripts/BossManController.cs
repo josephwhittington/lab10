@@ -5,7 +5,7 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class BossManController : MonoBehaviour
+public class BossManController : IPausable
 {
     enum BossState
     {
@@ -14,6 +14,8 @@ public class BossManController : MonoBehaviour
     }
 
     private BossState State = BossState.PHASE1Vulnerable;
+
+    [SerializeField] private GameObject MeshThing = null;
 
     [SerializeField] private GameObject EnvObjects = null;
     [SerializeField] private GameObject WinScreen = null;
@@ -63,43 +65,46 @@ public class BossManController : MonoBehaviour
         target = Quaternion.AngleAxis(180.0f, Vector3.up);
         agent = GetComponent<NavMeshAgent>();
 
-        mesh = GetComponent<MeshRenderer>();
+        mesh = MeshThing.GetComponent<MeshRenderer>();
         mesh.enabled = false;
     }
 
     void Update()
     {
-        BossManHealth.fillAmount = (float)((float)Health / (float)maxheath);
-
-        if (Health <= 0)
-            Suicide();
-        if ((Health <= ((float)maxheath * 0.6f)) && !phase2)
+        if (!GamePaused)
         {
-            phase2 = true;
+            BossManHealth.fillAmount = (float)((float)Health / (float)maxheath);
 
-            EnvObjects.gameObject.GetComponent<LightningWallsController>().EnableEnvEffects();
-        }
-
-        if (Health <= (maxheath * 0.3f))
-        {
-            EnvObjects.gameObject.GetComponent<LightningWallsController>().StartPhase3();
-        }
-
-        TimeElapsedSinceLastShot += Time.deltaTime;
-
-        if (TimeElapsedSinceLastShot >= ShotInterval)
-        {
-            shotcount++;
-            for (int i = 0; i < BulletSpawnPoints.Length; i++)
+            if (Health <= 0)
+                Suicide();
+            if ((Health <= ((float)maxheath * 0.6f)) && !phase2)
             {
-                Shoot(BulletSpawnPoints[i]);
+                phase2 = true;
+
+                EnvObjects.gameObject.GetComponent<LightningWallsController>().EnableEnvEffects();
             }
 
-            if (shotcount == 4) shotcount = 0;
+            if (Health <= (maxheath * 0.3f))
+            {
+                EnvObjects.gameObject.GetComponent<LightningWallsController>().StartPhase3();
+            }
 
-            TimeElapsedSinceLastShot = 0.0f;
+            TimeElapsedSinceLastShot += Time.deltaTime;
+
+            if (TimeElapsedSinceLastShot >= ShotInterval)
+            {
+                shotcount++;
+                for (int i = 0; i < BulletSpawnPoints.Length; i++)
+                {
+                    Shoot(BulletSpawnPoints[i]);
+                }
+
+                if (shotcount == 4) shotcount = 0;
+
+                TimeElapsedSinceLastShot = 0.0f;
+            }
+            Rotate();
         }
-        Rotate();
     }
 
     void Rotate()
@@ -188,6 +193,8 @@ public class BossManController : MonoBehaviour
 
     void Shoot(GameObject p_spawnPoint)
     {
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayEnemyPew();
+
         if (BulletPrefab && shotcount < 4)
         {
             Instantiate<GameObject>(BulletPrefab, p_spawnPoint.transform.position, p_spawnPoint.transform.rotation);

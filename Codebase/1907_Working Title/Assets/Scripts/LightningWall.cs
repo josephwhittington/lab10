@@ -8,6 +8,7 @@ public class LightningWall : MonoBehaviour
     [SerializeField] private GameObject[] HealthSpawnPoints = null;
     [SerializeField] private GameObject HealthPickup = null;
     private float tickDamageTimer = 0.0f;
+
     public void OnTriggerStay(Collider other)
     {
         tickDamageTimer += Time.deltaTime;

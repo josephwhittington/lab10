@@ -26,9 +26,6 @@ public class DoorController : MonoBehaviour
             other.gameObject.SetActive(false);
             other.gameObject.transform.position = SpawnPosition.transform.position;
             other.gameObject.SetActive(true);
-            //MoveCamera();
-            //NextRoom.SetActive(true);
-            //gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
 
