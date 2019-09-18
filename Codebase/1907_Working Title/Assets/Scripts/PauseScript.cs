@@ -94,6 +94,11 @@ public class PauseScript : MonoBehaviour
             PauseMenu.gameObject.SetActive(IsPaused);
 
             TriggerEvent();
+
+            // If the pause menu is active - disable that shit
+
+            if (SoundMenu.isActiveAndEnabled)
+                SoundMenu.gameObject.SetActive(false);
         }
     }
 }

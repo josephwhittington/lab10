@@ -24585,11 +24585,11 @@ MonoBehaviour:
   - {fileID: 1674391605}
   - {fileID: 1674391605}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   EnemyWeights: 010000000200000003000000030000000100000004000000
   SpawnInterval: 2
@@ -26707,11 +26707,11 @@ MonoBehaviour:
   - {fileID: 369105003}
   - {fileID: 1998026956}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   EnemyWeights: 010000000200000003000000030000000100000004000000
   SpawnInterval: 2
@@ -27070,11 +27070,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27143,6 +27138,11 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -27421,11 +27421,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27495,6 +27490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -32634,11 +32634,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32708,6 +32703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -33841,11 +33841,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33915,6 +33910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -34985,17 +34985,17 @@ MonoBehaviour:
   - {fileID: 606038568}
   - {fileID: 1477919491}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   EnemyWeights: 010000000200000003000000030000000100000004000000
-  SpawnInterval: 6
-  HealthPickupSpawnInterval: 6
+  SpawnInterval: 2
+  HealthPickupSpawnInterval: 2
   RoomWeight: 30
-  WaitTimebeforeSpawn: 0
+  WaitTimebeforeSpawn: 6
 --- !u!1001 &794890629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37225,11 +37225,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37294,6 +37289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.40000045
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -39210,11 +39210,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39283,6 +39278,11 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -45166,11 +45166,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45239,6 +45234,11 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -49945,11 +49945,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50018,6 +50013,11 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -56009,9 +56009,9 @@ MonoBehaviour:
   - {fileID: 2017506142}
   - {fileID: 890309090}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
   - {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
@@ -63043,11 +63043,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63116,6 +63111,11 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -73677,11 +73677,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73750,6 +73745,11 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -75924,11 +75924,11 @@ MonoBehaviour:
   - {fileID: 2015839096}
   - {fileID: 1103948325}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   EnemyWeights: 010000000200000003000000030000000100000004000000
   SpawnInterval: 2
@@ -79736,11 +79736,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -79810,6 +79805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
@@ -83013,11 +83013,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBase
       objectReference: {fileID: 0}
-    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -83086,6 +83081,11 @@ PrefabInstance:
     - target: {fileID: 5768514398615434991, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766716561267074401, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5766552642364974144, guid: 3a02be799cb7b5841801b772a96f2936,
@@ -84649,11 +84649,11 @@ MonoBehaviour:
   - {fileID: 941703266}
   - {fileID: 1189274532}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   EnemyWeights: 010000000200000003000000030000000500000001000000
   SpawnInterval: 2
@@ -94550,11 +94550,11 @@ MonoBehaviour:
   - {fileID: 1198350470}
   - {fileID: 1179374148}
   Enemies:
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
-  - {fileID: 1115178621210527503, guid: f0c518ed6ae86b24b868da7427e0dba1, type: 3}
-  - {fileID: 1489110510071579459, guid: 8c5799ba95c9fd74c9962391cea311a7, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
+  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
   - {fileID: 1489110510071579459, guid: d6999f2238774af43b056ee9acb34f1f, type: 3}
-  - {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   EnemyWeights: 010000000200000003000000030000000100000004000000
   SpawnInterval: 2
