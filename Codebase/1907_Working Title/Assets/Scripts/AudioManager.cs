@@ -59,7 +59,6 @@ public class AudioManager : MonoBehaviour
 
     public void PlayEnemyBoomerDeathSound()
     {
-        //Debug.Log("Bruh");
         GetComponents<AudioSource>()[5].Play();
     }
 

@@ -19,7 +19,9 @@ public class SantaController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Projectile"))
         {
+#if DEBUG
             Debug.Log("Hit");
+#endif
             Health -= 1;
 
             Instantiate<GameObject>(CoinPrefab, CoinSpawnLocation.transform.position,

@@ -43,6 +43,8 @@ public class EventOnlyRoomController : MonoBehaviour
 
     public void ClearRoom()
     {
+#if DEBUG
         Debug.Log("Start room cleared");
+#endif
     }
 }

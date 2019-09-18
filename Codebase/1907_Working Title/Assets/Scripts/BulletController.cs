@@ -76,11 +76,6 @@ public class BulletController : IPausable
     {
         if (!IsColliding)
         {
-            if (!PlayerBullet)
-            {
-                //Debug.Log(collision.gameObject.name);
-
-            }
             Vector2 directionVector = Vector2.Reflect(new Vector2(_RigidBody.velocity.normalized.x, _RigidBody.velocity.normalized.z), new Vector2(collision.contacts[0].normal.normalized.x, collision.contacts[0].normal.normalized.z)).normalized;
             _RigidBody.velocity = (new Vector3(directionVector.x, 0, directionVector.y)).normalized * Speed;
             transform.forward = _RigidBody.velocity.normalized;
@@ -109,7 +104,6 @@ public class BulletController : IPausable
             }
             else if (collision.gameObject.CompareTag("CoinThief"))
             {
-                Debug.Log("Hit");
                 collision.gameObject.GetComponent<EnemyCoinThief>().DealDamage(Damage + PlayerStats.DamageUpgrade);
             }
 
