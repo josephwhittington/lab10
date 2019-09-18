@@ -41,7 +41,7 @@ public class EnemySpawnController : IPausable
     // Enemy spawn timer
     [SerializeField] private float WaitTimebeforeSpawn = 0.0f;
 
-    private float enemyspawntimer = 0;
+    //private float enemyspawntimer = 0;
     private List<GameObject> enemy = new List<GameObject>();
     private List<Vector3> enemylocation = new List<Vector3>();
     private List<uint> EnemySpawnWeights = new List<uint>();
