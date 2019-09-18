@@ -39,7 +39,7 @@ public class PlayerHasDied : MonoBehaviour
         PlayMenuSelectSound();
         DeathScreen.enabled = false;
         RestartStats();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void PlayMenuSelectSound()
     {
@@ -56,8 +56,8 @@ public class PlayerHasDied : MonoBehaviour
         PlayerStats.PlayerDead = false;
 
         //alex killcount
-        KillCounter.instance.count = 0;
-        KillCounter.instance.UpdateCounter();
+        //KillCounter.instance.count = 0;
+        //KillCounter.instance.UpdateCounter();
         //alex killcount
     }
 }

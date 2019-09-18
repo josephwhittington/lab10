@@ -19,7 +19,7 @@ public class SniperController : IPausable
     [SerializeField] GameObject[] SpawnPoints = null;
     [SerializeField] float ShotInterval = 0.5f;
     //[SerializeField] float ShotWaitTime = 2.0f;
-    [SerializeField] Image EnemyHealthUI = null;
+    //[SerializeField] Image EnemyHealthUI = null;
 
     //[SerializeField] uint BulletDamage = 1;
 
