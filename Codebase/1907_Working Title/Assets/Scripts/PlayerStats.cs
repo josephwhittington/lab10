@@ -22,7 +22,7 @@ public static class PlayerStats
     public static uint MAXDMG = 3;
     public static uint MAXBOUNCEY = 3;
     public static float MAXFIRERATE = 2;
-    public static uint MAXMULTISHOT = 2;
+    public static uint MAXMULTISHOT = 1;
     //Maxes
 
 
@@ -32,7 +32,7 @@ public static class PlayerStats
     public static uint DamageUpgrade = 0; //1 per level, max 3 dmg
     public static uint Bouncy = 0;
     public static float FireRate = 0; //1 per level, max 2
-    public static uint MultiShot = 1; //1 per level, max of 3, represents spawnpoints from the gun
+    public static uint MultiShot = 0; //1 per level, max of 1, represents spawnpoints from the gun
     //Uogrades
 
     //WHITTINGTON REMOVE YOU HOE \/\/\/\/
@@ -57,7 +57,7 @@ public static class PlayerStats
         DamageUpgrade = (uint)PlayerPrefs.GetInt(GlobalConfigs.DamageUpgrade, 0);
         Bouncy = (uint)PlayerPrefs.GetInt(GlobalConfigs.Bouncy, 0);
         FireRate = PlayerPrefs.GetFloat(GlobalConfigs.FireRate, 0f);
-        MultiShot = (uint)PlayerPrefs.GetInt(GlobalConfigs.MultiShot, 1);
+        MultiShot = (uint)PlayerPrefs.GetInt(GlobalConfigs.MultiShot, 0);
 
         MaxHitPoints = (uint)PlayerPrefs.GetInt("MaxHealth", 10);
         CurrentHealth = (uint)PlayerPrefs.GetInt("CurrentHealth", 10);

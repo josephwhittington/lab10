@@ -39,7 +39,7 @@ public class PlayerHasDied : MonoBehaviour
         PlayMenuSelectSound();
         DeathScreen.enabled = false;
         RestartStats();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void PlayMenuSelectSound()
     {
@@ -48,16 +48,13 @@ public class PlayerHasDied : MonoBehaviour
 
     void RestartStats()
     {
-
+        PlayerStats.LoadPlayerPrefs();
         PlayerPrefs.SetInt("CurrentHealth", (int)PlayerStats.MaxHitPoints);
-
-        PlayerStats.CurrentHealth = PlayerStats.MaxHitPoints;
-        PlayerStats.Coins = 0;
         PlayerStats.PlayerDead = false;
 
         //alex killcount
-        KillCounter.instance.count = 0;
-        KillCounter.instance.UpdateCounter();
+        //KillCounter.instance.count = 0;
+        //KillCounter.instance.UpdateCounter();
         //alex killcount
     }
 }
