@@ -76,6 +76,10 @@ public class BulletController : IPausable
     {
         if (!IsColliding)
         {
+            // Play sound
+            //GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayBulletRicochetSound();
+            // Play sound
+
             Vector2 directionVector = Vector2.Reflect(new Vector2(_RigidBody.velocity.normalized.x, _RigidBody.velocity.normalized.z), new Vector2(collision.contacts[0].normal.normalized.x, collision.contacts[0].normal.normalized.z)).normalized;
             _RigidBody.velocity = (new Vector3(directionVector.x, 0, directionVector.y)).normalized * Speed;
             transform.forward = _RigidBody.velocity.normalized;

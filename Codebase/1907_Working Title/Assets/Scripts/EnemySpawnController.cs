@@ -41,7 +41,7 @@ public class EnemySpawnController : IPausable
     // Enemy spawn timer
     [SerializeField] private float WaitTimebeforeSpawn = 0.0f;
 
-    private float enemyspawntimer = 0;
+    //private float enemyspawntimer = 0;
     private List<GameObject> enemy = new List<GameObject>();
     private List<Vector3> enemylocation = new List<Vector3>();
     private List<uint> EnemySpawnWeights = new List<uint>();
@@ -215,12 +215,16 @@ public class EnemySpawnController : IPausable
             Instantiate(SpawnEffect, SpawnPoints[spawnpointindex].transform.position, transform.rotation);
             // Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
             // Spawn Enemy
-            if(!Enemies[spawnIndex])
+            if (!Enemies[spawnIndex])
+            {
 #if DEBUG
                 Debug.Log("Thing broke");
 #endif
+            }
             else
+            {
                 enemy.Add(Enemies[spawnIndex]);
+            }
 
             enemylocation.Add(SpawnPoints[spawnpointindex].transform.position);
             EnemySpawnWeights.Add(EnemyWeights[spawnIndex]);

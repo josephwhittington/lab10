@@ -53,8 +53,11 @@ public class PlayerHasDied : MonoBehaviour
         PlayerStats.PlayerDead = false;
 
         //alex killcount
-        KillCounter.instance.SetCount();
-        KillCounter.instance.UpdateCounter();
+        if (SceneManager.GetActiveScene().name != "BossManLevel")
+        {
+            KillCounter.instance.SetCount();
+            KillCounter.instance.UpdateCounter();
+        }
         //alex killcount
     }
 }

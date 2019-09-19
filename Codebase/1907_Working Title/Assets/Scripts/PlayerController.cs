@@ -7,8 +7,8 @@ public class PlayerController : IPausable
     CharacterController characterController;
 
     [SerializeField] float speed = 6.0f;
-    [SerializeField] GameObject healEffect;
-    [SerializeField] GameObject HealEffectSpawnPoint;
+    [SerializeField] GameObject healEffect = null;
+    [SerializeField] GameObject HealEffectSpawnPoint = null;
 
     // Shooting
     private float ShootSpeedTimer = 0;
@@ -20,7 +20,7 @@ public class PlayerController : IPausable
     // God mode
 
     // Alex's Dash
-    private Rigidbody rb;
+    private Rigidbody rb = null;
     private bool dashing = false;
     private bool DashCoolDown = false;
 
@@ -30,14 +30,14 @@ public class PlayerController : IPausable
     [SerializeField] GameObject Dash = null;
     [SerializeField] GameObject DashParticle = null;
 
-    TrailRenderer trailRend;
+    TrailRenderer trailRend = null;
     // Alex's Dash
 
     //Alex Hit effect
-    SkinnedMeshRenderer meshRenderer;
-    public GameObject model;
-    public Texture normTexture;
-    public Texture tempTexture;
+    SkinnedMeshRenderer meshRenderer = null;
+    public GameObject model = null;
+    public Texture normTexture = null;
+    public Texture tempTexture = null;
   
 
     private float HitColorCoolDown = 0.25f;
@@ -75,7 +75,6 @@ public class PlayerController : IPausable
 
     void Start()
     {
-        
         tempDash = DashSpeed;
         tempSpeed = speed;
         // Player Y correction
@@ -116,7 +115,6 @@ public class PlayerController : IPausable
             }
         }
         //Will's Check for Slowing projectile
-
     }
 
     private void OnTriggerEnter(Collider other)

@@ -25566,11 +25566,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3521601335492636123, guid: a92154e9c94d6b1448942aefe3164430,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3521601335492636121, guid: a92154e9c94d6b1448942aefe3164430,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25624,16 +25619,6 @@ PrefabInstance:
     - target: {fileID: 3521601335492636121, guid: a92154e9c94d6b1448942aefe3164430,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521601335492636127, guid: a92154e9c94d6b1448942aefe3164430,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521601335492636127, guid: a92154e9c94d6b1448942aefe3164430,
-        type: 3}
-      propertyPath: m_Volume
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

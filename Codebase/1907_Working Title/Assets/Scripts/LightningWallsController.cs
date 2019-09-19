@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class LightningWallsController : MonoBehaviour
 {
+    // Spawn hit
+    [SerializeField] private GameObject SpawnEffect = null;
+    // Spawn hit
+
     [SerializeField] private float spawnInterval = 10.0f;
 
     // Explosion shit
@@ -60,6 +64,10 @@ public class LightningWallsController : MonoBehaviour
         {
             SectorObjLights[sector].GetComponent<Light>().gameObject.SetActive(false);
 
+            // Play Sound
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlaySectorBasedExplosion();
+            // Play Sound
+
             Instantiate(SectorBasedExplosion, SectorObjs[sector].transform.position, SectorObjs[sector].transform.rotation);
             phase3timer = 10;
             sectorSelected = false;
@@ -71,11 +79,22 @@ public class LightningWallsController : MonoBehaviour
         {
             for (int i = 0; i < EnemySpawnPoints.Length; i++)
             {
-                Instantiate<GameObject>(Enemies[0], EnemySpawnPoints[i].transform.position,
+                Instantiate<GameObject>(SpawnEffect, EnemySpawnPoints[i].transform.position,
                     EnemySpawnPoints[i].transform.rotation);
             }
 
+            Invoke("Spawn", 1.0f);
+
             timer = spawnInterval;
+        }
+    }
+
+    private void Spawn()
+    {
+        for (int i = 0; i < EnemySpawnPoints.Length; i++)
+        {
+            Instantiate<GameObject>(Enemies[0], EnemySpawnPoints[i].transform.position,
+                EnemySpawnPoints[i].transform.rotation);
         }
     }
 

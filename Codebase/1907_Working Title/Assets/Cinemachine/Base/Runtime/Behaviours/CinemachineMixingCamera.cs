@@ -116,12 +116,16 @@ namespace Cinemachine
         {
             int index;
             if (m_indexMap.TryGetValue(vcam, out index))
+            {
                 SetWeight(index, w);
+            }
             else
+            {
 #if DEBUG
                 Debug.LogError("CinemachineMixingCamera: Invalid child: "
                                + ((vcam != null) ? vcam.Name : "(null)"));
 #endif
+            }
         }
 
         /// <summary>Blended camera state</summary>

@@ -19,6 +19,7 @@ public class GameWinScreenScript : MonoBehaviour
 
     public void Exit()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene("Main Menu");
     }
 }

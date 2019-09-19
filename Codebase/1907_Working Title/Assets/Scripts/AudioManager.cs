@@ -90,4 +90,20 @@ public class AudioManager : MonoBehaviour
     {
         GetComponents<AudioSource>()[10].Play();
     }
+
+    public void PlayBulletRicochetSound()
+    {
+        GetComponents<AudioSource>()[11].Play();
+    }
+
+    public void PlayBossDeflect()
+    {
+        GetComponents<AudioSource>()[12].volume = GetComponents<AudioSource>()[12].volume * 0.4f;
+        GetComponents<AudioSource>()[12].Play();
+    }
+
+    public void PlaySectorBasedExplosion()
+    {
+        GetComponents<AudioSource>()[13].Play();
+    }
 }

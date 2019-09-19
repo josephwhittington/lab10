@@ -9,7 +9,7 @@ public class ObstacleEnemyController : IPausable
     NavMeshAgent agent;
     [SerializeField] GameObject HealthDrop = null;
     [SerializeField] GameObject DeathEffect = null;
-    [SerializeField] Image EnemyHealthUI = null;
+    //[SerializeField] Image EnemyHealthUI = null;
     [SerializeField] GameObject[] Waypoints = null;
     private int currIndex = 0;
     private GameObject CurrentWaypoint = null;

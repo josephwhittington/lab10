@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1882801850526167543}
   - component: {fileID: 1886646668728183090}
   - component: {fileID: 1499143502793214863}
-  - component: {fileID: 1867679671540546}
-  m_Layer: 0
+  - component: {fileID: 570153018547103920}
+  - component: {fileID: 1284465332}
+  m_Layer: 8
   m_Name: Bossman
   m_TagString: Bossman
   m_Icon: {fileID: 0}
@@ -73,10 +74,11 @@ MonoBehaviour:
   - {fileID: 0}
   CenterWaypoint: {fileID: 0}
   ShotInterval: 0.15
-  Health: 100
+  Health: 1400
   DestroyEffect: {fileID: 632193105208960728, guid: a89bccfe7837b244f918b5aa31e0e559,
     type: 3}
   BossManHealth: {fileID: 0}
+  IndicatorLights: []
 --- !u!195 &1499143502793214863
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -99,8 +101,8 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!135 &1867679671540546
-SphereCollider:
+--- !u!136 &570153018547103920
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,9 +111,23 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 36.90421
-  m_Center: {x: -0.024127701, y: 44.1431, z: -8.977092}
+  m_Radius: 75.20608
+  m_Height: 150.41216
+  m_Direction: 1
+  m_Center: {x: -1.2047304, y: 52.670498, z: -9.348447}
+--- !u!114 &1284465332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884780097208456323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dd13f1b35022944a3e6baa8a90d1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThingToDisable: {fileID: 0}
 --- !u!1 &1884814667046347101
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +139,7 @@ GameObject:
   - component: {fileID: 1883020726689483941}
   - component: {fileID: 1898361032592186253}
   - component: {fileID: 1907920793233754163}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Volume129
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +218,7 @@ GameObject:
   - component: {fileID: 1886646668264841250}
   - component: {fileID: 1886646668264841248}
   - component: {fileID: 1886646668264841251}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +295,7 @@ GameObject:
   - component: {fileID: 1886646668273352091}
   - component: {fileID: 1886646668273352089}
   - component: {fileID: 1886646668273352088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +372,7 @@ GameObject:
   - component: {fileID: 1886646668298939218}
   - component: {fileID: 1886646668298939216}
   - component: {fileID: 1886646668298939219}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +449,7 @@ GameObject:
   - component: {fileID: 1886646668306342284}
   - component: {fileID: 1886646668306342290}
   - component: {fileID: 1886646668306342285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1886646669727809918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletSpawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +564,7 @@ GameObject:
   - component: {fileID: 3862658473373515323}
   - component: {fileID: 83451398552357360}
   - component: {fileID: 9072813186124731973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +641,7 @@ GameObject:
   - component: {fileID: 4169064893976366914}
   - component: {fileID: 2349331859129065227}
   - component: {fileID: 4745692591914641730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +718,7 @@ GameObject:
   - component: {fileID: 944810718840304280}
   - component: {fileID: 5274220466308056959}
   - component: {fileID: 5820420295001379129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +795,7 @@ GameObject:
   - component: {fileID: 7603509402775775713}
   - component: {fileID: 7190412627071138878}
   - component: {fileID: 1262560265058890959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,7 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8387030176102291362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TorchEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +903,7 @@ GameObject:
   - component: {fileID: 8387030183495054298}
   - component: {fileID: 8563011439499776220}
   - component: {fileID: 8550223574048757412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5560,7 +5576,7 @@ GameObject:
   - component: {fileID: 8393233259238206364}
   - component: {fileID: 8551023776222332866}
   - component: {fileID: 8550491295737978440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FireEmbers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10222,7 +10238,7 @@ GameObject:
   - component: {fileID: 8386929722575765348}
   - component: {fileID: 8550350059630605138}
   - component: {fileID: 8551869155729522310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
