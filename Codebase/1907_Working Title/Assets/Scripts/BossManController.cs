@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine;
@@ -48,6 +47,10 @@ public class BossManController : IPausable
     private int shotcount = 0;
     // AI
 
+    // Indicator Lights
+    [SerializeField] private GameObject[] IndicatorLights = null;
+    // Indicator Lights
+
     private float TimeElapsedSinceLastShot = 0.0f;
     private Quaternion target = Quaternion.identity;
     private Quaternion last_position = Quaternion.identity;
@@ -59,7 +62,7 @@ public class BossManController : IPausable
         // Disable the win screen canvas
         WinScreen.gameObject.SetActive(false);
         // Disable the win screen canvas
-
+        
         maxheath = Health;
 
         target = Quaternion.AngleAxis(180.0f, Vector3.up);
@@ -104,6 +107,24 @@ public class BossManController : IPausable
                 TimeElapsedSinceLastShot = 0.0f;
             }
             Rotate();
+            SetInterctionLightColors();
+        }
+    }
+
+    void SetInterctionLightColors()
+    {
+        if (State == BossState.PHASE1Vulnerable)
+        {
+            for (int i = 0; i < IndicatorLights.Length; i++)
+            {
+                IndicatorLights[i].GetComponent<Light>().color = Color.green;
+            }
+        } else if (State == BossState.PHASE1Invulnerable)
+        {
+            for (int i = 0; i < IndicatorLights.Length; i++)
+            {
+                IndicatorLights[i].GetComponent<Light>().color = Color.red;
+            }
         }
     }
 
@@ -175,17 +196,23 @@ public class BossManController : IPausable
         }
     }
 
-    void OnCollision(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerController>().DealDamageToPlayer(5);
+        }
+
+        if (collision.gameObject.CompareTag("Projectile") && State == BossState.PHASE1Invulnerable)
+        {
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayBossDeflect();
         }
     }
 
     void Suicide()
     {
         WinScreen.SetActive(true);
+        Time.timeScale = 0;
 
         Instantiate<GameObject>(DestroyEffect, transform.position, transform.rotation);
         Destroy(gameObject);

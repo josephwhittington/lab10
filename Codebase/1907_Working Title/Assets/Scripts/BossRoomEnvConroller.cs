@@ -14,7 +14,8 @@ public class BossRoomEnvConroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GetComponent<AudioSource>().volume =
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().SFXVolume;
     }
 
     public void EnableEnvEffect()
