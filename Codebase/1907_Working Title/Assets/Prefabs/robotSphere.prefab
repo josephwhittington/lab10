@@ -2503,7 +2503,7 @@ MonoBehaviour:
   ForceField: {fileID: 4419911095361798027}
   scrollSpeed: 0.2
   HitPoints: 2
-  littlefucks: {fileID: 6505893791756670012, guid: 4793fd51cc8311c41beaf5c1eff7712f,
+  littlefucks: {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf,
     type: 3}
 --- !u!135 &1511386084900366489
 SphereCollider:
