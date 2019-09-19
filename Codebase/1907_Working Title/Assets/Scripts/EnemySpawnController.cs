@@ -215,12 +215,16 @@ public class EnemySpawnController : IPausable
             Instantiate(SpawnEffect, SpawnPoints[spawnpointindex].transform.position, transform.rotation);
             // Instantiate<GameObject>(Enemies[spawnIndex], SpawnPoints[spawnpointindex].transform.position, transform.rotation);
             // Spawn Enemy
-            if(!Enemies[spawnIndex])
+            if (!Enemies[spawnIndex])
+            {
 #if DEBUG
                 Debug.Log("Thing broke");
 #endif
+            }
             else
+            {
                 enemy.Add(Enemies[spawnIndex]);
+            }
 
             enemylocation.Add(SpawnPoints[spawnpointindex].transform.position);
             EnemySpawnWeights.Add(EnemyWeights[spawnIndex]);
