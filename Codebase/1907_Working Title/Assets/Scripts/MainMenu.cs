@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     public void Scene_Switcher(string menu)
     {
         //PlayerStats.LoadPlayerPrefs();
+        GameState.GamePaused = false;
 
         PlayMenuSelectSound();
         SceneManager.LoadScene("LoadingScreen");
@@ -25,6 +26,7 @@ public class MainMenu : MonoBehaviour
         PlayMenuSelectSound();
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("StoreVisited", 1);
+        GameState.GamePaused = false;
 
         SceneManager.LoadScene("LoadingScreen");
     }
