@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 9106866327662156620}
   m_Layer: 8
   m_Name: _EnemySniper
-  m_TagString: Enemy
+  m_TagString: Sniper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1430,7 +1430,6 @@ MonoBehaviour:
   SpawnPoints:
   - {fileID: 9107481699585258610}
   ShotInterval: 5
-  EnemyHealthUI: {fileID: 0}
   HitPoints: 5
   ParticleSystem: {fileID: 1787777519516420121}
 --- !u!1 &9106877709416143365
