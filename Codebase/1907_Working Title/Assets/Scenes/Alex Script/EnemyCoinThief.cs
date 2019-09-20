@@ -7,11 +7,11 @@ public class EnemyCoinThief : IPausable
 {
     GameObject player = null;
     NavMeshAgent agent = null;
-    [SerializeField] uint HitPoints = 6;
+    [SerializeField] int HitPoints = 6;
     [SerializeField] GameObject CoinDrop = null;
     [SerializeField] GameObject DeathEffect = null;
     private float TimerCoolDown = 0;
-    private float CoolDown = 0.01f;
+    private float CoolDown = 0.1f;
 
    
     //private float WaitForThis = 0;
@@ -23,7 +23,7 @@ public class EnemyCoinThief : IPausable
     {
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
-        InvokeRepeating("CoinTimer", 0, .6f);
+        InvokeRepeating("CoinTimer", 0, .9f);
         
     }
 
@@ -48,7 +48,8 @@ public class EnemyCoinThief : IPausable
     {
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
-           
+            GetComponent<AudioSource>().volume =
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().SFXVolume;
         }
 
     }
@@ -63,7 +64,7 @@ public class EnemyCoinThief : IPausable
 
     public void DealDamage(uint p_damage)
     {
-        if (HitPoints - p_damage <= 0)
+        if (HitPoints - (int)p_damage <= 0)
         {
             Suicide();
             //alex kill counter
@@ -75,7 +76,7 @@ public class EnemyCoinThief : IPausable
 
         else
         {
-           HitPoints -= p_damage;
+           HitPoints -= (int)p_damage;
         }
 
     }
