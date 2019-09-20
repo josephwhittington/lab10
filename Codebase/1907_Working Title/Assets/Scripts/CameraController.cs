@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
         next_position = p_position;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(next_position != Vector3.zero)
             Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, next_position, 0.9f * Time.deltaTime);
