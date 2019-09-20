@@ -9,7 +9,8 @@ public class FillHp : MonoBehaviour
 
     void Start()
     {
-        fillHP.onClick.AddListener(Fill);
+        if(fillHP)
+            fillHP.onClick.AddListener(Fill);
     }
     void Fill()
     {
