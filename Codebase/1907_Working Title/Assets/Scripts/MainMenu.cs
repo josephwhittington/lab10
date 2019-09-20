@@ -31,6 +31,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("LoadingScreen");
     }
 
+    public void Credits()
+    {
+        PlayMenuSelectSound();
+        SceneManager.LoadScene("Credits");
+    }
+
     void PlayMenuSelectSound()
     {
         GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayMenuSelectSound();
