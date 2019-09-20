@@ -18,9 +18,11 @@ public class ObstacleEnemyController : IPausable
     private GameObject[] EnemiesToHeal = null;
     int MaxHP;
     [SerializeField] ParticleSystem particle = null;
+    [SerializeField] string RoomName = null;
 
     void Start()
     {
+        gameObject.SetActive(false);
         particle.Stop();
         agent = GetComponentInChildren<NavMeshAgent>();
         CurrentWaypoint = Waypoints[0];
@@ -31,7 +33,10 @@ public class ObstacleEnemyController : IPausable
         // Set the max hp to the starting hp value for percentage on fill amt for UI update
         MaxHP = HitPoints;
     }
-
+    private void OnEnable()
+    {
+        StartSpawner.PlayerEntered += StartObst;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -124,5 +129,14 @@ public class ObstacleEnemyController : IPausable
         }
         if(EnemiesToHeal.Length != 0)
             particle.Play();
+    }
+    void StartObst(string roomName)
+    {
+        if (RoomName == roomName)
+            gameObject.SetActive(true);
+    }
+    private void OnDisable()
+    {
+        StartSpawner.PlayerEntered -= StartObst;
     }
 }

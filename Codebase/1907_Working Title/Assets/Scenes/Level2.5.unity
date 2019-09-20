@@ -1718,6 +1718,11 @@ PrefabInstance:
       propertyPath: Waypoints.Array.data[5]
       value: 
       objectReference: {fileID: 327828991}
+    - target: {fileID: 3865189405388957701, guid: d627bd29b8752e34d8ed792eb01fde47,
+        type: 3}
+      propertyPath: RoomName
+      value: Room 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d627bd29b8752e34d8ed792eb01fde47, type: 3}
 --- !u!1 &219632100
@@ -28118,7 +28123,7 @@ MonoBehaviour:
   EnemyWeights: 01000000020000000300000003000000010000000400000002000000
   SpawnInterval: 6
   HealthPickupSpawnInterval: 6
-  RoomWeight: 30
+  RoomWeight: 0
   WaitTimebeforeSpawn: 0
 --- !u!1001 &5140130230255686794
 PrefabInstance:
@@ -29968,11 +29973,6 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.6865593
       objectReference: {fileID: 0}
-    - target: {fileID: 5768103474679001313, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.28
-      objectReference: {fileID: 0}
     - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29982,6 +29982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768103474679001313, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
@@ -30893,7 +30898,7 @@ MonoBehaviour:
   EnemyWeights: 01000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 10
-  RoomWeight: 20
+  RoomWeight: 0
   WaitTimebeforeSpawn: 0
 --- !u!1 &5862083077051277908
 GameObject:
