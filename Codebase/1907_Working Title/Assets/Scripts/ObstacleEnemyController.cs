@@ -21,6 +21,7 @@ public class ObstacleEnemyController : IPausable
 
     void Start()
     {
+        gameObject.SetActive(false);
         particle.Stop();
         agent = GetComponentInChildren<NavMeshAgent>();
         CurrentWaypoint = Waypoints[0];
@@ -31,7 +32,6 @@ public class ObstacleEnemyController : IPausable
         // Set the max hp to the starting hp value for percentage on fill amt for UI update
         MaxHP = HitPoints;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -125,4 +125,6 @@ public class ObstacleEnemyController : IPausable
         if(EnemiesToHeal.Length != 0)
             particle.Play();
     }
+
+
 }
