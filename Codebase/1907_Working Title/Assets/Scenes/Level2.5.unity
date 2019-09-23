@@ -11723,14 +11723,14 @@ MonoBehaviour:
   Enemies:
   - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
   - {fileID: 4844688352770810366, guid: acadb12c4b01a944fac790b57829f319, type: 3}
-  - {fileID: 5871140461455956743, guid: 5a87593a2198323429ee1afa35eae545, type: 3}
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
   - {fileID: 3219876069786205276, guid: 363e5f656fc8dbb4f91ea2f7a92e39b0, type: 3}
   - {fileID: 410909471745440353, guid: 0f67e1c74fd22f348bb250e3b46658d2, type: 3}
   - {fileID: 9106866327662156619, guid: 5ce2eacc049a9d349af85c6e88772518, type: 3}
   EnemyWeights: 010000000100000002000000030000000400000002000000
   SpawnInterval: 2.5
   HealthPickupSpawnInterval: 10
-  RoomWeight: 0
+  RoomWeight: 30
   WaitTimebeforeSpawn: 0
 --- !u!1001 &46172888490995142
 PrefabInstance:
@@ -27974,7 +27974,7 @@ MonoBehaviour:
   EnemyWeights: 01000000020000000300000003000000010000000400000002000000
   SpawnInterval: 6
   HealthPickupSpawnInterval: 6
-  RoomWeight: 0
+  RoomWeight: 30
   WaitTimebeforeSpawn: 0
 --- !u!1001 &5140130230255686794
 PrefabInstance:
@@ -30749,7 +30749,7 @@ MonoBehaviour:
   EnemyWeights: 01000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 10
-  RoomWeight: 0
+  RoomWeight: 25
   WaitTimebeforeSpawn: 0
 --- !u!1 &5862083077051277908
 GameObject:
@@ -31257,11 +31257,14 @@ MonoBehaviour:
   - {fileID: 5835274364991427380}
   - {fileID: 5995950513143972109}
   - {fileID: 2124173853997623171}
-  Enemies: []
-  EnemyWeights: 
+  Enemies:
+  - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
+  - {fileID: 9106866327662156619, guid: 5ce2eacc049a9d349af85c6e88772518, type: 3}
+  - {fileID: 3219876069786205276, guid: 363e5f656fc8dbb4f91ea2f7a92e39b0, type: 3}
+  EnemyWeights: 010000000100000001000000
   SpawnInterval: 3
   HealthPickupSpawnInterval: 600000
-  RoomWeight: 0
+  RoomWeight: 20
   WaitTimebeforeSpawn: 0
 --- !u!1 &6025532557398983144
 GameObject:
