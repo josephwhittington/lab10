@@ -41,6 +41,8 @@ public class BoomerEnemy : IPausable
     {
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
+            GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
+    .GetComponent<AudioManager>().SFXVolume;
             agent.SetDestination(player.transform.position);
             anim.SetBool("Walk_Anim", true);
             float offset = Time.time * scrollSpeed;
