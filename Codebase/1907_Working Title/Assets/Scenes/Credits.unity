@@ -1254,7 +1254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.794999}
+  m_AnchoredPosition: {x: 0, y: -1.6}
   m_SizeDelta: {x: 0, y: -1.590003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1458632213
@@ -1290,9 +1290,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Exit
-
-'
+  m_Text: Exit
 --- !u!222 &1458632214
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1426,7 +1424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.794999}
+  m_AnchoredPosition: {x: 0, y: -1.6}
   m_SizeDelta: {x: 0, y: -1.590003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1759360998
@@ -1462,9 +1460,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Main Menu
-
-'
+  m_Text: Main Menu
 --- !u!222 &1759360999
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1554,8 +1550,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 94532278}
   m_HandleRect: {fileID: 94532277}
   m_Direction: 2
-  m_Value: 0.49999982
-  m_Size: 0.25314564
+  m_Value: 0.49999988
+  m_Size: 0.15611893
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
