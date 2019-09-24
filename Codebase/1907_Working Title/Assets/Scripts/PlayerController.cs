@@ -8,7 +8,6 @@ public class PlayerController : IPausable
 
     [SerializeField] float speed = 6.0f;
     [SerializeField] GameObject healEffect = null;
-    [SerializeField] GameObject HealEffectSpawnPoint = null;
 
     // Shooting
     private float ShootSpeedTimer = 0;

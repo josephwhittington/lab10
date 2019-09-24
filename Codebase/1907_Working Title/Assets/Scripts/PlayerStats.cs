@@ -41,6 +41,10 @@ public static class PlayerStats
     public static uint PlayerCoinCountOnLevelLoad = 0;
     //Upgrades
 
+    // Store shit
+    public static bool StoreActive = false;
+    // Store shit
+
     public static void DealDamageToPlayer(uint p_damage)
     {
         if (CurrentHealth - p_damage <= 0)

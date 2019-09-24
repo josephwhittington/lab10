@@ -1074,8 +1074,6 @@ MonoBehaviour:
 
 
 
-
-
     Coin Asset - Saish Thakur
 
 
@@ -1124,11 +1122,18 @@ MonoBehaviour:
     Room Assets - https://assetstore.unity.com/packages/3d/environments/sci-fi/cube-sci-fi-interiors-pack-134181
 
 
+    Main Menu Screen Art -
+
+    Done by: Whitson Mize
+
 
     Music from Westar
 
 
-    Sound from FreeSounds'
+    Sound from FreeSounds
+
+
+'
 --- !u!222 &1272167443
 CanvasRenderer:
   m_ObjectHideFlags: 0

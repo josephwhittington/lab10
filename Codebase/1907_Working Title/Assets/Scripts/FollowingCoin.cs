@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class FollowingCoin : MonoBehaviour
 {
-    GameObject player;
-    NavMeshAgent agent;
+    GameObject player = null;
+    NavMeshAgent agent = null;
 
     float coolDown = 5.0f;
     public float TimerCoolDown = 0.0f;
@@ -35,7 +35,6 @@ public class FollowingCoin : MonoBehaviour
             PlayerStats.Coins += 1;
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayCoinPickup();
         }
-
     }
 
     public void TimerTillSelfDestruct()

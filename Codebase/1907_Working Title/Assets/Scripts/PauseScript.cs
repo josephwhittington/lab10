@@ -86,7 +86,7 @@ public class PauseScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape)) && !PlayerStats.PlayerDead)
+        if (((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape)) && !PlayerStats.PlayerDead) && !PlayerStats.StoreActive)
         {
             IsPaused = !IsPaused;
             PauseMenu.gameObject.SetActive(IsPaused);

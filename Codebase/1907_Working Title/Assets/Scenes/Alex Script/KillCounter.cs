@@ -36,6 +36,7 @@ public class KillCounter : MonoBehaviour
     void Start()
     {
         //player = GetComponent<Transform>();
+        killcounter.text = count.ToString();
     }
 
     private void Awake()

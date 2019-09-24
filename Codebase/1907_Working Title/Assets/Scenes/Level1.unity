@@ -2562,7 +2562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+  SpawnEffect: {fileID: 8192225758381509539, guid: 2cb28894cc442394bb1c15f8b2feb68e,
     type: 3}
   DoorGuards:
   - {fileID: 648824807}

@@ -14,6 +14,7 @@ public class StoreBehavior : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            PlayerStats.StoreActive = true;
             StoreUI.SetActive(true);
         }
     }
@@ -21,6 +22,7 @@ public class StoreBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            PlayerStats.StoreActive = false;
             StoreUI.SetActive(false);
         }
     }
