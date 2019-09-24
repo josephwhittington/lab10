@@ -20,6 +20,7 @@ public class BoomerEnemy : IPausable
 
     uint ShieldHealth = 10;
 
+    bool isPlaying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,19 +31,27 @@ public class BoomerEnemy : IPausable
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
         rend = ForceField.GetComponent<Renderer>();
-        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayBigMeech();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         if (!GamePaused && !PlayerStats.PlayerDead)
-        { 
+        {
+            if(!isPlaying)
+                GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayBigMeech();
             agent.SetDestination(player.transform.position);
             anim.SetBool("Walk_Anim", true);
             float offset = Time.time * scrollSpeed;
             rend.material.SetTextureOffset("_MainTex", new Vector2(0, offset));
         }
+        else
+        {
+            isPlaying = false;
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().StopBigMeech();
+        }
+
     }
 
     void Suicide()

@@ -55,7 +55,7 @@ public class SniperController : IPausable
             if(Hit.collider.gameObject.tag == "Player")
             {
                 canShoot = true;
-                if (ParticleSystem.isStopped)
+                if (ParticleSystem.isStopped || ParticleSystem.isPaused)
                 {
                     ParticleSystem.Play();
                     GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlaySniperCharge();
@@ -86,6 +86,8 @@ public class SniperController : IPausable
         else
         {
             agent.isStopped = true;
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().StopSniperCharge();
+            ParticleSystem.Pause();
         }
         
     }
