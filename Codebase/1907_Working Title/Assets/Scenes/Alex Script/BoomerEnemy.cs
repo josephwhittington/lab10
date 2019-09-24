@@ -30,10 +30,7 @@ public class BoomerEnemy : IPausable
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
         rend = ForceField.GetComponent<Renderer>();
-
-        if (GetComponent<AudioSource>())
-            GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
-                .GetComponent<AudioManager>().SFXVolume;
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayBigMeech();
     }
 
     // Update is called once per frame
@@ -41,8 +38,7 @@ public class BoomerEnemy : IPausable
     {
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
-            GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
-    .GetComponent<AudioManager>().SFXVolume;
+            
             agent.SetDestination(player.transform.position);
             anim.SetBool("Walk_Anim", true);
             float offset = Time.time * scrollSpeed;
