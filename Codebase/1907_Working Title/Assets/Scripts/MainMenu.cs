@@ -24,7 +24,15 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
         PlayMenuSelectSound();
-        PlayerStats.ResetUpgrades();
+
+        float sfxvolume = PlayerPrefs.GetFloat(GlobalConfigs.SFXVolume, 1);
+        float musicvolume = PlayerPrefs.GetFloat(GlobalConfigs.MusicVolume, 1);
+
+        PlayerPrefs.DeleteAll();
+
+        PlayerPrefs.SetFloat(GlobalConfigs.SFXVolume, sfxvolume);
+        PlayerPrefs.SetFloat(GlobalConfigs.MusicVolume, musicvolume);
+
         PlayerPrefs.SetInt("StoreVisited", 1);
         GameState.GamePaused = false;
 
