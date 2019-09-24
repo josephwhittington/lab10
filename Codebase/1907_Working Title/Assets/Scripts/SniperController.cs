@@ -116,6 +116,8 @@ public class SniperController : IPausable
 
     void Suicide()
     {
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().StopSniperCharge();
+        ParticleSystem.Stop();
         Destroy(gameObject);
     }
 

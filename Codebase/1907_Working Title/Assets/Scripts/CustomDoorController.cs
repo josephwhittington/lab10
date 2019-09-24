@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CustomDoorController : MonoBehaviour
 {
-    [SerializeField] private bool OnlyUsableOnRoomClear = false;
     [SerializeField] private string Roomname = "";
 
     // Shit we need

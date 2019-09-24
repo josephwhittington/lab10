@@ -96,7 +96,8 @@ public class BulletController : IPausable
             }
             else if (collision.gameObject.CompareTag("Enemy"))
             {
-                collision.gameObject.GetComponent<EnemyController>().DealDamage((int)(Damage + PlayerStats.DamageUpgrade));
+                if(collision.gameObject)
+                    collision.gameObject.GetComponent<EnemyController>().DealDamage((int)(Damage + PlayerStats.DamageUpgrade));
             }
             else if (collision.gameObject.CompareTag("EnemyBoom"))
             {

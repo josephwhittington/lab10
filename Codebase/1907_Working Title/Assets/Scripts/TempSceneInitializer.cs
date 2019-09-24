@@ -8,6 +8,9 @@ public class TempSceneInitializer : MonoBehaviour
     void Start()
     {
         GameObject.FindGameObjectWithTag("Player")?.GetComponent<PlayerController>()?.ChangeGun("GunPeaShooter", "GunPeaShooter");
+
+        PlayerStats.PlayerCoinCountOnLevelLoad = PlayerStats.Coins;
+
         PlayerStats.LoadPlayerPrefs();
     }
 }

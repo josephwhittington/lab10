@@ -152,7 +152,6 @@ public class PlayerController : IPausable
             float hSpeed = characterController.velocity.magnitude;
 
             anim.SetFloat("Hspeed", hSpeed);
-            //anim.SetFloat("Vspeed", vSpeed);
 
             if (PlayerStats.CurrentHealth <= 0 || PlayerStats.CurrentHealth > PlayerStats.MaxHitPoints)
             {

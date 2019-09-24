@@ -33,7 +33,7 @@ public class LightningWall : MonoBehaviour
         System.Random rand = new System.Random();
         int thing = rand.Next(HealthSpawnPoints.Length);
         Instantiate<GameObject>(HealthPickup, HealthSpawnPoints[thing].transform.position,
-            HealthSpawnPoints[thing].transform.rotation);
+            HealthPickup.transform.rotation);
     }
 
     public void Disable()

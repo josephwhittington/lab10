@@ -37,6 +37,8 @@ public static class PlayerStats
 
     //WHITTINGTON REMOVE YOU HOE \/\/\/\/
     public static bool Trichochet = true; // 25% chance of richochet
+
+    public static uint PlayerCoinCountOnLevelLoad = 0;
     //Upgrades
 
     public static void DealDamageToPlayer(uint p_damage)
@@ -45,6 +47,7 @@ public static class PlayerStats
         {
             CurrentHealth = 0;
             PlayerDead = true;
+            Coins = PlayerCoinCountOnLevelLoad;
         }
         else CurrentHealth -= p_damage;
     }
@@ -227,5 +230,17 @@ public static class PlayerStats
 
         return 5 + (multiplier * 5);
     }
-    //Call on scene exit
+    public static void ResetUpgrades()
+    {
+        PlayerPrefs.SetInt("MaxHealth", 10);
+        PlayerPrefs.SetInt("CurrentHealth", 10);
+        PlayerPrefs.SetInt("Coins", 0);
+
+        PlayerPrefs.SetInt(GlobalConfigs.Bouncy, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.HealthUpgrade, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.DashCooldownUpgrade, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.DamageUpgrade, 0);
+        PlayerPrefs.SetFloat(GlobalConfigs.FireRate, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.MultiShot, 0);
+    }
 }

@@ -39,6 +39,8 @@ public class BoomerEnemy : IPausable
     // Update is called once per frame
     void Update()
     {
+        GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
+            .GetComponent<AudioManager>().SFXVolume;
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
             agent.SetDestination(player.transform.position);

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
 public class EnemySpawnController : IPausable
 {
     //Alex Spawn Effect
@@ -45,6 +44,8 @@ public class EnemySpawnController : IPausable
     private List<GameObject> enemy = new List<GameObject>();
     private List<Vector3> enemylocation = new List<Vector3>();
     private List<uint> EnemySpawnWeights = new List<uint>();
+
+    private float waittimebeforeroomclearcheck = 5.0f;
     // Enemy spawn timer
 
     private void OnEnable()
@@ -56,6 +57,8 @@ public class EnemySpawnController : IPausable
     {
         RoomStartWeight = RoomWeight;
         DisableDoors();
+
+        if (RoomWeight == 0) waittimebeforeroomclearcheck = 0;
     }
 
     void Update()
@@ -94,12 +97,24 @@ public class EnemySpawnController : IPausable
             ShouldSpawn = true;
             DisableDoors();
             InvokeRepeating("SpawnHealthPickup", HealthPickupSpawnInterval, HealthPickupSpawnInterval);
+
+            // For roomclear check
+            InvokeRepeating("SubstractWaitTimeBeforeRoomClearCheck", 0, 1.0f);
+            // For roomclear check
         }
+    }
+
+    void SubstractWaitTimeBeforeRoomClearCheck()
+    {
+        waittimebeforeroomclearcheck -= 1.0f;
+
+        if(waittimebeforeroomclearcheck <= 0.0f)
+            CancelInvoke("SubstractWaitTimeBeforeRoomClearCheck");
     }
 
     void CheckIfRoomClear()
     {
-        if ((RoomWeight <= 0 || RoomWeight > RoomStartWeight))
+        if ((RoomWeight <= 0 || RoomWeight > RoomStartWeight) && waittimebeforeroomclearcheck <= 0)
         {
             int NumberOfEnemies = 0;
 
