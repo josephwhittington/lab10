@@ -15,8 +15,6 @@ public class DoorController : MonoBehaviour
 {
     // Shit we need
     [SerializeField] GameObject SpawnPosition = null;
-    //[SerializeField] GameObject CameraPos;
-    //[SerializeField] GameObject NextRoom;
     // Shit we need
 
     private void OnTriggerEnter(Collider other)
@@ -27,10 +25,5 @@ public class DoorController : MonoBehaviour
             other.gameObject.transform.position = SpawnPosition.transform.position;
             other.gameObject.SetActive(true);
         }
-    }
-
-    void MoveCamera()
-    {
-        //Camera.main.transform.position = CameraPos.transform.position;
     }
 }

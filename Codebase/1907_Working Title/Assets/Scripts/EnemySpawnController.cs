@@ -62,8 +62,6 @@ public class EnemySpawnController : IPausable
     {
         if (!GamePaused)
         {
-            CheckIfRoomClear();
-
             if (ShouldSpawn && WaitTimebeforeSpawn > 0)
                 WaitTimebeforeSpawn -= Time.deltaTime;
 
@@ -83,6 +81,8 @@ public class EnemySpawnController : IPausable
                     }
                 }
             }
+
+            CheckIfRoomClear();
         }
     }
 
