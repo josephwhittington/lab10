@@ -8,6 +8,8 @@ public class FollowingCoin : MonoBehaviour
     GameObject player;
     NavMeshAgent agent;
 
+    float coolDown = 5.0f;
+    public float TimerCoolDown = 0.0f;
     //public Transform Target;
     //public float MinModifier = 7;
     //public float MaxModifier = 11;
@@ -22,6 +24,7 @@ public class FollowingCoin : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
+        TimerCoolDown = coolDown;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,12 +35,28 @@ public class FollowingCoin : MonoBehaviour
             PlayerStats.Coins += 1;
             GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayCoinPickup();
         }
+
     }
 
+    public void TimerTillSelfDestruct()
+    {
+        if (TimerCoolDown > 0)
+        {
+            TimerCoolDown -= Time.deltaTime;
+        }
 
+        if (TimerCoolDown <= 0)
+        {
+            Destroy(gameObject);
+            PlayerStats.Coins += 1;
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>()?.PlayCoinPickup();
+        }
+
+    }
 
     void Update()
     {
         agent.SetDestination(player.transform.position);
+        TimerTillSelfDestruct();
     }
 }
