@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
         PlayMenuSelectSound();
-        PlayerPrefs.DeleteAll();
+        PlayerStats.ResetUpgrades();
         PlayerPrefs.SetInt("StoreVisited", 1);
         GameState.GamePaused = false;
 

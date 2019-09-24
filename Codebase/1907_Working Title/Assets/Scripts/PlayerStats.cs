@@ -227,5 +227,17 @@ public static class PlayerStats
 
         return 5 + (multiplier * 5);
     }
-    //Call on scene exit
+    public static void ResetUpgrades()
+    {
+        PlayerPrefs.SetInt("MaxHealth", 10);
+        PlayerPrefs.SetInt("CurrentHealth", 10);
+        PlayerPrefs.SetInt("Coins", 0);
+
+        PlayerPrefs.SetInt(GlobalConfigs.Bouncy, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.HealthUpgrade, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.DashCooldownUpgrade, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.DamageUpgrade, 0);
+        PlayerPrefs.SetFloat(GlobalConfigs.FireRate, 0);
+        PlayerPrefs.SetInt(GlobalConfigs.MultiShot, 0);
+    }
 }
