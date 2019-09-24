@@ -37,8 +37,7 @@ public class BoomerEnemy : IPausable
     void Update()
     {
         if (!GamePaused && !PlayerStats.PlayerDead)
-        {
-            
+        { 
             agent.SetDestination(player.transform.position);
             anim.SetBool("Walk_Anim", true);
             float offset = Time.time * scrollSpeed;
