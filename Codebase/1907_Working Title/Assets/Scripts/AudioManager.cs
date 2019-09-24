@@ -106,4 +106,12 @@ public class AudioManager : MonoBehaviour
     {
         GetComponents<AudioSource>()[13].Play();
     }
+    public void PlayBigMeech()
+    {
+        GetComponents<AudioSource>()[14].Play();
+    }
+    public void StopBigMeech()
+    {
+        GetComponents<AudioSource>()[14].Stop();
+    }
 }

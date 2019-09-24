@@ -14723,7 +14723,7 @@ PrefabInstance:
     - target: {fileID: 5766771897721370987, guid: 9578ce29b3a87294b9789a6597945774,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -270.9064
+      value: -272.4
       objectReference: {fileID: 0}
     - target: {fileID: 5766771897721370987, guid: 9578ce29b3a87294b9789a6597945774,
         type: 3}
@@ -14733,7 +14733,7 @@ PrefabInstance:
     - target: {fileID: 5766771897721370987, guid: 9578ce29b3a87294b9789a6597945774,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 243.35017
+      value: 242.6
       objectReference: {fileID: 0}
     - target: {fileID: 5766771897721370987, guid: 9578ce29b3a87294b9789a6597945774,
         type: 3}
@@ -21745,7 +21745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d1f2f83c013e4fa8bfc00e20ed435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnEffect: {fileID: 4194824117646111609, guid: 0e8541ca8377e50478b1ea99018f9703,
+  SpawnEffect: {fileID: 8192225758381509539, guid: 2cb28894cc442394bb1c15f8b2feb68e,
     type: 3}
   DoorGuards:
   - {fileID: 755176802}
@@ -21760,7 +21760,7 @@ MonoBehaviour:
   Enemies:
   - {fileID: 5365732162526282822, guid: fd80790a9fc1583489bf9c7ea7c3afdf, type: 3}
   EnemyWeights: 01000000
-  SpawnInterval: 5
+  SpawnInterval: 3.75
   HealthPickupSpawnInterval: 6
   RoomWeight: 5
   WaitTimebeforeSpawn: 0

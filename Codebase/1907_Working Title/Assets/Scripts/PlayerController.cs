@@ -128,7 +128,9 @@ public class PlayerController : IPausable
 
         if (other.gameObject.CompareTag("FirstAid"))
         {
-            Instantiate<GameObject>(healEffect, HealEffectSpawnPoint.transform.position, HealEffectSpawnPoint.transform.rotation);
+             GameObject heal = Instantiate<GameObject>(healEffect, gameObject.transform.position, gameObject.transform.rotation);
+            // heal.transform.parent = gameObject.transform;
+            heal.transform.SetParent(gameObject.transform);
         }
     }
 
