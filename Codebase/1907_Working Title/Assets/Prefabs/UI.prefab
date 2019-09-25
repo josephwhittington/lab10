@@ -4391,6 +4391,7 @@ MonoBehaviour:
   BounceSlider: {fileID: 5030512861335550259}
   FireRateSlider: {fileID: 2641897124140110631}
   MultishotSlider: {fileID: 6166845790532943744}
+  store: {fileID: 3850418763339500270}
 --- !u!1 &3850418763354450207
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,6 +4745,7 @@ MonoBehaviour:
   BounceSlider: {fileID: 5030512861335550259}
   FireRateSlider: {fileID: 2641897124140110631}
   MultishotSlider: {fileID: 6166845790532943744}
+  store: {fileID: 0}
 --- !u!1 &3850418763878384341
 GameObject:
   m_ObjectHideFlags: 0

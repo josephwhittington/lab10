@@ -7,7 +7,7 @@ public class PlayerController : IPausable
     CharacterController characterController;
 
     [SerializeField] float speed = 6.0f;
-    [SerializeField] GameObject healEffect = null;
+    [SerializeField] ParticleSystem healEffect = null;
 
     // Shooting
     private float ShootSpeedTimer = 0;
@@ -88,6 +88,8 @@ public class PlayerController : IPausable
         meshRenderer = model.GetComponent<SkinnedMeshRenderer>();
         
         anim = GetComponent<Animator>();
+        healEffect.Stop();
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -124,13 +126,12 @@ public class PlayerController : IPausable
             string location = other.gameObject.GetComponent<ItemPickupScript>()?.GetPrefabLocation();
             ChangeGun(location, name);
         }
-
         if (other.gameObject.CompareTag("FirstAid"))
         {
-             GameObject heal = Instantiate<GameObject>(healEffect, gameObject.transform.position, gameObject.transform.rotation);
-            // heal.transform.parent = gameObject.transform;
-            heal.transform.SetParent(gameObject.transform);
+            if (!healEffect.isPlaying)
+                healEffect.Play();
         }
+
     }
 
     public void ChangeGun(string p_gunlocation, string p_name)

@@ -22,7 +22,7 @@ public class StoreCostTextUpdater : MonoBehaviour
     [SerializeField] private Slider FireRateSlider = null;
     [SerializeField] private Slider MultishotSlider = null;
     // Sliders
-
+    [SerializeField] GameObject store = null;
     // Upgrade Levels
     private int DashCoolDown = 0;
     private int Health = 0;
@@ -35,6 +35,12 @@ public class StoreCostTextUpdater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (store.activeSelf)
+                store.SetActive(false);
+        }
+
         // Check for value updates
         if (PlayerPrefs.HasKey(GlobalConfigs.DashCooldownUpgrade))
             DashCoolDown = PlayerPrefs.GetInt(GlobalConfigs.DashCooldownUpgrade);
