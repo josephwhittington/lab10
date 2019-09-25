@@ -19,7 +19,7 @@ public class BoomerEnemy : IPausable
     int MaxHP = 5;
 
     uint ShieldHealth = 10;
-
+    bool isPlaying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,23 +30,28 @@ public class BoomerEnemy : IPausable
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
         rend = ForceField.GetComponent<Renderer>();
-
-        if (GetComponent<AudioSource>())
-            GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
-                .GetComponent<AudioManager>().SFXVolume;
+        GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayBigMeech();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        GetComponent<AudioSource>().volume = GameObject.FindGameObjectWithTag("AudioManager")
-            .GetComponent<AudioManager>().SFXVolume;
+    { 
         if (!GamePaused && !PlayerStats.PlayerDead)
         {
+            if (!isPlaying)
+            {
+                GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().PlayBigMeech();
+                isPlaying = true;
+            }
             agent.SetDestination(player.transform.position);
             anim.SetBool("Walk_Anim", true);
             float offset = Time.time * scrollSpeed;
             rend.material.SetTextureOffset("_MainTex", new Vector2(0, offset));
+        }
+        else
+        {
+            isPlaying = false;
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().StopBigMeech();
         }
     }
 
