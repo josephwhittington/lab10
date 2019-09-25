@@ -11,6 +11,7 @@ A top down shooter where you must traverse through some treacherous labs to esca
 
 ###### Download the Windows build at:
 https://SpookyMoonGames.fun/Download/Lab10.exe
+https://download.SpookyMoonGames.fun
 
 ###### Play the WebGL build at:
 https://SpookyMoonGames.fun
