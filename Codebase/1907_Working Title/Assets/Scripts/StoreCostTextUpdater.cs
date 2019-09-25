@@ -66,20 +66,39 @@ public class StoreCostTextUpdater : MonoBehaviour
         FireRateSlider.value = FireRate;
         MultishotSlider.value = Multishot;
         // Set sliders
-        
+
         // Update Cost Text
-        CooldownCostText.text = PlayerStats.GetUpgradeCost(1).ToString();
-        HealthCostText.text = PlayerStats.GetUpgradeCost(0).ToString();
-        if(Damage == PlayerStats.MAXDMG - 1 || Damage == PlayerStats.MAXDMG)
-        {
+        if (DashCoolDown == PlayerStats.MAXDASH)
+            CooldownCostText.text = "Max";
+        else
+            CooldownCostText.text = PlayerStats.GetUpgradeCost(1).ToString();
+
+        if (Health == PlayerStats.MAXHP)
+            HealthCostText.text = "Max";
+        else
+            HealthCostText.text = PlayerStats.GetUpgradeCost(0).ToString();
+
+        if (Damage == PlayerStats.MAXDMG - 1)
             DamageCostText.text = "500";
-        }
+        else if (Damage == PlayerStats.MAXDMG)
+            DamageCostText.text = "Max";
         else
             DamageCostText.text = PlayerStats.GetUpgradeCost(2).ToString();
 
-        BounceCostText.text = PlayerStats.GetUpgradeCost(3).ToString();
-        FireRateText.text = PlayerStats.GetUpgradeCost(4).ToString();
-        MultishotText.text = PlayerStats.GetUpgradeCost(5).ToString();
+        if (Bounce == PlayerStats.MAXBOUNCEY)
+            BounceCostText.text = "Max";
+        else
+            BounceCostText.text = PlayerStats.GetUpgradeCost(3).ToString();
+
+        if (FireRate == PlayerStats.MAXBOUNCEY)
+            FireRateText.text = "Max";
+        else
+            FireRateText.text = PlayerStats.GetUpgradeCost(4).ToString();
+
+        if (Multishot == PlayerStats.MAXMULTISHOT)
+            MultishotText.text = "Max";
+        else
+            MultishotText.text = PlayerStats.GetUpgradeCost(5).ToString();
         // Update Cost Text
     }
 }

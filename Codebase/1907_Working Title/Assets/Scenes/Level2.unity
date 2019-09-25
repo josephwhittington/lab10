@@ -3578,6 +3578,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1003578638}
     m_Modifications:
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 540607252}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 652002991}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[2]
+      value: 
+      objectReference: {fileID: 1475808889}
     - target: {fileID: 5766552642364974151, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Name
@@ -21849,6 +21869,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 327720015}
     m_Modifications:
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 1022832471}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 266315586}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[2]
+      value: 
+      objectReference: {fileID: 1215134967}
     - target: {fileID: 5766552642364974151, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Name
@@ -26090,7 +26130,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -26167,7 +26207,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -37296,6 +37336,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 794012978}
     m_Modifications:
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 283034079}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 1044901785}
     - target: {fileID: 5766552642364974151, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Name
@@ -43550,7 +43605,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -50380,7 +50435,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -70150,7 +70205,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -75901,6 +75956,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 127854560}
     m_Modifications:
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 444871804}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[2]
+      value: 
+      objectReference: {fileID: 295466064}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[3]
+      value: 
+      objectReference: {fileID: 1176219699}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 651821897}
     - target: {fileID: 5766552642364974151, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Name
@@ -77358,7 +77438,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -83248,6 +83328,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1460889673}
     m_Modifications:
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 272743179}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 1713309196}
     - target: {fileID: 5766552642364974151, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Name

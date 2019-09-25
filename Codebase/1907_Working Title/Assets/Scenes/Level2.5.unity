@@ -2669,7 +2669,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5831,7 +5831,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7131,17 +7131,18 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.6865593
       objectReference: {fileID: 0}
-    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
 --- !u!4 &1170384506 stripped
 Transform:
@@ -8277,31 +8278,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1385574429 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5766552642364974151, guid: 3a02be799cb7b5841801b772a96f2936,
-    type: 3}
-  m_PrefabInstance: {fileID: 5602324778222774442}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1385574430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385574429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 219458bbfd1b03542af964631ea90271, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lights:
-  - {fileID: 2131400604320838089}
-  - {fileID: 5925057769864057653}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1001 &1386164822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10658,12 +10634,12 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.6865593
       objectReference: {fileID: 0}
-    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -15041,17 +15017,18 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.6865593
       objectReference: {fileID: 0}
-    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
 --- !u!1 &502317682375377531 stripped
 GameObject:
@@ -17379,17 +17356,18 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.6865593
       objectReference: {fileID: 0}
-    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
 --- !u!1 &1275865671636970440 stripped
 GameObject:
@@ -25481,7 +25459,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -26787,7 +26765,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -29013,12 +28991,12 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.6865593
       objectReference: {fileID: 0}
-    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
+    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -29038,7 +29016,8 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.09984993
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a02be799cb7b5841801b772a96f2936, type: 3}
 --- !u!1 &4928928010291122043 stripped
 GameObject:
@@ -31227,6 +31206,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1957867966711766025}
     m_Modifications:
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 5925057769864057653}
+    - target: {fileID: 5996472345057850425, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: Lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 2131400604320838089}
     - target: {fileID: 5766552642364974151, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_Name
@@ -31387,17 +31381,17 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.6865593
       objectReference: {fileID: 0}
-    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5768103474679001313, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 5766808329962562615, guid: 3a02be799cb7b5841801b772a96f2936,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764906513426341349, guid: 3a02be799cb7b5841801b772a96f2936,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -32876,7 +32870,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -40790,7 +40784,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
