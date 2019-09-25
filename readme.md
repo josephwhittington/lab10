@@ -2,7 +2,7 @@
 
 A top down shooter where you must traverse through some treacherous labs to escape the clutches of some evil scientists who intend to experiment on you and whatnot. Made as a student project for our midterm at Fullsail University.
 
-![logo](/Img/Menu.png) 
+![logo](https://raw.githubusercontent.com/josephwhittington/lab10/master/img/Menu.png) 
 
 ###### Built By:
 - Joseph Whittington
